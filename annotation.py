@@ -19,7 +19,7 @@ def generate_ner_json(input_sample_path, glossary_path, output_json_path, min_se
             matched_terms = []
             term_spans = []
             
-            # Paso 1: Anotar términos más largos primero
+            # Paso 1: Anotar términos más largos primero (incluyendo los compuestos como 'type-token ratio')
             for term in glossary_terms:
                 for match in re.finditer(rf"\b{re.escape(term)}\b", sentence):
                     start, end = match.span()
@@ -35,24 +35,22 @@ def generate_ner_json(input_sample_path, glossary_path, output_json_path, min_se
                 if not any(s <= start < e or s < end <= e for s, e in term_spans):
                     matched_terms.append((start, end, "TERM"))
             
-            # Paso 3: Anotar términos con guion como 'type-token ratio' antes que sus partes individuales
-            for match in re.finditer(r"\btype-token ratio\b", sentence):
-                start, end = match.span()
-                if not any(s <= start < e or s < end <= e for s, e in term_spans):
-                    term_spans.append((start, end))
-                    matched_terms.append((start, end, "TERM"))
+            # Paso 3: Anotar términos compuestos antes que sus partes individuales
+            compound_terms = [term for term in glossary_terms if "-" in term or " " in term]
+            for term in compound_terms:
+                for match in re.finditer(rf"\b{re.escape(term)}\b", sentence):
+                    start, end = match.span()
+                    if not any(s <= start < e or s < end <= e for s, e in term_spans):
+                        term_spans.append((start, end))
+                        matched_terms.append((start, end, "TERM"))
             
-            # Paso 4: Anotar 'type' y 'token' solo si no forman parte de 'type-token ratio'
-            for match in re.finditer(r"\btype\b", sentence):
-                start, end = match.span()
-                after_word = sentence[end:end+3].strip().lower()
-                if after_word != "of" and not any(s <= start < e or s < end <= e for s, e in term_spans):
-                    matched_terms.append((start, end, "TERM"))
-            
-            for match in re.finditer(r"\btoken\b", sentence):
-                start, end = match.span()
-                if not any(s <= start < e or s < end <= e for s, e in term_spans):
-                    matched_terms.append((start, end, "TERM"))
+            # Paso 4: Anotar términos individuales solo si no forman parte de términos compuestos
+            for term in glossary_terms:
+                if term not in compound_terms:
+                    for match in re.finditer(rf"\b{re.escape(term)}\b", sentence):
+                        start, end = match.span()
+                        if not any(s <= start < e or s < end <= e for s, e in term_spans):
+                            matched_terms.append((start, end, "TERM"))
             
             if matched_terms:
                 all_sentences.append(sentence)
