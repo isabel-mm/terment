@@ -1,39 +1,38 @@
 Término,Frecuencia
-corpus,567
-text,222
-type,83
-sample,80
-corpus linguistics,75
-annotation,73
-concordance,32
+corpus,575
+text,198
+type,86
+corpus linguistics,74
+annotation,74
+sample,65
+concordance,25
+XML,25
+token,24
+metadata,22
 tagging,22
-collocation,19
-corpus-based,18
-metadata,18
-XML,17
+corpus-based,22
 node,15
-diachronic,15
+collocation,14
+diachronic,13
+lemma,13
 frequency list,12
-representativeness,12
-markup,11
-token,10
-lemma,9
+balance,12
+markup,9
 encoding,9
-balance,8
+representativeness,8
 keyword,8
-reference corpus,8
 lexis,7
-comparability,6
-concordancer,4
-corpus-driven,4
-statistical significance,3
-lemmatization,3
-corpus construction,3
-monitor corpus,3
-markup language,1
-synchronic,1
-sampling frame,1
+reference corpus,6
+comparability,5
+lemmatization,5
+concordancer,5
+corpus-driven,5
+statistical significance,4
+markup language,3
+lemmatisation,3
+synchronic,2
+corpus construction,2
+type-token ratio,2
 colligation,1
-sample corpus,1
-type-token ratio,1
-key word in context,1
+monitor corpus,1
+sampling frame,1

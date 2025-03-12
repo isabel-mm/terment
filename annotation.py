@@ -35,7 +35,7 @@ def generate_ner_json(input_sample_path, glossary_path, output_json_path, min_se
                 if not any(s <= start < e or s < end <= e for s, e in term_spans):
                     matched_terms.append((start, end, "TERM"))
             
-            # Paso 3: Anotar 'type-token ratio' antes que 'type' o 'token'
+            # Paso 3: Anotar términos con guion como 'type-token ratio' antes que sus partes individuales
             for match in re.finditer(r"\btype-token ratio\b", sentence):
                 start, end = match.span()
                 if not any(s <= start < e or s < end <= e for s, e in term_spans):
