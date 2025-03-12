@@ -7,7 +7,7 @@ from collections import defaultdict
 nlp = spacy.load("en_core_web_trf")
 
 # Ruta de la carpeta con los textos
-text_folder = "/content/nterm/original_texts/"
+text_folder = "/content/nterm/texts/"
 glossary_path = "/content/terment/cl_glossary"
 
 # Cargar términos del glosario eliminando espacios en blanco y líneas vacías
