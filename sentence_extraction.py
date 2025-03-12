@@ -11,7 +11,7 @@ def extract_sentences(text_folder, glossary_path):
     with open(glossary_path, "r", encoding="utf-8") as file:
         glossary_terms = [term.strip() for term in file.readlines() if term.strip()]
 
-    # Ordenar términos por longitud (número de caracteres) para priorizar la anotación de términos compuestos
+    # Ordenar términos por longitud (número de caracteres) para priorizar la anotación de términos poliléxicos (para evitar solapamientos, se anota antes 'multimodal corpus' que 'corpus')
     glossary_terms.sort(key=len, reverse=True)
 
     # Diccionario para almacenar oraciones por término
