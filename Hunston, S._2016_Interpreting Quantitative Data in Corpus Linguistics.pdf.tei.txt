@@ -1,0 +1,99 @@
+Introduction
+
+There are two distinguishing features of Corpus Linguistics as a field of research. Firstly, it involves naturally-occurring discourse, and in relatively large quantities. What counts as 'relatively large' depends on the individual study and can be anything from a few hundred thousand words to hundreds of millions of words. Among the assumptions that lie behind Corpus Linguistics, though, is the view that there are aspects of language use that are important but that are invisible to the human reader of texts. In particular, the relative frequency with which words, phrases, and grammatical categories are used is of importance but can be established only with the help of search software. In very basic cases, the language of the corpus is rearranged so that a reader is presented with an altered and focused view. Taking this one or more steps further, quantitative information is given that replaces the human reading process.
+
+Secondly, Corpus Linguistics attempts to make contributions to linguistic theory that are informed by quantitative information. As will be noted below, those contributions may relate to the mechanisms by which language changes over time, or to the nature of the difference between registers, or to the relationship between lexis and grammar. The question of 'what is language like' is one that Corpus Linguistics seeks to answer. In some cases, that answer is very much aligned with other approaches to language; in other cases less so.
+
+Work in Corpus Linguistics has grown exponentially over the last three decades, and the quantitative tools it routinely uses have become more sophisticated. An area of constant exploration is the role that a technical expertise in language structure -lexis, grammar, discourse -plays in relation to expertise in quantification. As the discussion below will indicate there are various types of combination, from 'mainly language with some numbers thrown in' to 'mainly numbers with little regard for language'. This is not simply a matter of finding a balance, but constantly exploring new ways of approaching language so that possibilities of finding new knowledge constantly come into view. Whatever Corpus Linguistics is, it is not static.
+
+In this paper I shall present a view of Corpus Linguistics that conceptualises it in three phases, distinguished by the use made in each phase of quantitative data. I am going to be talking about corpora of English, though much of what I say will be applicable to other languages.
+
+Laying the foundation: quantifying language categories
+
+One of the greatest contributions of corpus linguistics to theoretical linguistics is the opportunity it affords for quantifying the comparative frequency of various linguistic categories that are identified and tagged in corpora. This activity has not been without criticism. Chomsky, for example, has famously offered the view that simple quantity adds nothing to the explanatory function of theory. It is true that establishing comparative frequencies does not change our knowledge of what can be said, but it does alter our understanding of what is typically said, and under what circumstances. It also permits comparison between corpora and as a consequence geographical varieties can be compared, changes in language over time can be observed, and the stages of language development (in children or in learners) can be described.
+
+A key example of this kind of work is the Longman Grammar of Spoken and Written English
+
+An example of comparative work in the same tradition is the paper by
+
+Annotating a corpus for the categories central to SFL (for example, distinguishing process types, or types of Theme) remains a largely manual enterprise, though assisted by mark-up and quantification software such as the UAM Corpus Tool (O'Donnell). Once annotation has been carried out, however, quantification can be carried out. Matthiessen demonstrates that registers are indeed distinguished by the relative frequency of grammatical categories in them, and he also shows the variation of individual texts within the register.
+
+'Quantifying' phraseology: a lexical approach
+
+The second 'phase' I draw attention to adopts a lexical view of language, and is often treated as qualitative rather than quantitative. This approach to Corpus Linguistics is based on the observation of pattern in concordance lines, where a word or short phrase is the node of the line and the few words occurring before and after the phrase are shown for each occurrence. The job of the researcher is to identify patterns of use. The attitude towards quantification is relatively casual and implicit, but is nonetheless of importance. Two examples will be given here, both using the Bank of English corpus (HarperCollins Publishers and the University of Birmingham).
+
+The first example uses the quintessentially British phrase 'cup of tea' (a phrase used as a demonstration by Sinclair and by Danielsson). The Bank of English contains over 2,400 instances of this phrase, of which 100 random examples are selected for this illustration. Preceding 'cup of tea' are a number of different elements:
+
+• Indefinite article: 'a cup of tea' (65 instances) • Indefinite article + adjective: 'a nice/quick/calming cup of tea' (9 instances) • Possessive: 'my/your/Linda's cup of tea' (7 instances) • Other determiners: 'the cup of tea', 'another cup of tea', 'every cup of tea' (6 instances)
+
+The obvious observation here is that 'cup of tea' is used with the indefinite article in nearly 75% of cases. But a further observation that can be made is that 'a cup of tea' and 'my cup of tea' are dissimilar in meaning ('They planned to celebrate with a quiet cup of tea' as opposed to 'She's not my cup of tea'). In other words, 'a cup of tea' is a container with brown liquid in it, whereas 'my cup of tea' refers to one's preference or otherwise for an individual.
+
+To what extent is it true that 'possessive + cup of tea' has this metaphoric use exclusively? To test this, instances of 'my/his/her/their cup of tea' in the BoE are identified (160 in total), and 100 random lines selected. The ones that do not indicate preference are then identified; there are 27 of them. Thus, 73% of instances of 'possessive + cup of tea' have a non-literal interpretation. A further observation is that the non-literal instances tend to include either a negative or a comparator ('not my cup of tea' or 'more/just/entirely my cup of tea'). A further count is then carried out on the 100 lines, identifying those including a negative or comparator and those with literal or non-literal meaning.
+
+Literal
+
+Non-literal Total The usual conclusion from this kind of study is that the non-literal meaning of 'cup of tea' is reliably associated with negative and comparative phraseology, while the literal meaning is rarely used with these words. More significantly, information such as this forms the basis of Sinclair's concept of Idiom
+
+Sinclair argues that much of English operates within this somewhat grey area between the absolute fixed phrase and the entire open choice. It is often exploited in jokes, such 'Chocolate is not my cup of tea'. The second point to make is that the precise numbers involved here are not of particular interest. The difference between the relevant numbers have to be significant, not only in the statistical sense but sufficiently to give confidence that the generalisations drawn from them are accurate.
+
+My second example is a study of verb complementation
+
+that whether decide 7 16
+
+Furthermore, the wordform 'decide' when followed by 'whether' is frequently preceded by indications of obligation, necessity or volition, such as 'will decide', 'has yet to decide', 'was forced to decide' and so on. This was later formalised with a study that looked at 10 verbs, each occurring with both that-clauses and wh-clauses. The conclusion was that non-finite verb-forms co-occur with wh-clauses that construe hypothetical actions whereas finite verbforms co-occur with that-clauses that construe actual situations. In addition, a concept known as 'semantic sequences' was developed -this suggested that concordance lines can be read to identify 'what is often said', thus moving from lexis to grammar to discourse. Further examples are given in
+
+In this section I have drawn on a tradition which, as noted above, is often described as qualitative rather than quantitative. What I have tried to point out, however, is that this qualitative work does rely on measures, sometimes intuitively rather than formally established, of relative and comparative frequency. What is valued in this kind of work is observation or noticing, that is, the identification of classes of object that may not exist as a class outside that context and which have a meaning-or function-related definition rather than a formal one.
+
+Enhancing innovation
+
+All the kinds of quantitative approaches outlined above continue to be used in Corpus Linguistics. If we try to combine the benefits of phases 1 and 2 we might arrive at the following desiderata:
+
+• The statistics should be robust and should be applicable to language data;
+
+• The method of working should rest on as few preconceptions about language as possible, and be as exploratory as possible; • The outcome should offer genuine insight into language and discourse.
+
+I am now going to give three examples of what might be considered to be phase 3 research. I would describe this work as quantity-led. Like the phase 2 work outlined above, there is an attempt to rely on information that emerges from the text ('trust the text', as Sinclair says), rather than on information that is presupposed. Phase 2 work is based on the human observation of the behaviour of large numbers of a single word or phrase ('decide' or 'cup of tea') and builds theory bottom-up from such observations. Concordancing software rearranges the data -the texts -to permit that observation. In phase 3 work, statistical packages take over the role of rearranging the data. So although the approach is quantitative rather than qualitative, and relies on numbers rather than observation, to my mind it has the same bottomup approach that moves from evidence to theory.
+
+One example of this phase comes from many decades ago; the others are more recent.
+
+Example 1: Multi-Dimensional Analysis
+
+and subsequent publications)
+
+The essence of Biber's MDA is the observation that language is different in different contexts. Academic prose is different from newspaper prose; political speeches are different from casual conversation, and so on. The differences are easily recognisable, but rest on a multiplicity of frequency variations. Biber is not the only linguist to observe this (Halliday does this in a more theoretically-informed way, and Matthiessen, as noted, has added statistical rigour to that model), but Biber has carried out more extensive investigations of this type than anyone else. Unlike Halliday, he begins with a 'common sense' notion of register and with an eclectic mix of language features. The mix is intentionally eclectic because unlike Halliday he does not make presuppositions about which features will be significant in distinguishing between registers. The various sub-corpora are then tagged with the language features, and the strength of co-occurrence of those features is calculated. The result is a number of factors, each consisting of a set of features that either attract or repel each other. The factors are then interpreted in terms of what they mean in terms of discourse. 'Informational' versus 'involved' is one factor; 'narrative' versus 'non-narrative' is another. At this point the factors are renamed 'dimensions'. Corpora of texts belonging to two different registers may be alike on one dimension and different on another. Plotting registers as being more or less like each other therefore requires multiple dimensions.
+
+The original five dimensions proposed by Biber have been widely used in subsequent work by him and others, but in other work the dimensions have been worked out anew, permitting the approach to be applied to texts that may not be categorised in traditional register categories. Further refinements to the set of language features have also been made.
+
+A project carried out 2013-15, led by Thompson and advised by Biber ('Interdisciplinary Research Discourse' or IDRD), used the current set of language features from Biber's studies, but attempted two innovations. The first was to generate new dimensions from a corpus of articles from a single academic journal (Global Environmental Change). We identified, for example, 'system-oriented' versus 'action-oriented'; 'explicit argumentation' versus 'implicit argumentation'; greater or lesser degrees of 'spoken-ness'. The second was to avoid a prior division of our corpus into registers. We had deliberately selected an interdisciplinary journal for our project, with the aim of investigating ID discourse. Although we hypothesised in advance that different disciplinary discourse styles would emerge from the journal, we were not able to, and indeed did not want to, divide the articles in the journal between those disciplines in order to arrive at sub-corpora that could then be compared. What we did instead was to assign each article -each text -a value on each of the identified dimensions. We then derived clusters of texts (or 'constellations') that shared values on those dimensions. Depending on how the figures are interpreted -with greater or lesser granularity -we identify 3 or 6 constellations. We are able then to identify the type of research being reported in each, basically on stylistic grounds. Figure
+
+Example 2: Collostructions (Stefanowitsch and Gries, 2003)
+
+My second example uses quantitative information to enhance a linguistic theory. That theory is the theory of Constructions (e.g.
+
+For example, they study the ditransitive construction ('give someone something', 'promise someone something', 'tell someone something'), arguing that the 'agent + recipient + theme'
+
+Stefanowitsch and Gries's work aligns with, though is not derived from, classic phase 2 approaches to language. For example, constructions such as 'accident waiting to happen' look very similar to Sinclair's Units of Meaning. Those such as 'predicative as' or 'causative into' are identifiable as grammar patterns
+
+Where Stefanowitsch and Gries's work is different is that it offers a robust quantitative approach to the question of collostruction, rather than relying on impressions of frequency. The numerical value given to collostructional strength is used to offer an insight into how constructions come to express meaning, as this is said to be derived from the meaning of the collostructions with the highest strength.
+
+Example 3: Co-occurrence measurements as exploratory mechanisms
+
+In this third example I include two research projects carried out recently, both of which involve exploiting quantitative measures to explore corpora. These are 'bottom-up' in the sense that there is no pre-emptive model of language at the outset, but unlike phase 2 studies they have numbers rather than words at their heart. For me, they have the genuine sense of exploring the unknown and of encountering unexpected insights that phase 2 studies also have. The studies are somewhat controversial, in that they treat language as a 'bag of words', that is, without adding linguistic knowledge about structure, meaning and so on. Linguists normally look askance at 'bag of words' studies, but I do think they offer interesting new ways of carrying out 'corpus-driven' research.
+
+In introducing these examples I have used the term 'co-occurrence', meaning that two words frequently co-occur in the same text. Co-occurrence of words within a short span (i.e. 'collocation') is a traditional concept in Corpus Linguistics, as noted at the beginning of this paper. Collocation, as Firth famously almost said, gives us a lot of information about a word: its denotational and connotational meanings, for example. It has been widely accepted with Corpus Linguistics that collocation needs to be measured within a fairly short span: + / -5 words from the node is common. Beyond this, the influence of a given word is negligible. In the studies described in this section, a rather different view of co-occurrence is taken. There is no node word and no directional influence, and the purpose is not to find out more about an individual word. Rather one aim is to gain novel insights into a set of texts by observing the co-occurrence of words within them. The second aim is to gain novel insights into those words by organising them into groups according to the strength of their co-occurrence in given texts.
+
+The first is a project initiated by Neil Millar
+
+My second example under this heading is another study undertaken as part of the IDRD project outlined above and used the same corpus. One of our aims in that project was to find bottom-up and novel ways to explore a corpus whose contents were diverse but not in known ways. To do this we used topic modelling
+
+The output from topic modelling is a set of lists of words that are grouped according to the probability of their co-occurrence within the specified texts. What the lists give us, first of all, is a sense of the 'aboutness' of the corpus. Here are a few of the themes that can be identified (from
+
+• Kinds of natural environment e.g.
+
+There are, of course, other methods of tracking topics through time, or of identifying the focus of a given paper. Simply reading the paper is an obvious method! What is significant about using topic modelling is precisely that it does not rely on pre-existing ideas about what a topic might consist of. It throws open the notion of 'aboutness' and uses a data-driven way of organising the content of a large corpus.
+
+Conclusion
+
+In this paper I have distinguished between a number of approaches to quantification, or phases, in Corpus Linguistics. I have suggested that there tends to be a tension between statistical rigour and a desired objective of using data-driven methods to drive theoretical innovation. However, methods of identifying word co-occurrence provide a way of organising a corpus to lead to new insights.
+
+One of the key questions for Corpus Linguistics is how a corpus might satisfactorily be 'analysed'. In general, the investigation is top-down, in the sense that a question is asked of the corpus and means devised to find the answer to the question. The project relating to 'Rate My Professors', described above, is one such investigation, where the question: 'what categories of individual qualities are discernible from the comments made' is answered using the strength of co-occurrence of adjectives as the research method. A guiding principle in Corpus Linguistics, however, is that one should 'trust the text'

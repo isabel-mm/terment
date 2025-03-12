@@ -1,0 +1,137 @@
+Introduction
+
+Over the last decades, corpus linguistics has been developed in an effort to empirically describe and extensively analyze language uses based on naturally occurring linguistic data
+
+Recent advances in knowledge building are not the result of one or two leading academic disciplines; rather, they are a product of active and dynamic interactions in all walks of academia. Corpus linguistics plays a role among academic disciplines. Given the recent overarching knowledge-building practices and the methodological roles of corpus linguistics, it is necessary to review how a certain body of knowledge has been created according to the common denominator of corpus linguistics.
+
+Ideas can be developed by others' ideas, but in some cases new ideas are generated from an individual's mind. They can also be generated from existing information of others. In academic areas, it is common to borrow others' ideas
+
+Investigating citation structures reveals the interaction patterns in a scholarly domain
+
+In the current study, we analyzed co-cited documents published in corpus linguistics during the past twenty years. The aims of this study are to discover the dominant themes and publications and to investigate how they changed during the target period. We also demonstrate the clusters visually and further discuss the implications of the findings.
+
+Literature Review
+
+Corpus Linguistics
+
+A corpus is a body of systematically gathered texts or transcribed speech to represent a particular function of a language that can serve as the basis for linguistic analysis and description. Corpus linguistics, therefore, is one of the sources for describing the structure and uses of languages as well as for different applications, such as natural language processing in computer science or language teaching and learning in language education
+
+Corpus linguistics has a relatively shorter history because it is considered to have emerged with the development of computer technology. Along with the core role of linguistic research in the description and explanation of linguistic phenomena, additional research activities are specifically pertinent to corpus linguistics, including corpus design and compilation
+
+More recently, the scope of corpus linguistics has been subdivided and the number of interfaces with other academic disciplines has increased. Corpus linguistics, however, has become an indispensable methodology throughout the field of linguistics and its neighboring disciplines.
+
+It has been a decade since the book Corpus Linguistics 25 Years on (Facchinetti 2007) was published. The book surveys the corpus linguistics discipline, providing a brief overview of 25 years of corpus linguistics studies, including descriptive corpus studies of syntax and semantics, as well as second language acquisition with specialized corpora. As has been observed, corpus linguistics is a fairly new and rapidly growing discipline. The influence and impact of the new methodology is huge not only for related sub-fields in linguistics, but also in the major fields of the humanities, social sciences, and science and engineering. Given the considerable interest in utilizing the corpus linguistic approach, in addition to the dynamic and interdisciplinary nature of current studies involving partnerships among disciplines, a comprehensive and systematic overview of the development of and relationships among individual research in the fields of corpus linguistics is called for. Thus, the pressing academic quest is to review past achievements as well as future directions of corpus linguistics.
+
+Citation Analysis
+
+A citation analysis investigates the structures of the ideas being disseminated. In particular, co-citation patterns, which are generated when different items are simultaneously referenced in the same article, reveal the topics and features that are shared in that domain
+
+Moreover, the clustering of intellectual communities reveals the collaboration structures between the groups within a community. The explored thematic clusters can be shown in the form of visualization. The visualized document clusters indicate the association among them, revealing the characteristics of the network from a broader point of view
+
+2015;
+
+Applications of Citation Analysis
+
+Various disciplines have been studied using citation analysis to investigate the research trends. A recent article used citation as an indicator to evaluate the academic performances of research teams
+
+Meanwhile, in the education fields, along with the semantic and knowledge network analysis of second language acquisition domain (e.g., Jang, Wood, and Khan 2017), citation analysis has been used to assess research trends.
+
+In the field of corpus linguistics and its neighboring field of language education, only a few attempts have been made to explore a comprehensive and bird's eye view of the interaction among published research articles on the subject.
+
+In order to contribute new insights to explore and uncover research trends in corpus linguistics from the past two decades, the purpose of the current study is address the following questions:
+
+1) In corpus linguistics literature, what are the salient works over the last two decades?
+
+2) What salient issues have been discussed in corpus linguistics research during the past 20 years? 3) How have these issues emerged and faded during this period?
+
+Methodology
+
+Data
+
+A series of small-scale pilot studies of the co-citation analysis was carried out to evaluate the technical feasibility of processing a large amount of citation data and identify any initial patterns of the co-citation analysis results. First, in order to ensure a robust and systematic investigation, CiteSpace, a program for visualizing and analyzing trends and patterns in scientific literature, was employed to conduct the co-citation analysis
+
+Analysis
+
+Researchers refer to other researchers' ideas and borrow their findings from the published scholarly works. There might be various reasons for referencing other researchers' publications. One of the reasons is that the referenced academic resources are used to support their research ideas
+
+Examining the clusters based on the specialties found in the references provides insights into the targeted scholarly world. References that share similar purposes can be grouped through cluster analysis
+
+Results
+
+Salient Publications
+
+Two sources of important citation data, most-cited journal titles and the individual publications, were analyzed to understand citation patterns in corpus linguistics. Every journal title has its own aims and scope of publication; therefore, the analysis of the cited journal titles identified trends in how corpus linguistics research has been communicated within the research community. Furthermore, the analysis of the most-cited publications was expected to identify influential and leading works within the given time span.
+
+Table
+
+Meanwhile, other journals from the list disappeared over time. Computational Linguistics was ranked at the top in the 1997-2001 time span, but the number of citations did not grow much; the ranking of the journal declined, and eventually it dropped off the list in the recent time span. Furthermore, some journals that appeared in the middle of the time span became actively cited by the corpus linguistics papers since then. English for Specific Purposes and TESOL Quarterly, founded in 1980 and 1967, respectively, appeared after the turn of the century and have been consistently cited by the corpus linguistics papers.
+
+Another trend worth noting is the emergence of specialized journals on the list. Between 2007 and 2011, International Journal of Corpus Linguistics, which was first published in 1996 and covers the areas of linguistics, applied linguistics, and translation studies, began to be cited widely, ranking until even recent years. Journal of English for Academic Purposes, along with English for Specific Purposes and Cognitive Linguistics, is another example of a specialized journal actively being cited by corpus linguistics papers. Therefore, based on the journals most cited by corpus linguistics papers, corpus linguistics studies not only refer to general linguistic studies, but also specialized journal papers for new areas of language education, cognitive linguistics, and corpus linguistics itself.
+
+Time span
+
+Journals 1997-2001 Computational Linguistics [89]; Language [67]; Journal of Pragmatics [38];
+
+Applied Linguistics
+
+Time span
+
+Publications 1997-2001 Markus, Mitchell P., Mary Ann Marcinkiewicz, and Beatrice Santorini. 1993 During the earliest period of the current research scope, between 1997 and 2001, the research topics related to new perspectives on grammar were the central issue in corpus linguistics. This trend likely stemmed from the publication of grammar references based on usage-based explanations or empirical corpus data, such as Introduction to Functional Grammar and Longman Grammar of Spoken and Written English. In tandem with the advancement of technology and large-scale empirical data, researchers attempted to explain grammar with the parsed corpora of the large-scale empirical data: Penn Treebank.
+
+Between 2002 and 2006, although researchers still cited corpus-based grammar references for their studies (e.g., Cambridge Grammar of the English Language), one group of researchers made use of newly developed datasets, both large or small, such as The CHILDES Corpus, Wordnet, and A New Academic Word List. Another group of researchers, possibly novices in the discipline, cited general references to corpus linguistics, such as Introduction to Corpus Linguistics, Corpora in Applied Linguistics, and Foundations of Statistical Natural Language. An alternative explanation for the emergence of the introductory references of corpus linguistics would be because the period was the optimal time for establishing corpus linguistics as a part of linguistics after a "hodgepodge" multi-directional development of corpus linguistics.
+
+Despite the small inception of specific and narrowed-down research topics, based on the cited publications between
+
+Research between 2012 and 2016 highlighted recurrent sequences of word forms, fixed expressions, lexical bundles, and n-grams.
+
+Salient Academic Research Themes
+
+Table
+
+Time span
+
+Clustered Themes 1997-2001 Processing definite description [21; 1994]; Translation studies [20; 1993];   Academic speech [18; 1997]; Research article
+
+Note. The numbers delimited by a semicolons in the brackets indicate the cluster size (i.e., the number of references) and the mean average publication year of the references within the cluster, respectively.
+
+Research papers and books have been published to introduce corpus linguistics and define how to use it or build a small corpus for pedagogic purposes. These introductory publications advanced the usage of the corpus for language teaching. In the late 2000s and early 2010s, studies about exploiting corpus were conducted concerning referencingcompiled corpus for language learning, especially in academic writing. For instance, students' attitudes or reactions were examined regarding consultation with corpus while they were writing.
+
+Considering the relationship among most sited publications and the salient academic research themes, it seems that the corpus linguistics has become a linchpin of certain academic disciplines. This is visually witnessed as shown in Figure
+
+At the beginning, the clusters are sparse with distance, however, in the recent time span, the cluster has become a tight and dense network, which suggests productive research themes in corpus linguistics and active interaction among publication citation. More details about prominent clusters will be presented in the following sections, focusing on five years at a time.
+
+1997-2001
+
+Between 1997 and 2001, 9,215 co-cited references were obtained from the 286 articles. Nine keyword themes were derived from the references: "processing definite description"; "translation studies"; "academic speech"; "research article"; "MDL principle"; "functional opposition"; "learning system"; "noun verb problem"; and "Spanish text." Figure
+
+During this period, a new view emerged toward the corpus dataset to be used for studies on grammar: Large text data compiled with the help of computational corpus enhanced the research on parsed grammar, resulting in publications such as Introduction to Functional Grammar by
+
+2002-2006
+
+Between 2002 and 2006, 669 articles were analyzed as the dataset, resulting in 18,985 co-cited references that revealed 17 keyword themes: "pedagogic issue"; "discourse marker"; "research article"; "doctoral student"; "indirect object"; "summarizing scientific article"; "unseen bigram"; :"cademic writing" "urban Nigerian Arab"; "syntactic hierarchical configuration information"; "ESP classroom"; "economics metaphor"; "signalizing delay"; "interactional language"; "semantic relation"; "competing motivation"; and "grammaticalization phenomenon." The most notable themes were "academic writing" and "research article" (see Figure
+
+On the other hand,
+
+Another significant cluster during this time span, "pedagogic issue," had a wider range in the cluster and of overlapped parts with other clusters, such as "research article," "academic writing," and "summarizing scientific writing" (see Figure
+
+2007-2011
+
+In 1,792 articles from 2007 to 2011, 52,382 co-cited references were identified. The references showed 13 keyword themes: "formulaic sequence"; "metadiscourse"; "schema abstraction"; "dative alternation"; "corpus consultation"; "weird"; "metaphor"; "sense"; "politeness"; "language contact"; "machine"; "work"; and "localization." During this period, corpus linguistics was used to figure out a fixed series of words and use them for students' language learning, which was distinctively depicted in the cluster network (see Figure
+
+Another cluster, "corpus consultation" (see Figure
+
+2012-2016
+
+A total of 10 keyword themes were extracted from the 91,770 co-cited references between 2012 and 2016: "statistical model"; "formulaic language"; "corpus-based study"; "academic writing"; "data-driven learning"; "second language development"; "progressive aspect"; "phrasal verb"; "grammar checker"; and "pragmatic marker." The references were included in 2,853 articles. Of the keyword themes, "formulaic language" was a prominent theme related to corpus linguistics and EAP or ESP (see Figure
+
+Another distinctive cluster was "data-driven learning," in which COCA (Davies 2008) appeared as the most influentially cited item. COCA is not a published article; rather, it is a web-based corpus complied of a 520 million-word database from newspapers, magazines, fiction, and other academic text documents. WordSmith Tools
+
+Discussion and Conclusion
+
+The present study explored the research trends in corpus linguistics over the past 20 years. Co-citation analysis was conducted to examine the salient themes of the clusters every five years, along with the significant co-cited publications within the themes. Changes among the most-cited journals and publications were also investigated. The findings revealed that four journals were steadily referred to during the two decades examined: Language, Journal of Pragmatics, Linguistics, and Applied Linguistics. Furthermore, journals that first ranked on the list after the early or late 2000s and remained dominant in corpus linguistics until now were English for Specific Purposes, TESOL Quarterly, International Journal of Corpus Linguistics, and Cognitive Linguistics. Thus, during the last two decades, in addition to general linguistics research being consistently referenced, specialized academic journals on corpus linguistics, cognitive linguistics, pragmatics, sociolinguistics, and language education have also been actively cited.
+
+Corpus linguists' most-cited publications which served as the foundations of corpus linguistics were constantly referenced. For instance, publications by John Sinclair, Douglas Biber, Michael Halliday, and Randolph Quirk were steadily cited throughout the 20 years. Meanwhile, publications by Mike Scott, Ken Hyland, and John Swales were first found in the middle time spans; their publications on corpus tools and discourse analysis in ESP or EAP were frequently cited. The pattern of cited publications also suggests that corpus linguistics has been specialized and branched out.
+
+Co-citation patterns in each time span also revealed significantly clustered themes as well as publications within the clusters. In the years before 2000 and the early 2000s, corpus linguistics tended to be studied by using enormous empirical datasets. During that time, corpora enabled researchers to conduct studies on grammar using corpus-based parsers, such as the Penn Treebank and its parts of speech tags. Consequently, researchers were able to computationally build corpus data, focusing primarily on grammatical or semantic aspects in discourses. In addition, publications in academic writing, academic speech, pedagogic issues, and research articles appeared as important themes during this period. Most recently (i.e., since the late 2000s), corpus tools were more commonly used by various groups, including not only researchers, but also language teachers and students, who finally had direct access to corpus. Moreover, these corpus practitioners started to compile their own personal corpora for analyzing and investigating linguistic features and examples of expressions by using corpus analysis software packages. Another recent trend in the corpus linguistics research, according to the current study, was the emergence of large web-based corpus (e.g., COCA). With the development of the technology and the easy accessibility to the internet, it is also worth noting the new practices in corpus linguistics research (e.g.,
+
+Few existing studies have explored research patterns and trends in corpus linguistics from a bird's-eye view. The findings of the current study demonstrate

@@ -1,0 +1,157 @@
+Introduction 1.The use of tree-based methods in current (corpus) linguistics
+
+Over the last 20 or so years, multifactorial modeling has taken much of corpus linguistics by storm. Compared to, say, the 1980s or even the 1990s, there is now a huge and constantly growing number of studies in corpus linguistics that tackle phenomena of interest with methods that allow researchers to study the effect of multiple independent variables, or predictors, on the dependent variable, or response, of interest. The by far most widely used statistical tool in this respect is probably that of generalized linear (regression) modeling, either directly or, as in the case of sociolinguistic Varbrul applications, indirectly. However, over the last few years, many researchers have also realized that generalized linear models or their extension to generalized linear mixed-effects models can run into problems especially when applied to observational data such as corpus data. This is because, unlike nicely balanced experimental data, observational corpus data exhibit a variety of characteristics which make regression modeling hard:
+
+-The data are often (extremely) Zipfian distributed
+
+Given these issues, a growing number of researchers are exploring data with such characteristics using methods other than regression modeling; a particularly popular alternative showing up in more and more studies is the family of treebased methods, including in particular classification and regression trees (CARTs), conditional inference trees, and random or conditional inference forests (see
+
+-CONJ: which conjunction heads the subordinate clause: weil/because versus bevor/before versus als/when versus nachdem/after; -SUBORDTYPE: causal or temporal (as in (1)); and -LENGTHDIFF: the length difference between the main and the subordinate clause (in words).
+
+(1) a. I was shocked when the cat killed the mouse. b. When the cat killed the mouse, I was shocked.
+
+The classification tree resulting from the data can be interpreted as follows: Starting from the top, if the subordinate clause type is causal, go left and "predict" mc-sc; if the subordinate clause type is temporal, then go right and check the length difference of the main and the subordinate clause: if that difference is < -2.5, go left and also "predict" mc-sc, otherwise go right and check whether the conjunction is before. If it is, "predict" mc-sc again, but if it is not, "predict" sc-mc. This particular classification tree can actually be summarized more concisely, given its structure: One could just say "always 'predict' mc-sc, unless the length difference between main and subordinate clause is greater than -2.5 and the conjunctions are after or when." However, this tree actually already also suggests that summarizing such a tree in prose can actually be extremely nonintuitive/difficult. This is for several reasons: First, one needs to realize that every split in the tree potentially requires another if-clause -"if X is this, go left, if it isn't, go right"which means that, with increasing depths of such trees, their prose summaries become quite painful to process. Figure
+
+Second, one also needs to realize that the binary-split nature of these methods can make the interpretation of the effects of numeric predictors quite cumbersome: Where a regression model would just return a significant slope for the effect of a numeric predictor, which can be easily summarized with a "the more x, the more/less y" sentence, a classification tree will often "represent" such a slope with multiple binary splits on the same variable. Consider the verb-particle construction alternation exemplified in (2), which is known to be quite strongly influenced by the length of the direct object (DO): (2) a. The cat bit off the bird's head.
+
+b. The cat bit the bird's head off.
+
+Consider how the effect of this numeric predictor is represented in a classification tree such as the one shown in Figure
+
+-MODE: whether the example is from spoken or written data; -COMPLEXITY: how complex the DO is: simple versus phrasally modified versus clausally modified; -DO_LENGTHSYLL: how long the DO is (in syllables); -PP: whether the verb-particle construction is followed by a directional PP or not; -DO_ANIMACY: whether the referent of the DO is animate or inanimate; -DO_CONCRETENESS: whether the referent of the DO is concrete or abstract.
+
+The tree reveals the effect of DO_LENGTHSYLL in two splits: First, there is a split at the top depending on whether the DO is shorter than 4.5 syllables. But if it is and one goes down the left part of the tree, later one needs to also consider whether the DO is shorter than 1.5 syllables (i.e. whether the DO is one syllable long). And if the DO is not shorter than 4.5 syllables and you go down the right part of the tree, then later one needs to consider whether the DO is less than 9.5 syllables long. In other words, it can happen that that single number in a regression modela slope of a numeric predictoris recoverable from a tree only by piecing together three or even more splits in different locations in a classification tree.
+
+Finally, it is worth mentioning that classification trees are not always particularly stable or robust: (1) even small changes in predictor values can produce big changes in the predictions, (2) even small changes to a data set can lead to drastic changes in the structure these kinds of algorithms find
+
+One recent attempt to improve tree-based approaches that will also be included in this discussion is that of conditional inference trees, a version of trees that uses a regression-and p value-based approach to identify the best splits in predictors (rather than the abovementioned criteria used in many regular tree-based approaches), which reduces the need for pruning and crossvalidation
+
+Another recent development is that studies are now also more often using an extension of tree-based methods called random forests
+
+randomness on the level of the data points because random forests involve fitting many decision trees on many different randomly sampled (with or without replacement) subsets of the original data; randomness on the level of predictors because at every split in every tree, only a randomly selected subset of the predictors is eligible to be chosen.
+
+Random forests usually tend to overfit much less than individual CARTs or training/test validation approaches and can be straightforwardly evaluated given that random forest accuracies are prediction, not classification, accuracies. In other words, while classification trees, strictly speaking, only return classification accuracies, i.e. accuracies of classifying cases on which the tree was trained, random forests return predictions for cases that did not feature in the training process of each tree, but cases that were "out of the bag" of a tree that was fit, thus reducing overfitting and obviating the need for crossvalidation.
+
+However, compared to regression models and classification/conditional inference trees, random forests have the distinct disadvantage that interpreting them is hard: There is no single model from a single data set, or no single tree from a single data set, that can be straightforwardly plottedthere are, say, 500 different trees fit on 500 differently sampled data sets, with thousands of different splits in different locations in trees with differently sampled predictors available for splits …. Thus, the problem is that there is a method (random/ conditional inference forests) that seems statistically superior to another (classification/conditional inference trees), but that is much harder to interpret/visualize. Two solutions are pursued in the literature: -The random forest implementations that seem to be most widely used in (corpus) linguistics offer the functionality of computing variable importance scores, which quantify the size of the effect that a predictor has on the response; some version of thesepermutation-based scores, conditional importance scores, and scaled or unscaled onesare reported frequently. In addition, they offer the computation of partial dependence scores, which represent the direction of the effect that levels/values of the predictor have on a response; for reasons not entirely clear to me, these are reported much less often (not even by scholars using Rs randomForest package, where these scores can be generated very easily). -Since the publications of
+
+The goals of the present paper
+
+In this paper, I want to discuss critically the field's increasing reliance on treebased methods as well as the field's currently predominant ways of using and interpreting random forests. To that end, I will first showcase a kind of data set that multiple tree-based approaches turn out to be very bad at handling in the sense that they fail to identify the correct predictors-response relation(s) in the data, which can lead to (1) suboptimal classification accuracies and (2) non-parsimonious trees (i.e. suboptimal variable importance scores); this data set and its analysis using the following R functions: tree::tree and rpart::rpart for classification trees and party::ctree as well as partykit::ctree for conditional inference trees (although the latter is merely a "reimplementation" of the former, see <http
+
+Second and based on that first part, I will discuss how the practice of summarizing random forests on the basis of single trees can be, minimally, risky or, maximally, even flawed and how the kinds of data that are problematic for tree-based approaches can be studied more safely; these issues will be the focus of Section 3. Code for all the analyses in Sections 2 and 3 will be made available on my website. Section 4 concludes.
+
+2 Data sets that trees cannot handle (very well)
+
+A small artificial data set
+
+Let me first introduce a data set that has a structure that we will find is problematic for the tree-based approaches; this data set is represented in a summary frequency table in Table
+
+There are two crucial things to notice about this data set. The first is that the three predictors differ in monofactorial predictive power:
+
+-P1s (for Predictor 1 from the small data set) leads to 70% accuracy: when P1s is a, the Response is x 7 out of 10 times, when P1s is b, the Response is y 7 out of 10 times. -P2s (for Predictor 2 from the small data set) leads to 60% accuracy: when P2s is e, the Response is x 6 out of 10 times, when P2s is f, the Response is y 6 out of 10 times. -P3s (for Predictor 3 from the small data set) leads to only 50% accuracy:
+
+when P3s is m, the Response is x 6 out of 12 times, when P3s is n, the Response is y 4 out of 8 times.
+
+The second thing to notice is that the two weaker predictors, P2s and P3s, together yield perfect 100% accuracy:
+
+when P2s is e and P3s is m, the Response is x all 6 times; when P2s is e and P3s is n, the Response is y all 4 times; when P2s is f and P3s is m, the Response is y all 6 times; when P2s is f and P3s is n, the Response is x all 4 times.
+
+This data set exemplifies something that is at least relatable to the so-called XOR problem, a situation where two variables show no main effect [not true of P2s. which has a main effect] but a perfect interaction. In this case, because of the lack of a marginally detectable main effect, none of the variables may be selected in the first split of a classification tree, and the interaction may never be discovered.
+
+One final comment regarding these data: The use of the above data set is not to imply that a data set like this is typical for corpus-linguistic data in general or for tree-based analyses of such data in particular. Of course, corpus data are usuallyhopefullya bit larger than the above data (and see Section 2.2 below for a larger sample size) and they do not usually exhibit the kind of complete separation shown above. However, the Zipfian distribution that corpus data often exhibit makes it quite likely that some categorical predictors have highly frequent levels whose association to the response variable may overpower other (combinations of) predictors. Also and as even one reviewer commented, this data set "seems to be the best (because simplest) illustration of the issue at hand" because it allows me to show that tree-based approaches may even fail at detecting the perfectly predictive effect of P2s and P3s in the data; the tree-based methods discussed below would not miraculously fare better if the data were not perfectly predictive (as that reviewer actually showed on the basis of more probabilistic/less deterministic data).
+
+2.1.1 How tree::tree handles this small data set
+
+The first tree is based on tree::tree in R, i.e. the function tree from the package tree
+
+How rpart::rpart handles this small data set
+
+The second tree uses the function rpart from the package rpart (Therneau and Atkinson 2018) and is shown in Figure
+
+Interim summary
+
+In sum, in terms of accuracy, none of the approaches scores a value higher than 75% although there is a very simple interaction-like structure in the data that should result in 100% accuracy. In terms of variable importance, no tree recognizes that P2s and P3s are important when combined, whereas P1s is not: Two approaches exaggerate the role of P1s and the third doesn't recognize any predictor as important; with these results, no approach would produce proper partial dependence scores for P2s and P3s: Even tree::tree, the only method that attributes at least some importance to P3s, does not see that P3s interacts with, so to speak, P2s. In other words, none of the trees succeeds at finding the right structure in even as simple a data set as this and this is because, as
+
+The large version of the artificial data set
+
+Given these results, a first obvious objection to the above would be that part of the problem might be the ridiculously small sample size, which should affect especially the conditional inference tree, which uses p-values as a splitting criterion and could be expected to suffer from the small sample size. Let us therefore increase data set 1 small by a factor of 10 (and rename the predictors to P1l [for large], etc.) and see whether that improves the results. As we will see, the new sample size leads to considerable changes.
+
+How tree::tree handles this larger data set
+
+The algorithm from tree::tree now returns a classification accuracy of 100%: every single case is identified correctly. However, as Figure
+
+A somewhat tree-savvy reader might now inquire whether the result of tree::tree will improve in terms of parsimony if the tree is pruned, a procedure that is routinely employed to avoid overfitting. However, as the companion file on my website at <http
+
+How rpart::rpart handles this larger data set
+
+The increase of the sample size also changes the results of rpart::rpart, and the resulting tree shown in Figure
+
+How party::ctree handles this larger data set
+
+What about the conditional inference tree, whose performance should benefit considerably? Indeed, this conditional inference tree (and the corresponding tree generated with partykit::ctree) now leads to the same results as the other two methods, as is shown in Figure
+
+Interim summary
+
+The more realistic sample size of data set 1 large has changed the picture considerably: All approaches now achieve 100% accuracy, but still no approach recognizes that it is the interaction of P2l:P3l alone that would be sufficient; none of the trees is parsimonious. This is already an interesting finding given how widespread the consensus among corpus linguists is that tree-based approaches are good at detecting interactions: in this case, all approaches return a three-way interaction when a two-way interaction is all that would be required/desired.
+
+The issue of variable effects is worthy of specific mention: If we were to compute variable importance scores on the trees, then these variable importance scores for P1l, P2l, and P3l do not alert the analyst to the fact that it is the "interaction" of P2l and P3lnot P2l or P3l in isolationthat does all the work. In other words, partial dependence scores would not provide the desired results in any of the above applicationswhat we would ideally like to see is (1) a variable importance score that is very small for P1l and (2) some indications that P2l and P3l on their own do not do much, but that, together, they do a lot.
+
+Random/Conditional inference forests to the rescue?
+
+On the whole, the picture that has emerged so far is somewhat sobering because trees on both the small and the large data sets never returned an optimal tree, optimal in terms of accuracy, parsimony, and effect interpretations simply because one strong predictor chosen for the first split may overpower everything else, something which can of course very easily happen in Zipfian-distributed corpus-linguistic data. Is there any way in which this result can be improved?
+
+One approach would seem to be to try and tweak hyperparameters of fitting trees, such as (1) the minimum decreases in deviance that define when trees stop splitting, (2) the minimum sample sizes per node, or (3) the tree depth. In the current scenario, however, they will not change that the tree-building algorithms will still go with local importance and split on P1s/P1l. Thus, a more powerful improvement might be the use of the extension of classification/conditional inference trees already discussed in Section 1.1, namely, random forests. Specifically, one might expect that the two layers of randomness introduced in random forests would help in the present case because, among the, say, 500 trees, some could contain random samples of the data points in which P1s/P1l is not as dominant as it is in the data set as a whole; some could be trees where P1s/P1l was not available for the first split, which means the algorithm could only choose either P2s/P2l or P3s/P3l, which in turn means that if, at the next splits, P3s/P3l or P2s/P2l were available, respectively, those trees would result in 100% accuracy and parsimoniously so it also means these trees would assess P1s/P1l's importance like a human analyst might prefer it (see
+
+In other words, the fact that not all predictors are always available for splits addresses the problem that "a classification tree makes its splits based on local best performance"
+
+What happens if we apply randomForest::randomForest (Liaw and Wiener 2002) to both data set 1 small and data set 1 large (setting the hyperparamater of mtry [how many predictors are considered at each split?] to 2 so that there is at least some choice at each split and using the default of ntree [how many trees are grown?]), first, the accuracies are improving over the trees: The random forest from data set 1 small scores an accuracy of 90%, whereas the forest from data set 1 large scores 100% (i.e. just like the trees). However, as Table
+
+What about the interpretation of the effects, however? While using random forests has not improved accuracy much but only variable importance scores, the interpretation of the random forests using partial dependence scores is still somewhat problematic: Figure
+
+First, the values of the partial dependence scores in the small data set are nearly perfectly aligned with the monofactorial accuracy percentages each predictor can score: P1s's scores deviate from 0 most (corresponding to the fact that it scores 70% accuracy), followed by P2s and then P3s. In other words, in this case, the random forest's partial dependence scores just replicate the simple observed percentages attainable from cross-tabulation. For the large data set, the situation is better, but the difference between the (totally irrelevant) predictor P1l and the predictors P2l and P3l (highly relevant in an interaction) is way smaller than we would like it to be. Second and relatedly, this of course also means that we do not get a score for the interaction of P2s:P3s/P2l:P3l. What if we generate a random forest out of conditional inference trees instead (using party::cforest, see
+
+3 The practice of summarizing a forest with a tree on all the data is problematic
+
+As just mentioned, the above discussion already indicates why summarizing a random forest with a tree grown on all the data is risky or worse. First, this practice seems problematic already on a very general level: How could a single tree that was fit on all the data (no sampling of cases) and with all predictors all the time (no sampling of predictors) possibly be great at summarizing a forest of hundreds or thousands of different trees based on that very sampling of cases and predictors? Second and more concretely here, it is problematic on empirical grounds: We saw above that the random forest results are not necessarily reflected well by any of the trees. Specifically, if one uses any of the trees grown on data set 1 to "visualize the random forest" grown on data set 1, then one runs into the problem that the trees either discovered no structure at all or considered P1 to be (one of) the most important predictors, while at the same time, P1 is the predictor that the random forests return as less or least important; in other words, how can Figures 4-9 possibly be seen as summarizing the results underlying Tables
+
+Not only is this ironic given how many people consider tree-based approaches as good at finding/representing interactions, but there is also a much more important consequence: The above results also point to an issue that seems not to be discussed in linguistic applications of random forests, namely, the question of how good forests and their variable importance measures are at capturing interactions and/or detecting interactions, where capturing refers to a random forest identifying a variable that "contributes to the classification with an interaction effect" and where detecting refers to a random forest identifying "the interaction effect per se and the predictor variables interacting with each other"
+
+Thus and exactly as demonstrated by our above data, RF methodologies are commonly claimed, often in rather vague terms, to be able to handle interactions […], although, by construction, the predictor defining the first split of a tree is selected as the one with the strongest main effect on the response variable.
+
+An alternative pointed out to me by one reviewer is the functionality offered by the package randomForestSRC
+
+A final potentially interesting method could be reinforcement learning trees, an improvement over random forests whose main characteristics sound exactly like what would be needed to address the problems discussed above:
+
+first, […] choose variable(s) for each split which will bring the largest return from future branching splits rather than only focusing on the immediate consequences of the split via marginal effects. Such a splitting mechanism can break any hidden structure and avoid inconsistency by forcing splits on strong variables even if they do not show any marginal effect; second, progressively muting noise variables as we go deeper down a tree so that even as the sample size decreases rapidly towards a terminal node, the strong variable(s) can still be properly identified from the reduced space; third, the proposed method enables linear combination splitting rules at very little extra computational cost.
+
+In sum, tree-based approaches can in fact be much less good at (1) being parsimonious and at (2) detecting interactions than is commonly assumed; this is true especially if interactions are not forced into a set of predictors explicitly and/or not explored once a first forest has been grown. However, once either of these options is pursued, both trees and random forests as used here can nearly always recover the structure in the data perfectly and parsimoniously.
+
+Representing random forests: representative trees
+
+Let us now turn to the question of how an existing random forest can be visualized better. We have seen that visualizing a random forest with a single tree fit on all the data can be highly misleading. However, a better option is available, namely, what is called a representative tree. This approach is implemented in
+
+Representing random forests: effects (plots)
+
+Another possibility of representing some of the structure in a random forestwith or without interaction predictorsinvolves applying a logic/tool that is widely used in regression modeling contexts, namely, that of effects plots
+
+For example, if one fitted a forest modeling the response variable in the large data set as a function of P1l, P2l, and P3l, this means that the predicted effect of P1l:a would be the mean of the predicted probabilities for the four combinations listed below weighted by their frequencies:
+
+- This seems like an appealing approach because it represents a predictor's effect in a random forest in a way that is not only well known from regression modeling but also controls for all other predictors in a way that goes beyond what observed frequencies/percentages can provide. Some readers might recognize that this approach is similar to partial dependence scores provided by randomForest::partialPlot, but the above discussion is still relevant for two reasons: (1) If I understand the documentation for randomForest::partialPlot correctly (see the documentation of partialPlot and Molnar 2018: Section 5.1), that function computes only an unweighted mean of the predicted probabilities/ logits (and the results from pdp::partial are the same), whereas the proposal above involves computing a weighted mean, i.e. one that is weighted by the frequency distribution of the actual data. This could be superior since it includes more information about our data (a logic that everyone using effects::effect seems to implicitly acknowledge). (
+
+Representing random forests: global surrogate models
+
+One final and more preliminary suggestion for the interpretation of random forests involves the notion of global surrogate models (GSMs). They are based on the notion discussed by
+
+In the present case, we could choose either one of two options: fit a binary logistic regression model on the categorical predictions of a random forest; fit a linear model on the predicted probabilities of Response: y from a random forest.
+
+In either case, one might use a forward model selection process, i.e. one would first fit a model using only an intercept and then add predictors as long as that makes the bigger model significantly better (e.g. in terms of p-values) or substantially better (e.g. in terms of AIC or BIC values). For this, one might consider adding predictors in the order determined by the regression modeling process or by the variable importance scores of the random forest (as in Deshors & Gries, accepted pending revision, who apply this logic to results from a random forest fit with interaction predictors). Once the chosen model selection process is completed, the final model is visualized with, for instance, effects plots
+
+If GSMs are applied to the present artificial data set (here as a backward selection example using MASS::stepAIC), the final model finds the interaction between P2 and P3 and thus achieves perfect accuracy and represents the effects faithfullyhowever, the results are less than ideal in terms of significance tests and confidence intervals because the didactically motivated perfect split/complete separation in the simulated data renders all coefficients insignificantwith real data, however, where perfect predictability is much less likely, this is correspondingly much less likely to happen.
+
+In sum, GSMs seem to be gaining ground as more and more relatively hardto-interpret (deep) machine learning methods are employed and researchers are struggling with making sense of what such black boxes return. While I have not seen them being used in linguistics, GSMs are an interesting alternative worth exploring and certainly more reasonable than trying to interpret a random forest with a single tree fit on all the data.
+
+Concluding remarks
+
+As the size and complexity of data sets in different subfields of linguistics grow, it becomes more and more important to study them with methods that do their complexity justice. While it is great that more and more linguists are using multifactorial methods to find patterns in their data, this also increases the risk of applications that raise more problems than they might solve. Treebased methods have become a welcome alternative for data sets that defy regression-based methods especially in noisy and unbalanced corpus data, and that, in and of itself, is potentially a good thing. However, in this paper, I showed that there can be patterns in data that make trees underperform considerably when it comes to accuracy, variable importance/parsimony, and effects interpretation; that random/conditional inference forests can sometimes help with (some of) these issues, but that the way in which some studies try to interpret random forestswith a single treeis also not ideal.
+
+These issues are especially problematic given the otherwise positive trend that corpus-linguistic data and methods are now informing linguistic theorizing more than they have for a long time. In order to address these problems, I discussed several analytical possibilities including explicitly created interaction variables in trees and random forests and interpreting random forests on the basis of (1) (ideally multiple) representative trees, (2) effects plots, and (3) GSMs. This paper can obviously only stimulate discussion rather than settle the matter(s) at handin fact, it seems every single aspect of random forests is currently being lively discussed in bioinformatics journals: sampling of data (with or without replacement), splitting criteria (Gini vs. p-values), variable importance measures (error rate vs. permutation-based versus AUC [the latter two conditional or unconditional]), variable selection, whether random forests can capture or detect interactions in the presence of correlated predictors, imbalanced response variables, etc., all of which affect the (quality of the) results …. However, I hope that the above observations and suggestions lead to a greater awareness of the potential pitfalls of trees and forests, but also the opportunities they offer.

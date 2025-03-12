@@ -1,0 +1,269 @@
+Introduction
+
+This tutorial is a short introduction to what statistics is good for, the basis of statistical thinking, and how some statistical tests can be computed using the program R, cf. R Development Core
+
+2 What is statistics?
+
+Before getting to the heart of the matter, it is perhaps necessary to clear the way by stating what statistics isn't about. First, statistics is not an indicator of how 'true' or 'correct' the obtained results are. Second, statistics is not primarily about mathematical calculations. And third, statistics is not a substitute for informed reasoning.
+
+Rather, statistics is a way of quantifying assumptions, so that they can be applied to large data sets. Thus, statistics is an indicator of how 'correct' your results are, if you have based the calculations on appropriate assumptions and interpreted the results correctly -and this is a big 'if.' This is a matter of careful consideration and experience, not mechanical application of test procedures. Furthermore, the calculation of such tests is now a trivial matter, carried out quickly and accurately with appropriate software. However, the software can never tell you if you have made some erroneous assumption or violated the conditions of a test: the software crunches numbers, and the validity of the results depends on the person who entered those numbers into the program. Finally, statistics can be used in two ways: to describe a data set, or to draw inferences outside of the data set (descriptive and inferential statistics, respectively). The conditions for describing or drawing inferences are obviously not the same, and this means that it is important to define what is being studied, and how the conditions for a given test are met in the data set.
+
+A typology of statistics
+
+Statistics is not one homogenous field, and it is sometimes useful to think of it in terms of three broad paradigms:
+
+i) The frequentist approach: The results of a statistical test are conceived of as part of a very long (but hypothetical) series of repeated experiments or tests.
+
+ii) The Bayesian
+
+iii) The explorative analysis approach: This purely descriptive tradition, as exemplified by for instance correspondence analysis, considers observations as correlations between categories in an n-sized dimension space.
+
+It is probably safe to say that i) has dominated both the practice and teaching of statistics in the 20 th Century for a number of reasons that we will not touch upon here; suffice it to say that this is what is primarily taught in introductory statistics courses in most universities. ii) has recently been getting more and more popular, partially because of the increase in computational power available. However, Bayesian statistics is more properly taught in an intermediate statistics course, see
+
+Why R?
+
+R is a free, open source version of the programming language S-plus, and is becoming the defacto standard statistical toolbox in many academic fields. In addition to being free, R has a number of advantages over commercial statistical packages such as SPSS:
+
+• once you get used to the idea of a command line interface, R is much faster and easier to work with than SPSS.
+
+• R is very flexible and can be used for preparing the data before applying the statistical tests, that is, it is much more than just a statistical software package.
+
+•
+
+• furthermore, R has many linguistics-specific functions contained in packages such as languageR by Harald Baayen; other packages like openNLP are also useful.
+
+• R is more reliable than, say, an online statistics calculator. It is sometimes difficult to check the reliability of such calculators, and there is no way of knowing how long a given web page hosting such a calculator will be available.
+
+• R (like SPSS) produces print quality graphics like figures and charts.
+
+Types of data
+
+The notion of data type is crucial to all branches of statistics. Because all statistical tests make assumptions about types of data (they are quite picky), it is necessary to decide which type the data at hand most closely correspond to, in order to choose the most appropriate test. In corpus linguistics, we are almost always dealing with nominal data.
+
+Nominal data
+
+Most linguistic data are of the nominal kind. As the name implies, it deals with named categories of things, like countries, beer types, or syntactic categories. Such data are unordered, which means that rearranging them does not affect their information value: listing countries by geographical size or alphabetically by name does not affect their properties as data. Nominal data are sometimes referred to as 'count-data,' because no arithmetical operations are allowed on them, they can only be counted (1, 2, 3, . . . , n bottles of beer).
+
+Ordinal data
+
+Ordinal data are ordered categories of things, and classic examples are score lists or race results: The winner was the first across the finishing line, but it is not important by how much he or she beat the competitors; that is, the magnitude of the difference between each category does not affect the information value it has for this kind of data. The important thing is the order the data points
+
+Continuous data
+
+Continuous data are things that can be measured on a continuous scale. This includes anything that can be measured in centimeters, inches, kilos, pounds, years, hours, minutes, seconds etc. The key property which differentiates these kinds of data from the previous ones, is their reducibility. One meter is composed of 100 centimeters, each of those centimeters is 10 millimeters, each of which can be measured in micrometers, nanometers and so on. This means that a number of arithmetic operations can be carried out, such as calculating the mean value. The average height in a population is easy to interpret in relation to the height of each person (i.e., each data point). It is less obvious how to interpret, say, an average number of children (which parts of a whole child are missing in a '0.8 child' ?). In linguistics, continuous data are mostly found in psycholinguistic reaction-time experiments where reaction times to linguistic stimuli are measured in seconds and milliseconds, or in studies where the age of participants is relevant.
+
+A bit of terminology
+
+A 'population' in statistics means a group or collection of entities that we want Population to study. Thus, 'population' could refer to people, but also light bulbs, car accidents, university students, or grammatical constructions. A population is thus not something which occurs naturally -it is defined for the purposes of the research project. A 'sample' is a subset of the population that we want to study. Sometimes Sample the sample is carefully collected based on pre-defined criteria. However, we sometimes have to work with the sample we happen to have available, like in historical linguistics.
+
+A 'random sample' is a sample where every member of the population has Random sample equal probability of being included in the sample. This is not always possible to achieve, but most statistical tests assume that the sample is drawn randomly A 'distribution' is a mathematical function which can in some cases serve as a Distribution model fair (but not necessarily perfect) model of the population we wish to study. One such model is the so-called 'normal' or Gauss-distribution (used with continuous data), with a shape more or less like a bell. There are other such distributions, notably the chi-square (or χ 2 ) distribution used to model the population under study in chi-square tests (nominal data).
+
+A 'null hypothesis', or H 0 , is a term used to denote the default assumption Null hypothesis of most statistical test, namely that all the variation in the sample data is due to random variation. The null hypothesis is then tested against an alternative hypothesis, or H 1 , which is typically states that the variation is not due to chance.
+
+Statistical tests
+
+The sections below present some statistical tests as they are implemented in R. For instructions on how to install and use R in general, see the web page
+
+Pearson's chi-square
+
+Pearson's chi-square (often referred to as simply 'chi-square') is a commonly used test in linguistics, because it can handle almost any kinds of nominal data. However, it still assumes that i) the data are a random sample from the population ii) the chi-square distribution is a fair model of how the phenomenon under study is distributed in the population iii) expected observations in each cell larger than five iv) you have actual observed frequencies -never do a chi-square test on percentages!
+
+The Pearson chi-square can be used in two ways, as a test of independence / correlation or as a test of goodness of fit. The goodness of fit test is used to check whether a set of observations are adequately represented by the chi-square distribution, and it will not be discussed further here. The test for independence is based on the following logic: a) Take two sets or more of some observations in a 2 × 2 or larger table
+
+The aim of this is to test whether the observations in the categories that we have divided the data into (i.e. the rows and columns of the table) represent random variation or whether it is caused by the factors represented by the categories.
+
+The underlying assumption is that if the observations in the table (i.e. our categories) are related only by chance, the observations will match well with the chi-square distribution in figure
+
+Genre NP subject Clausal subject Fiction 45 67 Newspaper 34 82
+
+Pearson's chi-square is computed in R the following way, assuming that x is a 2 × 2 table with nominal data, created like this (the < -sign is R's assignment operator which assigns the material on the right hand side to a short-hand variable):
+
+(1)
+
+x < -matrix(c(45, 34, 67, 82), nrow = 2) R code which produces the following output when x is entered into R:
+
+34 82
+
+The chi-square test is then computed like this:
+
+In some circumstances, R will apply the Yates correction for continuity to the Pearson chi-square test. The issue is somewhat complicated, but there are good reasons not to use the Yates corrected chi-square. In order to tell R not to use it, write:
+
+where the argument correct = FALSE turns off the Yates' correction.
+
+How are the results of a Pearson chi-square test to be interpreted? The Interpretation of Pearson's chi-square
+
+Pearson chi-square p-value indicates the probability of obtaining the entire set of observations in the table, provided that the observations are a random sample from the population, and that the null-hypothesis is appropriate. In other words, the p-value indicates whether the null-hypothesis (the set of observations is a random selection from a single, chi-square distributed population) should be rejected (low p, in linguistics and the social sciences often somewhat arbitrarily set to p < 0.05) or whether we should choose to not reject the null hypothesis (p > 0.05). There is often an implicit alternative hypothesis of the form that the set of observed values come from two (or more) different populations.
+
+In the example above, the result of the uncorrected Pearson chi-square was p = 0.0847. Since this is a number which is larger than the threshold of 0.05, the result would normally be considered an example of random variation and thus not significant. That is, in this case we cannot reliably differentiate between random variation (noise) and interaction effects (information). But note that the obtained p-value is also quite close to the conventional 5% threshold.
+
+As pointed out above, the Pearson chi-square assumes that we have a random sample from the entire population we want to generalize to. But what if this is not the case? In this case, we need to interpret the results with more care, and take into consideration the size of the sample in relation to the entire population as well as the effect size (see below), instead of blindly trusting in the chi-square p-value. Note that the p-value does not say anything about the association between the observed values, it refers to the whole set of observations in relation to a larger population (for between-observation association, see the section on effect size below).
+
+The proper way to report the results of a Pearson chi-square test is to include Reporting results all the following information:
+
+• the chi-square value (reported as 'X-squared' in R),
+
+• the df-value (stands for 'degrees of freedom', this is a complicated concept which falls outside the scope of this tutorial),
+
+• whether Yates' correction for continuity was used,
+
+• the p-value (this should be the value as reported by the test, not e.g. p > / < 0.05)
+
+Fisher's exact test
+
+Fisher's exact test
+
+Traditionally, the Fisher exact test is treated as equivalent with the Pearson chi-square, but used in cases where the Pearson chi-square is considered inappropriate, notably with very small sample sizes (n < 20) or in cases where the expected table cell values are smaller than five.
+
+The test has certain advantages and certain limitations. Among its advantages are that it is less conservative than the Pearson chi-square, that is, it can more easily detect a real relationship in the data. Furthermore, the Fisher exact test p-value can be interpreted as a reasonable measure of the size of the observed effect , i.e., the strength of association between the variables for purposes of comparison, cf. footnote 6 in
+
+Like in the Pearson chi-square, the R-format of the Fisher exact test is:
+
+(4) fx < -fisher.test(x) R code
+
+When the fisher exact test is run with the x table above as its argument, we get quite a lot of information from R:
+
+data: x p-value = 0.09575 alternative hypothesis: true odds ratio is not equal to 1 95 percent confidence interval: 0.9015428 2.9181355 sample estimates: odds ratio 1.61635
+
+For the present purposes we will ignore most of this information, and simply consider the p-value, which in this case is 0.096. As with the Pearson chisquare, this is normally taken to indicate that the result is not significant given the conventional threshold of 0.05.
+
+The Fisher Exact p-value can be interpreted as the likelihood of obtaining Interpretation of Fisher's exact test the observed table, or a table with 'more extreme' (essentially larger differences) observations. Additionally, the p-value gives a relative effect size adjusted for the observed frequencies in the table. In the context of corpus linguistics, the most obvious role for the Fisher exact test is to measure dependencies between collocations, or in the case of Stefanowitsch and Gries, dependencies between words and constructions. Note that it is not given that the results of a Fisher exact test can be extended beyond the corpus, due to the mathematical assumptions it is based on. Stefanowitsch and Gries do so anyway, but through an explicitly psychological, or psycholinguistic interpretation of their object of study, thus illustrating both the limitations of the test and how to overcome them.
+
+Rank tests
+
+This handout is primarily directed towards corpus linguistics, but as mentioned in section 5 above, we sometimes deal with ordinal data in linguistics, typically in the context of an experimental or sociolinguistic study.
+
+(5) m < -wilcox.test() R code
+
+Mann-Whitney U
+
+Consider the following situation, adapted from the example in
+
+x < -c(43,34,14,62) R code y < -c
+
+The result is p = 0.8714, which would usually be taken to indicate that there is no real difference between the two areas in their judgments -in fact, they are almost identical.
+
+Wilcoxon
+
+Now consider a slightly different scenario, adapted from the example in
+
+x1
+
+The result is p = 0.025, suggesting (again based on the conventional threshold of 0.05) that the subjects have a systematic preference for one construction over the other (i.e., there is a real difference in the subjects' rating of the two constructions). Judging by the differences in rank sums, it seems that the subjects find construction 1 more acceptable than construction 2.
+
+Student's t-test, ANOVA, and parametric rank tests
+
+These tests are so-called parametric tests designed for continuous data, and fall outside the scope of the present tutorial. How and when to use them is taught in all introductory statistics courses, such as the ones listed in section 12. In the context of corpus linguistics, their use is somewhat questionable, and the reader should be aware that it is regrettably not unusual to find these tests employed in ways which do not fit well with their assumptions.
+
+Effect size
+
+What is the importance of effect size, or association strength? Generally, the p-value of a statistical test says nothing about the size of the observed effect in the data, that is, the association between variables in the data. Rather, the p-value tests the hypothesis that the distribution in the data is a random sample from a population which has the properties of some mathematical distribution (e.g. the chi-square). That is, the p-value indicates how likely we would be to observe the data -the full set of data -in this table if we assume that the population follows a chi-square distribution and if the data in our matrix is a random sample from some population.
+
+Whether these assumptions hold or not, is often a question of interpretation. However, the main reason why effect size is important is this:
+
+In corpus linguistics, the chi-square p-value addresses a different question than the one we want to answer ! As
+
+What we need instead is some test or measure which indicates the magnitude of difference when we observe 34 in one cell and 82 in another cell, or which can tell us how much the information in one of the columns contributes to the overall result. Put differently, when when we observe 34 in one table cell and 82 in another table cell, how can we quantify the tendency of the factors involved to go in the same (or opposite) directions? With the possible exception of the Fisher exact test, cf. 7.2 above, the statistical tests we have looked at so far need to be augmented by some kind of effect size measure to give us this kind of information. In this section two such useful measures are introduced, however, there are a lot more such measures around in the social and behavioral sciences, and no 'gold standard' currently exists.
+
+Phi and Cramér V
+
+Phi (or φ) is computed based on the chi-square value. Recall that the chi-square p-value is very sensitive to the sample size (n). Phi and Cramér V 'factor out' the size of the sample, and give the 'average' contribution of rows and columns (that is, the categories in the table and their respective observations in the rows and columns) to the final result. Phi has certain weaknesses when the table gets bigger than 2 × 2, however, and the Cramér V is a generalized version of Phi, cf.
+
+Essentially, Phi is restricted to 2 × 2 tables, whereas Cramér V can be used on larger tables. Note that in the 2 × 2 table case the tests are identical, cf. (
+
+χ 2 is the computed test statistic from the uncorrected Pearson chi-square, n is the total sample size (i.e. the sum off all cells in the matrix), and k is the smaller of either the number of rows or the number of columns. Converted into R code, this can be calculated quite efficiently as follows (assuming the same matrix vector x as above):
+
+It is possible to save some typing by converting this code into a script and loading the script into R. This will not be covered here, though. If you are only working with 2 × 2 tables, Phi is even easier to compute: Phi (8)
+
+(Phi is simpler because the reason for introducing (6) was to test more complex cases, i.e., cases where the table is larger than 2 × 2). Phi can be computed as follows:
+
+Cramér V and Phi
+
+(10)
+
+The result, 0.114 or 11.4 %, indicates a mutual association between rows and columns of approximately eleven and a half percent.
+
+However, other factors should influence the interpretation of the effect size, notably:
+
+• the size of the sample -a small sample is almost always a bad representation of the population. Thus, whether the observed effect can be applied to the entire population needs careful interpretation.
+
+• how much data is missing? If you know that a lot of data is missing, this should influence the interpretation.
+
+• what type of study are you conducting? The interpretation of the Phi/Cramér V should differ in a corpus based syntax study, an experimental situation, or the evaluation of a sociolinguistic survey.
+
+Note that both these measures are symmetric, that is, they give you both the association of rows with columns and columns with rows. Often this is ok, but sometimes we want to measure asymmetric relationships -this is discussed in the section on the Goodman-Kruskal lambda below.
+
+Goodman-Kruskal lambda
+
+Unlike Phi and Cramér V, the Goodman-Kruskal lambda is not on the chi-square statistic. Instead, it is based on the probability of 'guessing' the right result in the table cells if you know something about the categories of the data. See
+
+(11) lx < -matrix
+
+The Goodman-Kruskal lambda (or λ B ) is not implemented as a default test in R, but can be computed as follows:
+
+(12) lb < -(sum(apply(lx, 2, max))-max(rowSums(lx))) R code /(sum(lx)-max(rowSums(lx)))
+
+The R code in (12) above is an implementation of a mathematical formula from
+
+Note that the code above assumes that x again is a matrix of nominal data where rows represent observations and where the columns of the matrix contain the classes, i.e., the independent variable.
+
+Goodman-Kruskal lambda can be interpreted as follows: This test measures Interpretation of lambda how much the potential error of predicting the observed results can be reduced by looking at additional columns (or classes). Put differently, if we are trying to predict the distribution of row observations other than the one with the highest frequency (i.e. the variation), how much would knowing the classes (columns) help us? In the case above, the result is 0.12, or 12 %. That is, in this case information about time period is only moderately helpful in explaining the variation (conversely, if the test is done on the rows instead of the columns, the result is 0.5, indicating that other factors have more explanatory value here). In other words, the Goodman-Kruskal lambda can be used to assess to what extent (measured in percent) each variable in either rows or columns contributes to the effect observed on the other variable. Note that this test is not particularly suited for 2 × 2 tables, or tables where the observations are very evenly distributed.
+
+Effect size measures for ordinal data
+
+There are a number of effect size measures available for ordinal data, examples include Spearman's rho (ρ) and
+
+(13) r < -cor.test(x1, y1, method = 'kendall', alternative = 'two.sided', exact = FALSE) R code
+
+In the code above, method refers to the type of test, alternative = 'two.sided' means that we had no indication before the experiment which construction would be rated highest, and exact = FALSE is necessary because there are ties in the rank sums. The output is as follows:
+
+Kendall's rank correlation tau data: x1 and y1 z = -0.9223, p-value = 0.3564 alternative hypothesis: true tau is not equal to 0 sample estimates: tau -0.2411214
+
+An in-depth discussion of all the output above falls outside the scope of this tutorial, and we will only consider the tau value.
+
+The Kendall tau is always a number between -1 and 1, where -1 indicates Interpretation of Kendall's tau negative association (i.e. disagreement), 1 indicates positive association (i.e. agreement), and 0 indicates no association. Formally, Kendall's tau is the difference between the sum of actual rank scores and potential maximum rank scores, which makes this a good measure of the size of the observed effect. The value obtained above, -0.24 or 24 %, indicates a weak to moderate negative association or difference in acceptability, between the two constructions.
+
+P -values and research questions
+
+It is crucial to keep in mind that the result of a statistical test cannot answer your research questions for you: you need to interpret the statistical results, see
+
+i) Are the research questions well operationalized -i.e., have you spelled out how you think your hypothesis relates to the data in terms of frequencies or magnitudes?
+
+ii) Do you have all the relevant information (i.e., are there other factors that could influence the outcome)?
+
+iii) How well do your data match the assumptions of the statistical test?
+
+Basically, i) is your responsibility -the researcher conducting a study is responsible for clarifying how the empirical and statistical results can be interpreted as having explanatory value with regards to a research question.
+
+ii) is obviously a matter of interpretation -what is 'enough' information about the sample, the population, any missing data etc? As a rule of thumb, the information should be sufficient to let you make good operationalizations.
+
+iii) is a very difficult problem to handle, and very often a statistical test is used in a way which does not match its assumptions well. It is important to keep in mind, however, that even when the assumptions match almost perfectly, you still need to (or ought to) explain your reasons for using a specific statistical test -'everyone else does it' is not an acceptable reason! How badly your data violate the assumptions of a given test and how this will influence your interpretations of the results in relation to the research questions is a factor of uncertainty which must be dealt with in any case.
+
+It might then be tempting to ask what is the point of doing a statistical analysis at all? The answer is simple: there is a world of difference between interpreting the result of a statistical test and interpreting raw frequencies. The human mind is not particularly well equipped to process complex frequency data in a reliable, unbiased way. Consequently, an appropriate statistical testwhatever its shortcomings -is in most cases preferable over raw frequencies as the basis for quantitative, scientific analysis.
+
+10 What is not covered in this tutorial?
+
+As mentioned previously, this tutorial is restricted to a few nonparametric tests and measures within the frequentist tradition. For a particular research project, there might be useful tests and measures to be found among the parametric tests, as well as in the Bayesian and correspondence analysis traditions. In most cases it would be advisable to follow a formal course in statistics such as one of the courses listed in section 12 below. Below are some examples of important concepts that were omitted for reasons of space, but this is in no way an exhaustive list:
+
+There is a lot more to be said about data types than the brief exposition in section 5. For instance, the problem of data source -as opposed to data typehas not been touched upon at all, but is nevertheless important.
+
+Furthermore, the question of sample and population is often quite complex in most real research projects and requires a lot more attention than what was given to it in section 6. Yet another important -but omitted -aspect of statistical testing is one-directional versus two-directional tests.
+
+All of these concepts typically require more attention than they could possibly receive in a short workshop. Again, the best solution would be to follow a regular course where these issues can be treated with the attention they require.
+
+Relevant literature
+
+For a gentle, non-numerical introduction to statistical thinking,
+
+For an in-depth understanding of some of the issues pertaining to the interpretation of statistics, it is necessary to go beyond introductory books. Articles such as
+
+Finally,
+
+12 Statistics courses at the faculty of humanities
+
+• dasp 106 "Statistikk og kognisjonsforskning" -5 credits: A brief introduction to parametric and nonparametric frequentist tests.
+
+• dasp 302 "Statistisk metode" -10 credits: A more in-depth introduction to parametric and nonparametric frequentist tests.
+
+• huin 308 "Statistikk for HF-fag" -15 credits: Identical to dasp 302, but with added coursework on correspondence analysis and Bayesian statistics.
+
+For an updated list of statistics courses offered at the faculty of humanities, see the course listings at

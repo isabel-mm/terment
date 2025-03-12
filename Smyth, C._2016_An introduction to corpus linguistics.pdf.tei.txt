@@ -1,0 +1,61 @@
+Introduction
+
+In any language it can often be confusing as to which word or phrase should be used in a given situation or, indeed, what the exact meaning of a given word is. Moreover, oftentimes, words which at first appear to have similar meanings and usages may actually be used in slightly different ways.
+
+They may have a pattern of usage that is unique to them. In the past these kinds of situations were generally judged by using intuition. However, given the advent of technology and corpus linguistics, it is now possible to study and analyse these patterns of usage. In the past, it simply was not feasible to manually do a meaningful study of this kind.
+
+In this paper, a look will be taken at the area of corpus linguistics. Firstly, a brief outline of what corpus linguistics is will be given. There will then be a description of some of the methodologies behind corpus research, with an emphasis placed on the word-based approach.
+
+An outline of collocation and the measurements used to strengthen assumptions will be made from the collocations. Next, there will be a discussion of patterning, usage and phraseology in text. Finally, there will be a brief discussion of implications for the language teacher.
+
+Corpus Linguistics
+
+Corpus linguistics is a relatively new field of linguistic research. It involves the collection of data; spoken, written, or both, and collating it into one or more text files. These text files are then searchable and the resulting data can be further studied for the purpose of linguistic research.
+
+Methodologies
+
+There are two main methodologies used for the study of corpora. These are, according to
+
+Category based
+
+This approach to corpus data analysis, according to
+
+It is worth noting that once a corpus has been tagged, it cannot be untagged. Therefore, it may be advisable for the researcher to make a back-up copy of the corpus before taking the step of tagging it.
+
+Word-form based
+
+According to
+
+The word-form based approach can help a researcher determine the different meanings which a word has and furthermore the patterns in which this differing meaning tends to occur. To help with this research collocation is used.
+
+106 Bulletin of Tokyo Denki University, Arts and Sciences No.14 2016 Collocation
+
+Mutual Information
+
+Mutual Information, henceforth referred to as MI score, is used to calculate the number or actual occurrences of a word against the number of times that word was predicted to occur.
+
+T-Score
+
+This measurement takes into account evidence for the collocation throughout the corpus.
+
+Patterns
+
+When talking about patterns in text,
+
+Regardless of whether a word is a noun, adjective, adverb, pronoun, preposition etc., they all occur in some form of grammatical pattern.
+
+These patterns can be analysed and coded into a standardised form. The coding used by
+
+The analysing and coding of grammatical patterns helps to show how a word is used and ultimately shows the meaning, or meanings, which a word has in a given pattern, or context.
+
+According to
+
+Differing meanings may share the same pattern, however
+
+Implications for the language teacher
+
+Corpus linguistics has the potential to be a powerful tool in the arsenal of a teacher, whether or not the course in question in specifically linguistics related or not. In particular, a writing class is ideally suited to such study as the teacher could set out rules for the type of files that students submit and dictate the format that file names should take. These files would be immediately ready for inclusion in a specialised corpus for both individual classes and a group of classes. This would allow the teacher to tailor future lessons to the needs of the students as the corpus would help highlight any common or frequent errors and, hopefully, aid in discovering in why this type of error was made. The corpus could also be student specific, which would greatly enhance feedback that a teacher gives.
+
+Creating a corpus for a communication course would, naturally, be more time consuming, but would also offer the same potential benefits.
+
+However, it would be quite difficult to create the type of student specific corpus mentioned above.

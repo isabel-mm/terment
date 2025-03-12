@@ -1,0 +1,115 @@
+Introduction
+
+Corpus-based word lists have been given considerable research attention for well over half a century. These lists of words that are particularly salient (i.e., frequently encountered) in a particular discourse domain have several practical applications, but perhaps the most common relate to language teaching and learning purposes. These lists can inform curricula in many ways, including instructional materials development or selection and assessments (e.g., proficiency/placement and achievement tests). To this end, many lists have been developed for discourse domains of varied breadth, with "general " lists being those intended to capture words that are highly frequent and widely distributed across a language generally, i.e., across a variety of language use domains, and "specialized " lists intended to represent words that are highly salient to discourse domains of more limited scope, e.g., academic discourse. Below are a few examples of lists developed for general purposes in English:
+
+Essential Academic Vocabulary: Mastering the Complete Academic Word List
+
+The title of a 2007 study by Hyland and Tse posed a question that had a notable impact on academic word list research. These researchers asked, simply, "Is there an 'Academic Vocabulary?' " The basis for this provocative question stemmed from research findings highlighting considerable cross-disciplinary variation in terms of lexical distribution, collocation, and even meaning. These findings called into question the generalizability of general academic word lists, and the researchers concluded with a call for more specialized, discipline-specific lists for instructional purposes.
+
+• Medical Academic Word List (MAWL)
+
+Despite the many advances made in word list research, once critical issue has often been largely overlooked: the generalizability of the word lists
+
+Literature review
+
+In order to frame the concern noted above, it is important to consider the process typically involved in word list development. Constructing a word list usually involves four key steps: 1) compiling a corpus representing a target discourse domain; 2) deciding on word selection criteria; 3) applying selection criteria & extracting the list from the corpus; 4) evaluating the list. Following is a discussion of each of these steps, with a particular focus on steps #1 and 4, as the evaluation of resulting lists (step #4) can provide insights into the extent to which corpora that have been designed (step #1) represent the vocabulary in a target discourse domain.
+
+Corpus compilation
+
+To develop representative corpora, researchers spend a great deal of effort ensuring that their corpus design has allowed for sampling texts representing the range of subjects and registers in their target discourse domain. In terms of subjects, this is often operationalized as academic disciplines or subdisciplines. For example,
+
+Researchers also typically included register representativeness as one guiding parameter in corpus design. For example, to ensure that their corpus would reflect the written and spoken registers students encounter in the target discourse domain, Biber and his colleagues' (
+
+Researchers also typically seek to establish that the included texts are of high quality and likely to be encountered in the target discourse domain. For example,
+
+Word selection criteria and list extraction
+
+Researchers must also determine both what linguistic feature they are interested in identifying and how they will do this. Decisions first must be made regarding the unit of measurement (e.g., word families, lemmas, multi-word units) to be identified and ultimately extracted (see
+
+List analysis
+
+Once the list has been extracted, researchers usually evaluate it to demonstrate its robustness. Robustness is typically operationalized in terms of text coverage -the extent to which words on the list account for the total running words in a corpus. The more words accounted for, i.e., the greater the coverage, the more robust the list. A list of 500 words that accounts for 15% of the running words in a target corpus would have more pedagogical value than a similarly purposed list accounting for only 5% of a corpus, as that increased coverage suggests increased impact. These coverage-based assessments serve as important evidence for the usefulness of a list. Such evaluation can also demonstrate that a list is indeed specialized if it provides higher coverage of a specialized corpus than of a general corpus. Coverage can also be used to demonstrate that a new list is more robust compared with previously designed, similarly purposed lists. For example,
+
+The concerns and the present study
+
+An important issue to consider is that word lists resulting from the procedure noted above rest on the assumption that the corpora designed for analysis are indeed representative of the target discourse domains. This assumption requires reflection on what is meant by corpus representativeness.
+
+The second way to look at representativeness
+
+The issue of corpus size raises another, related question: How big is big enough for corpora? Corpus linguistics manuals provide somewhat vague guidance:
+
+"…a corpus should be as large as possible , and should keep on growing "
+
+How, then, can researchers know that corpora -and word lists based on these corpora -are representative from a linguistic/distributional perspective?
+
+One way to view "linguistic/distributional " representativeness, especially with regard to corpora designed to represent lexical distributions in a given discourse domain, might be through the lens of replicability. That is, if a corpus indeed represents target lexical distributions, a word list extracted from it should have considerable overlap (ideally 100%) with a word list extracted -based on the same selection criteria -from a corpus of the same design but different texts. Notable differences between lists would suggest limitations to their generalizability, and, ultimately, to the representativeness of the corpus upon which they were based. Such a case would suggest a need to revise the original corpus design.
+
+This type of analysis has been suggested previously for word list development. For example,
+
+Similarly, when word list comparisons do occur in the design of specialized word lists, it is typically done to evaluate the coverage of lists in comparison with coverage of alternative lists. For example, many studies examined the coverage of the AWL compared with the performance of more specialized lists, typically demonstrating that the latter were more suitable for more specialized discourse domains because they accounted for greater coverage (e.g.,
+
+More recently,
+
+The present study seeks to further address the issue of word list generalizability by replicating the word list development process and comparing resulting specialized word lists -not in terms of coverage, but in terms of "overlapping and non-overlapping words. " The following ques-
+
+Methods
+
+Corpora
+
+Two specialized corpora were compiled to represent the language of written, published academic research conducted in two different academic fields: environmental science and applied linguistics. These two disciplines were chosen because, at least in terms of where they are housed in educational institutions, they represent different macro disciplines, "Natural Sciences, " and "Humanities, " respectively. In answering the question "How big is big enough? " for a corpus to be representative, the lexical diversity of a target domain would seem to play some role.
+
+The disciplinary makeup of the Environmental Sciences Corpus (ESC) drew from the expertise that
+
+The disciplinary makeup of the Applied Linguistics corpus (APLXC) was largely a convenience sample based in part on my own knowledge of the field and highly regarded journals therein, but also on what journals were most easily accessible. While subject-area specialists may no doubt suggest that other, higher-impact journals belong in this corpus, the goal of this study was not to produce "the " "definitive " applied linguistics research article corpus and word list. Rather, the purpose was to investigate the generalizability of a given specialized word list via methodological replication and comparison of findings. Thus, the importance resides in the comparability of the design of the two corpora from which the lists were culled rather than the "quality " or impact of the texts in the corpora themselves. Similar to the ESC, the APLXC comprised 120 research articles from 10 different academic journals, totaling 1,200 texts and 8.7 million words (see Table
+
+Word selection criteria
+
+As discussed above, considerable effort has gone into researching and debating the ideal selection criteria for specialized word lists for different target uses (e.g., What is the ideal unit of measurement, e.g., word family vs. lemma?; Should stop lists of "general " vocabulary be used or should we consider all words as potentially specialized, and, if the former, which stop lists should we use?; Which measures of dispersion are the most robust for identifying words with the broadest range and most even distribution, given the design of our corpora?). The focus of this study is not that. Indeed, adjustments along any of these parameters (e.g., unit of measurement, dispersion statistic used) would likely affect the reliability of resulting word lists. Rather, the goal was to simply select a single set of commonly used or recommended criteria and measures and create a list. Then, applying those same criteria to a corpora of different texts but the same design, extract and compare lists, observing the extent of overlap (i.e., generalizability).
+
+The following selection criteria were used for compiling all lists for this study:
+
+1. Unit of analysis: the lemma (i.e., "lexical forms having the same stem and belonging to the same major word class, differing only in inflection and/or spelling "
+
+The online corpus toolbox from Lancaster University, #LancsBox, was used for lemmatizing and determining all frequency and dispersion statistics.
+
+Word list comparisons
+
+From each of the corpora, four pairs of non-overlapping subcorpora of different sizes were compiled: corpora with 10, 20, 40, and 60 articles from each of the 10 journals (8 subcorpora, total). Table
+
+Findings and discussion
+
+The goal of the present study was to investigate the generalizability of word lists of different lengths, produced from corpora of different dimensions, and for different target discourse domains. As discussed earlier, generalizability has been operationalized in terms of word list overlap, with a higher percentage of shared words evidence of word list generalizability.
+
+As can be seen in Table
+
+In both cases, the increased overlap can be seen as evidence of increased reliability of the lists -that lists drawn from larger corpora are increasingly more stable and generalizable as the corpora grow. This, in turn, also provides evidence of increasing linguistic (i.e., lexical) representativeness of the corpora upon which the lists are based.
+
+Also interesting is the difference between the two disciplines. Corpora of 100 applied linguistics articles produced lists with 80.8% overlap, whereas the same corpus design applied to environmental science produced lists with only 75.8% overlap. This finding is perhaps a somewhat surprising, considering
+
+We can again also see the effect of corpus size on reliability in these band-wise comparisons.
+
+Findings for the ESC word list comparisons are found in Table
+
+Another way of viewing the effect that corpus size plays in word list generalizability is by considering overlap for lists of different lengths. Tables
+
+As noted above, the applied linguistics subcorpora of comparable size (in terms of number of texts sampled) provides somewhat higher generalizability. A corpus of 100-articles would suffice for meeting a hypothetical 85% threshold for a list of 750 words, and that level of reliability could be achieved even for a full 1,000 words with corpora of ≥ 200-articles.
+
+Thus far, the discussion of findings has been entirely quantitative, with the focus being on the percentage of overlap between two lists. As more texts were added to the corpora, the amount of overlap increased, providing evidence that the lists have become somewhat more stable, and, thus, more generalizable. In order to put a "face " to these numbers, following is a brief look at some of the actual words on these lists and how they fare as the corpora grow. The first column in Table
+
+Table
+
+In most of these instances for both the ESC and APLXC lists, where there had been lack of overlap between lists produced from 100-article subcorpora, overlap became evident when the corpora were doubled in size to 200 articles and remained as the corpora grew. For these words, then, this would be evidence that their discourse domain distributions may have been captured with 200-article corpora. With other words, however, such as those discussed above, the lack of stable agreement between lists suggests greater variation in their distribution and thus the need for larger corpora to capture their natural distribution across the target discourse domains.
+
+Conclusion
+
+The goal of this study was not to design implementable specialized word lists for environmental science or applied linguistics. Nor was it to provide a definitive answer to the question "How large does my corpus need to be in order to…? " Rather, the goal was to investigate the generalizability of word lists of different sizes, culled from corpora of different dimensions, representing language in two different discourse domains. Findings provide some insights into the effect of corpus size on generalizability of word lists of different lengths, and, in turn, demonstrate how an iterative process of methodological replication and word list comparison can provide insights into the representativeness of corpora from a "linguistic "
+
+Findings also raise practical considerations for specialized word list designers and word list users, the former who hope to compile representative corpora capable of producing generalizable word lists, and the latter who may hope to implement word lists into their teaching or learning efforts. Chief among these considerations include the resources available for compiling corpora and the stakes involved in the use to which the resulting word lists will be put.
+
+When an individual instructor wants to create a word list of for their individual class, generalizability may be less of a concern. It is likely that even non-overlapping words have at least some level of salience in at least part of the target domain. And any related instructional activities based on these lists will help students further develop both their vocabulary and their vocabulary learning skills
+
+One the other hand, when lists are being designed for higher-stakes curricular decisions such as acceptance into or placement within a program, or instructional materials are being designed around these lists for wider distribution, higher levels of generalizability would likely be the goal. Both list designers and list users would want to ensure that the corpora are representative of both the "situational/domain " and "linguistic/distributional " factors of interest
+
+Declarations of Competing Interest
+
+None.

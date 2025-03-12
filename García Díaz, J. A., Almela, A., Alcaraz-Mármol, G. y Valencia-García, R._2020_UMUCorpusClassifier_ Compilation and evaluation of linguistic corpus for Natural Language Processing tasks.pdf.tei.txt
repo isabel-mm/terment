@@ -1,0 +1,37 @@
+Introduction
+
+Supervised learning is the machine learning task which consists of building a model capable of predicting output for a specific problem based on prior observation of a previously labeled data set
+
+The main idea behind this is that supervised learning models can infer new knowledge by establishing associations between the examples provided and the expected tags. However, supervised learning requires a sufficient number of labeled examples that model the problem domain and, at the same time, the number of examples should be enough to cluster the examples in two subsets, one for model learning, and another for evaluating its accuracy based on samples that are not seen during the training stage.
+
+The development of an annotated corpus is a very time-consuming process. To facilitate this task, some researchers have used distant supervision as a method of getting automatically annotated data
+
+Furthermore, even though the annotation process occurs manually, the quality of the corpus cannot be guaranteed. In this sense, Mozetič, Igor et al.
+
+The remainder of this paper is organized as follows: Section 2 describes our proposal, and Section 3 contains information regarding studies based on corpus compiled with this tool, as well as the description of future lines of action.
+
+System architecture
+
+UMUCorpusClassifier is designed to work with the social network Twitter, which is a widely used network for compiling corpus in various branches of Natural Language Processing (NLP)
+
+Identifying duplicate tweets is a complex task. Although Twitter provides a mechanism called retweet that allows the content of messages written by other users to be disseminated and the identification of these messages is trivial, many users in the social network use copy and paste mechanisms so it is possible to find duplicate or virtually the same tweets. Also, hyperlinks in tweets are encoded differently with each new tweet due to Twitter's own hyperlink shortening mechanism. For this reason, we have made the decision to replace URLs with a fixed token, which makes it easier to identify certain tweets. In addition, we have added a mechanism to calculate the similarity of the texts. Being an experimental technology, tweets are not removed, but administrators are given the opportunity to combine the responses of the tweets at their discretion.
+
+The next step is to assign each corpus a set of independent labels. They can be made using a set of predefined labels, such as outof-domain, positive, negative, neutral, do-notknow-do-not-answer or define a new set of tags for the corpus. Each label is identified with a color and a name.
+
+The corpus labeling process can be carried out manually by the same user or allow access to the platform to a set of annotators and to supervise their work. Documents are When an annotator enters the web application, a tweet appears randomly from tweets that they had not previously classified. Figure
+
+To facilitate the labeling monitoring process, UMUCorpusClassifier provides a set of metrics and charts, such as the evolution of the annotations made by time, to evaluate that the work is being done constantly; the total rankings by tag; or (3) the average of annotations as well as their standard deviation. Figure
+
+For each annotator, the degree of selfagreement is calculated, which measures how the same annotator classifies semantically similar documents. To cluster similar documents, we obtain the sentence-embeddings from FastText in its Spanish version
+
+For each tweet, one can see the degree of inter-agreement that measures how the same tweet is classified by different annotators by using the Krippendorff's alpha coefficient
+
+Once the corpus has been compiled and annotated, it can be exported to text formats. The export process is flexible and allows you to choose the number of classes to export. Combining classes is also allowed. This is useful, for example, when a classification has been made on a scale of very negative, negative, neutral, positive, and very positive type values, but one may want to combine the results to return the corpus grouped into positive, neutral, and negative. Corpora can be exported balanced, that is to say, the system automatically searches for the class with the largest number of instances and cuts instances from the other classes. These deleted instances are agreed by consensus. Finally, it is possible to export only the Twitter IDs in order to share them with the community as recommended by Twitter's privacy policies
+
+Furthermore, the number of instances to export can be selected and set. One of the advantages of this approach is that corpus can be exported by consensus: since the same tweet can be classified by different annotators, the number of tweets to export can be limited and retrieve those tweets that have achieved strong consensus among annotators. Thus, subsets of the corpus comprising the documents with common agreement can be retrieved, and the rest of the documents can be analyzed. Furthermore, the software is easily extensible. In this respect, it is relatively easy to include new strategies to export the data or to improve the platform to include new data sources other than Twitter.
+
+Further work
+
+In this study, we have presented UMUCor-pusClassifier, a NLP tool that assists in the compilation and annotation of linguistic corpus. So far, we have used this application on several domains. Specifically, we have compiled tweets about different types of diseases to carry out infodemiology studies that involve measuring the population's perception of infectious diseases
+
+In the current version of the platform it is only possible to assign a label to a document. We are working to enable the multilabel classification. Another line of research is the addition of a contextual feature extraction module, enabling the analysis of groups of Twitter accounts from which tweets are extracted. These features may include information on the time of publication, number of followers, etc. Lastly, with regard to semantic similarity, we are currently analyzing ways to distance the most different tweets from each other, so that we can export the tweets with strongest consensus and the most distant ones.

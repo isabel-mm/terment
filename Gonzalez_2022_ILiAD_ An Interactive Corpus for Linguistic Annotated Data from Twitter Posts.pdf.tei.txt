@@ -1,0 +1,159 @@
+Introduction
+
+In this current age, the use of social media platforms has permeated across all circles of society, from personal communication to government communications. Its impact is hard to be overstated. It is considered as a form of mass media, but distinctive from other forms such as television and radio, where the information is presented by a specific broadcasting mechanism
+
+One framework that has efficiently paved the way for linguists to examine social media language is Computer-Mediated Communication (CMC). This has been defined as a relatively new 'genre' of communication
+
+But describing social media features is not a straightforward task because it is not a homogenous genre. It has a diversity of types depending on the main shareable content (e.g., YouTube for videos, Twitter for texts 1 ) and main format (e.g., Reddit as a discussion forum, Pinterest Product pins for products purchase), for example. But one common feature is that all platforms have an interactive component in which users can express ideas, comment, and reply to other people's perspectives. The inherent communicative aspect in this social interaction is one that has strong implications in linguistic research, which is that when we analyse language from social media, we look at how language is used in natural contexts, with concrete communicational purposes. What distinguishes then our 1 The type of content of social media platforms is not restricted to only one. This is just an example on the main purpose for approach as language researchers, from engineers and app developers, for example, is that we are interested to study how people use technology to communicate and describe what makes it a distinctive type of language
+
+Twitter and Corpus Linguistics
+
+The combination of language research and social media is a complex endeavor, making people working with both apply skills that are necessary in this interdisciplinary undertaking. One area that reflects this complexity and that has efficiently adapted social media is Corpus Linguistics (CL). A strong characteristic of CL is that it is used to collect, store, and facilitate language analysis for large datasets
+
+Many social media platforms have been widely used for language and linguistic research (c.f.
+
+information of the posts
+
+Current Project
+
+In this paper, we present the development of a webbased corpus from Twitter posts, named ILiAD: An Interactive Corpus for Linguistic Annotated Data. In relation to our methodological approach, we propose that corpora built from social media helps study the patterns of language used in this context and capture their linguistic complexity. By doing this, we can have a better view of the multilayered nature of the corpus.
+
+Goal of the Paper
+
+The aim of the corpus is to capture the linguistic complexities used in Twitter language, and we chose two types of account users: news agencies and individuals. We explore the differences between their structures and patterns. The language of journalism is characterised based on its main purpose: exert influence on readers and convince them on a specific interpretation
+
+The analysis can focus on many linguistic parameters and here we approach it in an integrated way. This can give users the opportunity to explore the corpus from different angles and linguistic perspectives.
+
+Methodology
+
+The stages of data collection, data processing, and app deployment were carried out in R (R Core Team, 2021), using shiny R
+
+Data Collection
+
+We applied four criteria to identify the Twitter accounts to be included in the corpus. The first criterion was that account users (news agencies and individuals) had to have English as the main language of communication. The second one was that accounts had to be active at the moment of extraction. The reason was to capture tweets that were synchronous and where topics and trends could be shared across accounts. The third criterion was that accounts had to have a large number of tweets, enough to reach over 3,000. This was done to make sure that enough posts were left after the filters were applied, which is explained below. The final criterion was to only include those users whose posts were not mainly retweets. This filter aimed to exclude those accounts that do not produce content but only retweet posts from other accounts. From this, we identified 29 news agencies, and 27 individual accounts. The percentages are shown in Table
+
+User Type Total Tweets Percentage
+
+News Agency 84,354 54% Individual 71,477 46% Total 155,831 100%
+
+Table
+
+The data extraction was done through an R script developed by the main author. We used the rTweet (Kearney, 2019) package, which allows users to gather Twitter posts by the free Twitter API, giving a total of over 156,000 tweets.
+
+Data Processing
+
+From the collected data, we applied six filters to make sure that the corpus reflects comparable linguistic data for all account users. The first filter was to exclude tweets that were not in English (n=10,067; 6%). This was done by filtering out those tweets which did not have the English (en) assigned by Twitter's machine language detection, as time zone and language features, which are used to infer locations. which is annotated in the tweet's metadata. The second filter was to exclude re-tweets (n=23260; 15%). This restricts the data only to those posts that come from the given user and not from other accounts. The third filter was to exclude quote tweets (n=7,142; 5%). These are tweets that are re-tweeted with an added comment from the user. Keeping quote tweets in the data would add repeated tweets to the corpus and also would add patterns and word counts that do not correspond to a specified account. The fourth filter deleted repeated tweets (n=778; 0.5%). This targeted those cases in which account users write the same content and post it as a separate tweet, but not as a re-tweet. Similar to quote tweets, keeping repeated tweets would inflate the content of the corpus and it would not be representative.
+
+For the fifth filter, we excluded strings that were URL links, which do not have linguistic features 3 of interest in this paper (n=1,208; 0.8%). For the sixth and last filter, we first calculated the number of words for each tweet, which were split by white spaces to get the number of individual words.
+
+We then excluded those tweets that had a length of less than eight words (n=14,125; 9%). This filter targets those tweets which do not have linguistic content but only social media features such as hashtags or links. With these filters, the final data contained 112,690 tweets. This is a loss of 28% (n = 43,919) of the original data exported from the Twitter API.
+
+Text Processing
+
+After data filtering, we implemented a wide range of Natural Language Processing (NLP) techniques for the data wrangling and analysis. We carried out the text processing using the UDPipe
+
+Tokenization
+
+The tokenization tools are wrapped within a trainable tokenizer based on artificial neural networks, specifically, the bidirectional LSTM artificial neural network
+
+3 URL Links are an important aspect of social media language. However, its analysis is beyond the scope of this paper.
+
+Morphological Analysis
+
+There are three main fields tagged in the data process:
+
+1. Part-of-speech tagging 2. Morphological features 3. Lemma or stem
+
+The parts-of-speech tagging uses MorphoDiTa
+
+Classification Features
+
+UDPipe uses two models that facilitate the tagging process and improve the overall accuracy by employing different classification feature sets. The first one the POS tagger, which disambiguates all available morphological fields in the data. The second model, a lemmatizer, disambiguates the lemmas tagged.
+
+Dependency Parsing
+
+Dependency parsers are part of the family of grammar formalisms called dependency grammars
+
+Summing up, the features, descriptions, and tagging done by the UDPipe framework, offer invaluable information relevant for linguistic analysis used in Corpus Linguistics. With these features extracted for all tweets, we have information available at different layers for linguistic analysis: morphological, syntactic, and even semantic, through the dependency parsers.
+
+Data Filtering
+
+After obtaining the output from the UDPipe package, we proceeded to filter the data. The motivation was to prepare it for the linguistic analysis within the corpus. This filtering process affects two dataset outputs which used for different purposes in the corpus. The first one is used for calculating n-grams and word frequencies. The second one is for showing Syntactic Dependencies.
+
+Token Filtering
+
+Identifying the right tokens in social media language is a difficult process. The correct practice in this step is crucial to achieve efficient outcomes. This filtering differs from the practice done on other language media such as the language in newspapers, television, and academic papers. Following O'Connor et al., (2010), we excluded tokens containing hashtags, URL links, @-replies, strings of punctuation, and emoticons
+
+Content Excluded
+
+Total Count Percentage
+
+Emoticons 1,556 0.4% Hashtags 1,986 0.5% URL Links 2,857 0.7% @-replies 3,851 0.9% Punctuation 30,001 7.3%
+
+Table
+
+Removing Stop Words
+
+Following standard procedures, we removed stop words for calculating n-grams and word frequencies. An important observation is that removing stop words is a compromise for the corpus, since certain word combinations are affected, especially those which appear together with the words in the list. Future versions of this work aim to efficiently implement analysis considering the role of stop words in the corpus.
+
+Here we removed stop words by following the steps below:
+
+1. First, we selected a list of stops words from the stopwords (Benoit et al., 2021) package in R. We selected the ones used for English and it included 175 words (see Table
+
+Sentence Structure Filtering
+
+In this filter, we aimed to identify those posts which were not linguistic phrases or sentences, thus including only those structures that were classified into a sentence category. For each of the tweet breakdown done by UDPipe (as shown in Table
+
+Calculating N-Grams
+
+By implementing NLP techniques, this brings more depth to the corpora analysis since it allows users to explore more areas in the data. In the current version of the app, we use unigram and bigram explorations. The n-grams are calculated using the tidytext
+
+Entity Identification
+
+A second group of NLP techniques implemented is the identification of entities in the corpus, and that includes mentions of people, physical locations, and established organisations. We used the entity
+
+Twitter Metrics
+
+The final metrics measured and obtained aims to show information that is relevant when dealing with Twitter data. The motivation is to be able to contextualise the information in the corpus within the overall world of social media. The information presented here is extracted from the Twitter API output, which means that we display two features publicly available. The first one is the number of tweets across time. We also include a general summary of the main sour locations by country of the tweets contributing to the data. Previous studies (c.f.
+
+App Infrastructure
+
+The app was developed in RStudio, which has been widely used for corpus linguistics development and related tasks
+
+Exploring Calculated Features
+
+The linguistic features are the main backbone of the corpus. In this section, there are visualisation options that can be used to have both a broad understanding of patterns, as well as a deep exploration of linguistic features.
+
+Parts of Speech
+
+This section gives the overall statistics of the words classified into their POS, including distributions and proportions per year and sentence type. The exploration can be done in different levels: all corpus or by user type (news agencies or individuals). The input data in this section comes from the Sentence Structure Filtering Section (3.4.3).
+
+Syntactic Dependencies
+
+This section allows users to explore the syntactic dependencies of all the available sentences. Here we use a combination of the UDPipe output and the textplot
+
+Exploring N-Grams
+
+N-grams are explored through visualisations, including connection networks. These networks are developed within the Network Analysis (NA) approach. The power of this analysis comes from its capability of observing
+
+Figure
+
+Exploring Entities
+
+We use a different visualization approach for the entities captured in the corpus. We use bar plots and word clouds. The advantage of bar plots is that they show the frequencies in a way that we can see from the most frequent to the least frequent, organized from left (most frequent) to right (least frequent). Word clouds are an easy and userfriendly way to represent frequencies. Here, more frequent words are represented with larger fonts than less frequent words. An example for the organizations mentioned in the corpus is shown in the figure below. At the top, we see the bar plot and at the bottom the word cloud.
+
+Twitter Data Metrics
+
+The final section shows relevant Twitter data metrics, for which we dedicate two sections. The first one is a timeline visualization using a combination of the ggplot2 package and the plotly
+
+Discussion
+
+The app presents a wide range of visualizations and analyses from the Twitter corpus. The features capture different linguistic layers, including morphology, syntax, and n-grams. With the inclusion of Twitter metrics, this tool gives all exploration opportunities to understand the whole corpus. R and shiny R have proven to be an efficient combination to develop and deploy the corpus. For the text processing tasks, the use of the UDPipe and tidytext packages have been highly effective. The in-built functions have been used and we have created our custom-made functions to complete the tasks done throughout the whole process. For visualization tasks, the combination of ggplot2, plotly, visNetwork, and echarts4r has demonstrated efficient to represent complex linguistic features and relationship analysis. The app can be accessed through the following GitHub repository:
+
+Conclusion
+
+In this paper, we have presented the development of a linguistic corpus based on the Twitter posts. It has been designed to be used by a diversity of audiences who are interested in exploring linguistic patterns from corpora based on social media language. Similar tools have been developed with invaluable contributions to the field of Corpus Linguistics. Our proposal, however, makes stronger integrations with a variety of visualization types that enhance the analysis in a holistic way. The tool also gives users interactive and reactive power throughout all the data, which not only offers a corpus to analyse, but a corpus to interact with and query in a more organic way, compared to more traditional approaches of presenting corpora. Finally, it has been developed within an open-source framework, making it freely available to any user interested in using and even expanding this tool.
+
+Future Work
+
+In the current version, we have selected a relatively small number of users in the corpus, as compared to other larger projects with similar goals. This is to allow the implementation of the interactive capability in the visualization methods, which requires a high level of computational power. We aim to add more data in future versions using more efficient processing algorithms. Finally, we see the value of adding linguistic analysis to emoticons. In a future version, we aim to include analysis on emoticons, as a distinctive component of social media language.

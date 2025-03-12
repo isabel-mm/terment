@@ -1,0 +1,145 @@
+Introduction
+
+As defined by
+
+As highlighted by
+
+What is a Corpus?
+
+Corpus is the main data that a corpus linguist (or a researcher aiming to explore the use of language) needs to investigate a specific area of a particular language(s).
+
+For this reason, sampling is an essential issue that a corpus compiler needs to consider. Secondly, the corpus should be created by considering a specific idea. This means that the researcher should have a clear mind about what to do with the corpus being collected. In addition to these aspects, the corpus needs to be in electronic form since it will be almost impossible to cope with such vast data without the help of technology. Finally, the corpus should serve as a linguistic study. As mentioned above, without narrowing down the scope of a corpus, it is impossible to create a corpus representing everything related to all areas of language and texts appearing in the language.
+
+Corpus as Data
+
+Researchers may use corpora for many purposes. The purpose of the study determines the corpus type the researcher will come up with at the end of the compilation of the texts. For example, suppose a researcher wonders about the use of language among teenagers or children. In that case, the researcher will collect the data from that target group. At the end of the data collection process, a corpus such as CHILDES, which aims to explore the language acquisition process of the children, will be created. No matter the purpose of a corpus collection, all corpora need to provide metadata to ensure that other scholars can also benefit from the corpus. Otherwise, the corpus itself, without the metadata, will be useless since the researcher will not be able to know the background information of the corpus.
+
+As metadata is vital for understanding the corpus itself, metadata can be defined as the data about data
+
+In addition,
+
+Analytic metadata provides information about how the corpus developer interpreted and analyzed corpus constituents.
+
+Descriptive metadata provides classificatory information derived from internal or external properties of the corpus components.
+
+Administrative metadata provides documentary information about the corpus itself, such as its title, availability, revision status, etc.
+
+Editorial metadata provides information about the relationship between corpus components and their source Corpus Analysis & Linguistic Theory
+
+Observational Adequacy: It focuses on describing the grammatically well-formed sentences in a language. For example, according to observational adequacy, the first example is well-formed, while the second is not grammatically well-formed. However, the reason why the second example is not well-formed is not explained at this level.
+
+He studied for the exam *studied for the exam
+
+Descriptive Adequacy: It focuses on describing whether individual sentences are well formed and specifying the abstract grammatical properties that make the sentences flawless. For instance, the second example above is not well-formed, while the first sentence is well formed. Thus, it can be stated that sentences in English require an explicit subject.
+
+Explanatory Adequacy: The description or theory not only reaches descriptive adequacy but uses abstract principles that can be applied beyond the language being considered and become part of UG. For example, by analyzing the samples above, it can be generalized that English is not a language permitting 'pro-drop'.
+
+Due to these levels, it was claimed that corpus linguists give more importance to descriptive adequacy while generative grammarians focus on explanatory adequacy. However,
+
+Corpus linguists have harshly criticized generative grammarians as their discussions generally gather around the advocacy of a language system that is highly abstract and decontextualized. Corpus is used to verify any linguistic hypothesis's falsifiability, completeness, simplicity, strength, and objectivity.
+
+As generative grammarians focus on more abstract discussions of language,
+
+As corpus linguistics is accepted as a methodology in linguistic research, corpora have been used in many studies. Some of the study areas exploiting are summarized below.
+
+Grammatical Studies
+
+According to
+
+Reference Grammars
+
+The purpose of using corpora in reference grammar studies is to gather information on the form and use of various grammatical forms of a specific language and to use this information for writing a reference book. Longman Grammar of Spoken and Written English (1999) by Biber et al. can be taken as an example to illustrate how the corpus is used. While writing this book, they used Longman Spoken and Written English Corpus. This grammar book provides extensive information both on the form of English structures and their frequencies. Also, the use of specific structures in different genres of spoken and written English is shared with the users of the book.
+
+Lexicography
+
+Language Variation
+
+The use of language may vary from one genre to another or from one region to another. Even socioeconomic status may play an essential role in language variation. To explain whether the language differs in different contexts, researchers may benefit from corpora, an excellent source to reveal such differences. Corpora are widely used in sociolinguistics, especially when the effects of socioeconomic status are taken into account. Furthermore, in the description and explanation of the use of language among specific people, such as teenagers, corpora help researchers a lot during the course of detecting language varieties. For example, researchers can use the Corpus of London Teenage English to determine the characteristics of teenager English.
+
+Historical Linguistics
+
+When the aim is to trace the historical change of a language, a corpus divided into periods should be used. In diachronic research, scholars may focus on the specific usage of a word or a structure. Also, the effects of demographic information on the use of specific linguistic constructions could be explored with the help of a corpus designed as a historical or diachronic corpus.
+
+Contrastive Analysis and Translation Theory
+
+To use corpora for contrastive analysis and translation theory, researchers need to use a parallel corpus, meaning that the same text has been translated into various languages. For example,
+
+Language Acquisition
+
+The corpus created by collecting data from children acquiring their first language help researchers explore the process of first language acquisition. Similarly, researchers can use data collected from children or adults acquiring their second language to reveal the stages and difficulties they face during the second language acquisition process. CHILDES (Child Language Data Exchange System) can be a good corpus for researchers focusing on acquisition.
+
+Learner Corpora
+
+The importance of learner corpora is also understood thanks to corpusbased studies related to language acquisition. For this reason, some corpora such as ICLE and Longman's Learner Corpus have been created to understand the systems of language learners and reveal their interlanguage systems.
+
+Language Pedagogy
+
+Learner corpus is used to find out the strengths and weaknesses of the language learners. The results received from a study based on learner corpus can be used for educational purposes. As researchers can understand the needs of students thanks to such studies, they can review the curriculum, materials, and even teaching methods thanks to learner corpus-based studies.
+
+Even though it is thought that corpus is quite helpful in language teaching, scholars still do not fully come to an agreement on this issue. As indi-cated by
+
+Types of Corpora
+
+Depending on the purpose of the study, corpus type will change. Some of the types of corpora are defined below.
+
+A specialized corpus is a corpus type represented by a collection of texts compiled from a particular genre (newspaper articles, agreement letters, academic articles, lectures, essays, etc.). Specialized corpora should serve the needs of a researcher who plans to study a specific genre in their study. In addition to the genre-based specification, a researcher may restrict the corpus to a time frame, a social setting, or a given topic. For example, the Air Traffic Control Speech Corpus and the Corpus of Early Modern English Tracts are specialized corpora.
+
+A general corpus comprises texts represented by various types, including written or spoken language. Compared to a specialized corpus, a general corpus is usually much larger. Since it can be used to produce reference materials, it is sometimes called a reference corpus. The Corpus of American Contemporary English is an example of a general corpus.
+
+Comparable corpora consist of two or more sub-corpora complied from different languages or varieties of a particular language. They are designed to contain the same proportion of texts (i.e., newspaper texts, essays, novels, conversations, etc.). Translators and learners can use comparable corpora to figure out similarities and differences in each language. International Corpus of English created for comparing the use of English throughout the words is an example of comparable corpora.
+
+Parallel corpora should consist of at least two sub-corpora compiled from different languages, including source and target texts or texts produced simultaneously in two or more languages (e.g., EU texts). Parallel corpora can be used by translators and learners to find potential equivalents in each language and to investigate differences between languages. For instance, English-Norwegian Parallel Corpus was created for contrastive analysis.
+
+A learner corpus is a collection of texts from learners of a particular language. Researchers can use learner corpora to focus on various aspects of learner language, such as differences among learners, frequency and type of errors, etc. This corpus type might be helpful in foreign language learning studies and language pedagogy.
+
+A historical or diachronic corpus is a collection of texts from different periods. It helps to trace the development and change of a language over time.
+
+A monitor corpus is a corpus allowing researchers to track current changes synchronically in a particular language. It rapidly increases in size since it is added annually, monthly, daily, etc. The proportion of text types has to remain constant so that each year is comparable with every other.
+
+Balanced or representative corpus consists of texts selected in predefined proportions to mirror a particular language or language variety. If a corpus is divided into word samples representing different types (or genres) of the language, it can be labeled as a 'balanced' or 'representative' corpus. Brown Corpus and British National Corpus can be accepted as balanced corpora.
+
+Collecting and Computerizing Data
+
+As corpora should be created by compiling written and/or spoken sample texts in a pre-determined way, the researcher needs to plan exactly what will be included in the corpus carefully. Also, researchers should choose the kinds and amounts of texts and from whom they will collect data according to the criteria set before compiling corpora. However, the researcher should also be ready for changes during the course of data collection since the process of text compilation may not be as smooth as expected. For this reason, the data collection process changes must be accepted as natural and inevitable. The researcher needs to be flexible in terms of restructuring the corpus creation process.
+
+While collecting spoken and written language samples, researchers need to be ready for numerous obstacles and complications. As
+
+People generally prefer communicating via speech. Many types of speeches range from spontaneous daily conversations to radio and television interviews. Due to this variety and the logistical difficulties that might be faced while recording speech samples, it is accepted that collecting samples of speech is much more complex than collecting samples of written language.
+
+The biggest issue regarding the collection of speech samples is the naturalness of the speech. The issue of natural speech collection becomes more critical when the aim is to collect spontaneous multi-party dialogues. Such natural speech samples should be collected carefully. Otherwise, the results of the recordings will show that the speech is not natural. While recording the participants, researchers should also ensure that interlocutors are not affected by the presence of such devices. Hence, researchers need to ensure that the interlocutors do not feel threatened to prevent the effects of being observed or recorded by an outsider. Once they do not feel comfortable due to knowing that they are recorded, they will adjust their speech because of the 'observer's paradox'. To avoid this, for example, London Lund Corpus was created through the recordings of the participants who were not informed before the recording process. Even though the speech will be quite natural in this way, most linguists criticize collecting speech samples without informing the interlocutors before starting to record their voices. It is also emphasized that researchers should take both verbal and written consent from the participants before collecting data.
+
+However, it should also be kept in mind that it might be almost impossible to record natural language samples when the participants are informed before they are recorded. To avoid this,
+
+As for collecting writing samples, we should accept that it is less complicated when compared to collecting speech samples. The first thing that needs to be taken into account is the copyright issue. If a written text is planned to be used in a corpus, researchers should take the required permissions from the author of the text, which will prevent copyright issues that might be faced in the future. Even though the authors allow researchers to use the text in their corpus, some of the owners of the writing texts may not allow researchers to share the corpus with other researchers worldwide. For example, English -Norwegian Parallel Corpus is not available online. If you want to conduct research with this corpus, you have to go to the University of Oslo to reach the corpus.
+
+In addition to copyright issues, digitalizing handwriting is another problem with collecting written language samples. Even though software programs are helping you scan and transfer the writing into a digital platform, these programs, such as OCR, do not transfer the information correctly. For this reason, the researcher has to deal with a vast amount of editing. Due to this fact, it is suggested that using electronic texts in a corpus may facilitate the researcher's duty.
+
+Computerizing Data
+
+Computerizing the data is the labor-intensive part of compiling corpora. After collecting raw data, researchers need to transcribe speech which is an extremely lengthy process as it requires the transcriber to listen to the same segments many times to reach a proper transcription. Even though computerizing written texts seems more manageable as the written data could be transferred to a computerized format by scanning, there will be many scanning errors that the researchers should correct manually. For this reason, most researchers generally give up scanning and typing the texts as it is not as time-consuming as editing the scanned written texts
+
+While computerizing data, researchers should bear some criteria in mind. They should keep the speech transcriptions and the written data in ASCII (text) format as it is the standard format used in corpus linguistics. Also, researchers can use ASCII files in parsers, concordance programs, and taggers. Similar to ASCII files, researchers have been using Text Encoding Initiative (TEI) as this system developed a formalism used for identifying the specific character set used in a given electronic format.
+
+Even though the basics of computerizing spoken and written data are the same, depending on the type of data (speech or written), the methods used for computerizing differ. While transcribing speech, for example, the researcher has to use transcriptors such as Sound Scriber, VoiceWalker 2.0, and Backbone Transcriptor. Such programs help the researcher control the recording and the transcription on the same page. In addition, they offer some shortcuts that might help the researcher add labels to specific speech events. Also, the recording could be slowed down, re-listened, or stopped by using some buttons on the keyboard. They also include transcription conventions and help researchers add pre-set formulas to the transcription. For example, the Backbone Transcriptor includes the transcription conventions given below; <unclear/> indicates that the researcher could not recognize what had been uttered. <unclear>word</unclear> indicates that the researcher could not exactly recognize the recording but has a guess about it. <trunc>word</trunc> indicates that a word has been truncated. <foreign>word</foreign> indicates that the speaker uses a foreign word. This tag shows that the speaker employs a 'code-switch'.
+
+( ) indicates that the researcher has written a comment about the recording.
+
+# shows the section boundaries.
+
+<break/> indicates that the speaker stops syntactic structure and starts a new utterance.
+
+These transcription conventions can be helpful when the data are transferred to annotators.
+
+Annotating Corpora
+
+Once the data are computerized, researchers should annotate the data according to the needs of the study. The first step of annotation is called the structural markup, which gives descriptive information about the text; thus, structural markup is used to create the text's metadata. Most corpora use Standard Generalized Markup Language (SGML), Text Encoding Initiative (TEI), or Extensible Markup Language (XML) to have a unified structural markup system. Among these systems, XML systems are used frequently since they include both SGML and TEI.
+
+While annotating the data, a label is attached to each linguistics item indicating its grammatical class or part of speech. Even though researchers can do tagging manually, it is now possible to train computer programs to tag utterances or sentences automatically. Parsing can also be used while annotating a corpus, done through grammatical markup inserted by a software program called a parser that automatically assigns labels to forms beyond word level (phrase, clause, etc.). Stanford Parser, for example, is widely used for the syntactic level of analyses of the corpus. Similar to taggers, once the parsers are trained, they automatically annotate the text for you. In addition to grammatical tagging and parsing, it is also possible to do semantic, discourse, and problem-oriented tagging.
+
+Analyzing Corpora
+
+Once the corpus is created and annotated, the most crucial part will be using the corpus for analysis. To use the corpus for analysis, the researcher needs to frame a research question that will help the researcher set the parameters of the process of the corpus analysis. After deciding on the research question(s), the researcher should test the corpus to determine whether it can answer particular research questions. If the corpus is not suitable for the research questions, the corpus should be changed or retagged by the researcher. After testing the appropriateness of the corpus for the research, the researcher needs to find suitable software tools to conduct the study, code the results and then analyze them through appropriate statistical tests. For example, if the purpose is to study the use of specific collo-cations, lemmas, or n-grams, the researcher can use concordance programs such as Wordsmith or AntConc. Then, the researcher should transfer the results obtained through the concordance programs to statistical software programs such as Excel or SPSS. Depending on the purpose of the study, the researcher should run appropriate statistical tests and analyze the results accordingly.
+
+Conclusion
+
+Corpus linguistics is a field within the study of general linguistics, and it can be accepted as a methodology rather than a paradigm within the area of linguistics. The corpus studies are crucial since they either test the validity of a language theory or hypothesis or help researchers create a language theory based on corpus analysis. Even though many people assert that corpus-based studies are essential in explaining the actual use of language, it should be kept in mind that corpus studies are challenging and require a lot of time and energy.

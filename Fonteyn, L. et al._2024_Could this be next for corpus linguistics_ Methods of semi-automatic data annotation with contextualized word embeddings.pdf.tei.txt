@@ -1,0 +1,101 @@
+Introduction
+
+In corpus linguistics, the collection and annotation of data commonly involves a relatively balanced combination of computer-aided and manual labour. It is still common practice, for instance, to first retrieve data representing a particular linguistic phenomenon from an electronic corpus (e.g. by means of a concordancer tool or query script) and subsequently manually categorize the collected examples into different functional-semantic groups (e.g. animate/inanimate; literal/figurative; agent/patient/instrument/ …). However, as the range of research questions that linguists aim to address by means of corpus data has expanded both in diversity and complexity, and as researchers have started to resort to more complex (often multivariate) statistical analysis to address these questions, it may no longer be practically feasible to continue working this way. Given how labour-intensive manual data annotation is, it is difficult to meet the growing need to annotate larger samples for robust statistical research. As such, it has become an important practical challenge in corpus linguistics to determine how data annotation practices can evolve along with the needs of researchers (e.g.
+
+This paper contributes to tackling this challenge by exploring how corpus data annotation can be made (semi-)automatic by means of machine learning. More specifically, we home in on the use of "contextualized word embeddings" (i.e. vectorized representations of the meaning of word tokens based on the sentential context in which they appear) extracted by large language models (LLMs; i.e. machine learning architectures with a large number of adjustable parameters, which are designed to exploit large amounts of pre-training text data). In natural language processing (NLP), contextualized word embeddings generated with LLMs are often shown to perform impressively at "downstream tasks", like part-of-speech tagging, dependency parsing, or named-entity recognition (e.g.
+
+Methods
+
+The method we assess in this paper takes as its starting position that researchers already have access to pre-annotated (e.g. part-of-speech tagged, and to a lesser extent semantically annotated) corpora and a range of (semi-)automatic annotation tools (e.g.
+
+This customizable procedure will be demonstrated in three case studies.
+
+Classification
+
+We implemented four different classification approaches belonging to two broad types. In the first type, we solely extracted the contextualized embeddings of the target words, and used them as the only features for training traditional off-the-shelf classification algorithms. In particular, we resorted to the k-nearest neighbour (KNN) and the support vector machine (SVM) algorithms, as implemented by the scikit-learn software package. With KNN, the model's prediction of which category an unseen test item belongs to is decided based on its k nearest neighbours in the training set. Here, neighbourhoods are determined by the distance between the embeddings of unseen test items and training test items. The SVM algorithm, by contrast, uses the training data to infer a plane in the space spanned by the input features (i.e. the input word embeddings) that maximally separates the instances according to their class. In the case of a binary classification problem, the fitted plane divides the space in two regions such that a test item is assigned a label considering on which side of the plane its feature representation lays.
+
+In the second type of approach, we use the original pre-trained LLM (i.e. MacBERTh or GysBERT), and finetune its parameters in order to perform the classification task at hand. We apply two kinds of fine-tuning. The first 5 For more detailed information on how these models were trained, see
+
+Could this be next for corpus linguistics?
+
+one is a common parametric fine-tuning procedure that incorporates additional parameters which are tuned in order to produce a probability distribution over the categories to which an example should be assigned. We will refer to this method simply as "fine-tuning" and rely on the implementation of the transformers software package
+
+Evaluation
+
+We evaluate all four approaches using a ten-fold cross validation (CV) procedure. We divide the available data into ten non-overlapping sections or "splits", and test the performance of each classification approach on each of these splits. As training material for the classification algorithms, we rely on the splits that are not used for testing at each iteration. Because CV is an iterative evaluation procedure, it not only yields a more statistically solid comparison between the different classification approaches, but also enables us to assess the variance in the performance of each model (i.e. fluctuations in performance due to differences in the training and test data). Finally, we show that cross-validated results also allow us to employ a powerful model comparison method that helps us determine which methods are worth deploying in future automatic annotation settings.
+
+Word sense disambiguation
+
+While LLMs that generate contextualized embeddings, such as BERT (Bidirectional Encoder Representations from Transformers;
+
+Fire metaphors
+
+To demonstrate how LLMs may be employed to at least partially automate the annotation of data in terms of word sense categories, we first focus on the use of a set of lemmata related to the conceptual domain of FIRE: fire, flame, ardent, blaze, and burn. A popular lexical domain for metaphorical extension (Charteris-Black 2016), words related to FIRE will not only frequently occur in their literal sense, but also in figurative uses (e.g. to describe positive as well as negative emotions). In line with the tsunami case study in De
+
+As a toy example, one could test the hypothesis that the Great Fire of London (1666) triggered a frequencydriven change in the semantic structure of FIRE words. For our purposes, we will test whether the data annotation for such a study could be done semi-automatically. To this end, a random sample of 300 instances per lemma was extracted from the EMMA corpus, which contains texts written by 50 prominent authors born in the seventeenth century who mostly belonged to the London-based elite
+
+(
+
+Comparing the f1 scores of each approach, we find that, while there is some variation between individual lemmas, a few generalizations can be made. The f1 scores are the lowest when the KNN algorithm is used to classify examples. One exception is the lemma ardent, where KNN performs slightly better than SVM. The worst performance of KNN is found with burn and fire, where poor recall results in f1 scores of 70.3 and 65.3 respectively. By contrast, the best results are achieved by metric fine-tuning, which is only equalled once by fine-tuning for ardent. Notably, the f1 scores for metric fine-tuning never drop below 93.0, and the standard deviations reveal that it also has the most stable performance across all trials.
+
+Mass and weight
+
+So far, then, it appears that using (MacBERTh) embeddings after fine-tuning with an end-to-end metric learning approach could serve as a highly reliable and robust tool for automated word sense classification. We will now show that this approach continues to perform strongly when the data is taken from a corpus of specialized language and is annotated at finer levels of granularity (i.e. with more and subtler sense distinctions). We consider a case study of terminological overlap in scientific language.
+
+In 1687, Isaac Newton first differentiated between the concepts of WEIGHT and MASS, which were both referred to by means of the word weight before then. To investigate, for instance, how long it took for the scientific community to adjust their usage of the word weight to Newton's proposal, how Newton's terminological renewal diffused among the scientific community (e.g. through author networks, through disciplines, etc.), or whether other uses of the words mass and weight were affected by this "conscious effort" to improve scientific terminology, a large-scale specialized corpus of scientific writing such as the Royal Society Corpus
+
+Source
+
+Model Precision Recall F1 As with the previous case study, we approach the sense disambiguation task per individual lemma, as well as by training and testing with a dataset in which both lemmas are grouped. The results of each classifier approach for the more fine-grained sense disambiguation of mass and weight are presented as f1 scores in Table
+
+Could this be next for corpus linguistics?
+
+category has equal weight: when the macro average of f1 is computed, this is done for each sense class individually after which the average is taken over all classes. With micro f1, by contrast, sense classes are not treated separately, which means that small sense categories, which may be more challenging to label correctly because there are fewer examples of them in the training data, are less important in the calculation of the f1 score.
+
+Starting with micro f1 and its accompanying standard deviation, we find relatively high scores for all of the classification tasks for each lemma individually as well as for the grouped set. Yet, as with the previous case study, the most accurate (and most stable) classification approach is metric fine-tuning. This is also evident from the macro f1 scores, where the difference between metric fine-tuning and the second-best approach, which in this case is SVM, is very large. In fact, while macro f1 ranges from 89.2 to 95.5 for metric fine-tuning, none of the other approaches score higher than 77.6. These results indicate that in more fine-grained WSD tasks, where there may be imbalance and a low number of training examples for certain categories, classification algorithms such as KNN, SVM, and "regular" fine-tuning could perform poorly for those categories. This appears to be particularly true for fine-tuning, which noticeably struggles with low-frequency categories (e.g. MET for the lemma mass; f1 = 46.4).
+
+Semantic role labelling: SCENT terms as agents, objects, or patients
+
+Beyond WSD, computational studies have also explored the performance of LLMs in semantic role labelling
+
+Our case study, which continues in the theme of olfactionthat is, "the sense through which smells (or odors) are processed and experienced"
+
+(9)
+
+A: The SCENT term reuk or geur is presented as the AGENT of an action. This action is done to or experienced by a person. a. Den geur van u schepsel heeft oock bedroghen mijnen reuck (1629, DBNL)
+
+'The scent of your creature has also misled my sense of smell' b. Want gelijck een lieflicke reuk den mensche seer vermaeckt, … (1637, DBNL) 'Because like a gentle smell pleases the people, …' c. en hoe lieflijk wierd ik door haaren reuk verkwikt! (1794, EDBO)
+
+'and how gently was I by her smell invigorated!'
+
+(10) O: The SCENT term reuk or geur is presented as an OBJECT given by a thing (to a person). a. het geeft Een lieffelyke reuk die iets verkwiklyke heeft (1790, EDBO)
+
+'it gives a lovely smell that has something invigorating' b. Blaas, lentewind blaas uw geur Door bosschen beemden, hoven (1790, EDBO)
+
+'Blow, spring wind blow your scent through forests, fields, yards' c. Die 't oog met kleur vermaakt, en 't hert met geur bewaassemt (1673, DBNL)
+
+'That pleases the eye with colour, and fogs the heart with scent'
+
+(11) P: The SCENT term reuk or geur is presented as the PATIENT or undergoer of an action (done by a person). a. de Heere rook dien lieffelyke reuk (1782, EDBO)
+
+'the lord smelled that lovely smell' b. De wandelaar juicht haar toe, daar hy haar geur geniet (1785, EDBO)
+
+'The hiker cheers her on, as he enjoys her smell' c. Nochtans verneem ik geenen viesen reuk (1691, DBNL)
+
+'Although I perceive no foul smell' Table
+
+Model comparison
+
+In this section, we summarize the evidence gathered across the case studies, and show which classification method is expected to give strongest results in similar semi-automatic annotation setups. To this end, we use a Bayesian model comparison method as presented in
+
+which use null-hypothesis testing. These include that Bayesian model comparison helps overcome a problem that occurs with frequentist methods, where the estimated effect size of the observed differences between models is entangled with the underlying sample size.
+
+The chosen Bayesian comparison method jointly analyses the cross-validated results obtained by different classification approaches across multiple datasets. That is, as input we use the classification accuracythat is, the proportion of correctly annotated itemsof each classification approach (i.e. KNN, SVM, fine-tuning, and metric fine-tuning) obtained in each of the folds for each of the three outlined case studies. The output of the comparison method consists of the estimated probability that a particular classification approach performs differently from or similarly to one of the others.
+
+The results of the comparison are presented in Table
+
+Several conclusions can be drawn from Table
+
+Besides the fact that combining contextualized word embeddings from LLMs with metric fine-tuning appears to be a reliable approach to automatically annotating linguistic data, the procedure is also adaptable to the corpus linguist's annotation needs. Furthermore, the procedure we presented has the added benefit that models used to annotated the data can be shared, and used to replicate the data annotation scheme in corroboration and follow-up studies. Thus, given its robustness, high reliability, flexibility, and potential for reusability and replicability, it is at least worth considering whether this (semi-)automated data annotation procedure could be what is next for corpus linguistic methodology.
+
+There is, however, more to explore before LLMs can be fully integrated into corpus linguistic research. We wish to note, for instance, that the fact that LLMs such as the BERT-based MacBERTh and GysBERT can be manipulated to distinguish literal from figurative uses of a word or correctly label the semantic role of a target word in a way that is comparable to human annotators does not necessarily mean that such LLMs can be said to "understand" the concept of metaphor or agency. We can only state that the information needed to successfully make the distinctions outlined by the human annotator is encoded in the embeddings generated by the LLM (for other work pursuing similar questions on what sort of information is encoded in contextualized embeddings from LLMs, see e.g.

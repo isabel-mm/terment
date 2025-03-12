@@ -1,0 +1,981 @@
+From fallacies and pitfalls to solutions and future directions
+
+Navigating the evolving terrain of corpus linguistics
+
+In a short but important paper published thirty-five years ago in the ICAME Journal,
+
+The insightfulness of Rissanen's article has been generally recognized by corpus linguists (see, e.g.,
+
+As solutions to the issues raised,
+
+In general, critical self-assessment is unquestionably an essential part in the evolution of any new methodological approach into language study, and corpus linguists have consistently recognized the theoretical and practical challenges inherent in the compilation, design, organization, and analysis of data. Over the years, scholars have noted and discussed the occasionally elusive nature of the challenges and suggested solutions to the problems, tackling broader and abstract notions such as representativeness and balance of corpora, but also more concrete questions like sampling, various levels of annotation, precision and recall of corpus queries, dispersion of search hits across a corpus, statistical evaluation, among other points.
+
+The attitudes of corpus linguists seem to include both a healthy sense of humility as regards what is possible to achieve, as well as an understanding of the need to continuously remind the scholarly community of the core concerns in the field. As illustrations of the former idea, we can consider the often-quoted statements that "
+
+Having noted that it is only sensible to be aware of the impossibility to create perfect corpora and analytical methods which are entirely free of pitfalls, it would feel wrong not to take note of the increase of the levels of analytical sophistication and efficiency in the field. The toolbox that a corpus linguist has today is immensely superior to a corresponding one twenty or thirty years ago. However, some problems persist, and it is safe to assume that the number of pitfalls that a corpus linguist needs to try to avoid has not necessarily decreased, quite the contrary. But it is not difficult to imagine that for novice users of corpora, the numerous functions readily available in concordancers and online corpus interfaces have created another fallacy that might be called a "fallacy of sophisticated technology": with such state-of-the-art systems, what could go wrong? In a way this would be related to Rissanen's "God's truth fallacy", but instead of a false sense of security arising from the seemingly representative datasets, the sheer impressiveness of the software and tools of analysis may suggest that pitfalls do not exist. Improvements in some areas do not mean that all of the old problems have been solved.
+
+In many ways we can then say that the challenges do not only relate to corpora and their use themselves, but also to how we educate new corpus users and inform them about the fundamental concepts and concerns. There are undoubtedly many types of persistent problems, common frustrations, and messiness in corpus data that seasoned scholars have encountered and know about, but which are seldom specifically addressed. Yet beginning corpus users might benefit from learning about what may be regarded as tacit knowledge in corpus linguistics, and even the more advanced scholar may encounter issues new to them that have been addressed earlier.
+
+This is also the main motivating factor behind the present volume. Comprising eight chapters, the book discusses the nature of these problems and seek solutions to the perplexities faced by themselves and other scholars. While the chapters mostly concentrate on English corpora, many of the themes are relevant from a general corpus-linguistic point of view. The topics range from addressing issues relating to grammatical annotation
+
+It deserves to be mentioned that Rissanen's concerns on the use of corpora were explicitly presented from the point of view of historical linguistics, and while many of the issues he raises are also relevant to the study of contemporary forms of languages, historical corpus linguistics faces significant challenges of its own. The chapter by Turo Vartiainen and Tanja Säily (Chapter 2) raises a number of practical points which still pose problems in the analysis of historical corpora. The authors examine a set of case studies, highlighting issues like part-of-speech annotation, miscategorization challenges, and problems related to metadata and digitized texts in historical databases, such as the 10.5-billion-word Eighteenth Century Collections Online, a database which was originally not compiled for linguistic purposes. Reporting on a number of instances where initial findings from corpora turned out to be misleading or inconclusive upon closer inspection of the data, the authors advocate for methodological improvements, user feedback channels, and balancing subgenres. They stress the significance of "knowing one's data" for researchers dealing with vast corpora, emphasizing collaboration with historians, and systematic text examination for qualitative analyses and data interpretation.
+
+The impact of insufficient metadata is also the topic of Chapter 3 by Mark Kaunisto, who examines the problems seen in the annotation of named entities in corpora, delving into the problems that arise in interpreting corpus data. Despite the long-recognized importance of considering proper nouns and names in corpus annotation schemes, many contemporary linguistic corpora lack the capability to exclude these items effectively when setting up queries. The presence of names in corpora introduces a layer of complexity, potentially including items that may not reflect the active linguistic choices of the represented writers or speakers. Through small-scale case studies utilizing prominent English language corpora like the British National Corpus and the Corpus of Contemporary American English, the chapter underscores the necessity for careful post-processing of search results. The occurrence of searched items within named entities poses challenges in analyzing word frequencies and collocational behavior. The chapter advocates for more detailed annotation of named entities in large linguistic corpora that are already available. Notable improvements could also be gained by the increased collaboration between traditional corpus linguists and scholars in the fields of computational linguistics and NLP, of which there are already encouraging examples.
+
+Chapter 4 by Marcus Callies discusses challenges related to the special characteristics of learner corpus data, emphasizing the importance of valid data representation for studying L2 production and development. Learner corpora, particularly those containing academic texts, often include instances of multilingual practices, code-switching, and borrowed content, presenting difficulties for annotation and analysis. Specific attention is called for in tagging elements like expert terminology, metalinguistic language use, and quoted passages to ensure the accuracy of word counts and concordance analyses. Compilers and users of learner corpora also grapple with the issue of unwanted lexical bias, stemming from task topics, writing prompts, or other input materials. Identifying and addressing lexical bias is crucial, as it can impact the validity of research findings, especially given the consideration of lexical variation as a proxy for L2 proficiency. Methods to tackle lexical bias involve treating biased words as stopwords or excluding L2 structures likely induced by bias. Additionally, task and prompt materials may influence the recurrent use of specific grammatical constructions, highlighting the need for careful analysis. Callies concludes his chapter by addressing potential bias in annotation methods within Learner Corpus Research (LCR) and related disciplines. Overall, the chapter emphasizes the need to move beyond a monolingual native-speaker norm in assessing learner data, acknowledging the significance of diverse linguistic expressions. Callies also raises an important point about the challenges that the use of AI or other writing tools may pose in the compilation of learner corpora in the future -a point that will also be relevant to the compilation of many different types of corpora -as one needs to make sure that the samples compiled truly reflect the writers' own language choices.
+
+In Chapter 5, the question of the useability of databases for corpus linguistic purposes is addressed by Turo Hiltunen, who discusses issues relating to the use of materials in the British Library Newspapers database. Perspectives on the matter vary between scholarly approaches: the criteria for determining what is "good data" -for example, considerations on the accessibility and processing of the data -can be quite different in Digital Humanities and corpus linguistics. For a corpus linguist, it is important to have detailed knowledge of how the data has been compiled, what editorial or reformatting practices have been applied to the data, and with what tools the data can be examined. Hiltunen highlights ways in which the useability of databases can be assessed, also noting the different conceptualizations of notions such as register in different scholarly disciplines as posing a challenge. As a way forward in trying to find solutions to improve the adaptability of databases for linguistic research, Hiltunen calls for more interdisciplinary discussions and collaboration between corpus linguistics, Digital Humanities, and related disciplines, which are still too far from each other because of the disparities in their research agendas.
+
+The subject of accessibility of data and its repercussions in corpus study is also covered by Stefan Hartmann (Chapter 6), who brings up the problem of replicability of corpus studies, often resulting from the limited accessibility of the corpora studied, as some corpora are only available behind a paywall. Seeing connections between these problems and those outlined by
+
+With the rise of social media and web data, the question of how texts of distinctly different shapes and forms, compiled together into a corpus, can reliably be examined becomes increasingly pertinent. Aatu Liimatta's chapter (Chapter 7) focusses on the challenges posed by variation in text length and the specific issue of short texts, an issue which so far has not received much attention from quantitative corpus linguists. Largely the reason for this is how previously short texts have not been regarded as being a major problem, but with the advent of new forms in contemporary digital communication, the 'problem of text length' , as Liimatta calls it, needs to be addressed. Although solutions have been proposed, they often appear to be limited as regards their suitability in different kinds of studies. Liimatta proposes potential avenues for improvement and new method development, including the exploration of resampling methods for estimating distribution and approaches utilizing the large size of datasets. While perfect solutions may not yet exist, Liimatta offers useful insights to the study of linguistic questions within the context of varying text lengths.
+
+In Chapter 8, Daniel Ocic Ihrmark explores the challenges of categorizing fiction genres in corpus compilation, especially when catering to both linguistic and literary research fields. General-purpose linguistic corpora have traditionally aimed to include works of fiction; however, as Ihrmark notes, the practices of categorizing (and subcategorizing) literary genres in the disciplines tend to differ, which may result in difficulties in trying to make use of corpora in literary studies. The differences between how literary genres are categorized largely reflect the different viewpoints and goals between the fields, with corpus linguistic categorizations aiming to focus on the different communicative purposes of texts, whereas the descriptions of genres by literature scholars are based more on content and stylistic concerns. Ihrmark examines various methods employed in corpus stylistics, such as keyword analysis and n-gram searches, and their reliance on genre categorization for comparative studies. Overall, Ihrmark suggests adopting broader genre categorizations at higher levels for wider applicability, while allowing for additional granularity as needed.
+
+As observed in other chapters in the volume, corpus linguistics stands to benefit from the innovative ideas, methods, and expanded possibilities developed in related fields such as natural language processing and computational linguistics, enriching its analytical toolkit and enhancing its capacity for nuanced linguistic analysis. In the concluding chapter of the volume, Filip Miletić, Anne
+
+Introduction
+
+When Professor Matti Rissanen wrote a short article entitled "Three problems connected with the use of diachronic corpora" for the ICAME Journal in 1989, the landscape of corpus linguistics looked quite different from today. At the time, Rissanen was leading a group of scholars responsible for the compilation of the first diachronic corpus of English, the Helsinki Corpus of English Texts. The Helsinki Corpus, which was to be published in 1991, would revolutionize the historical research of English for decades to come, and its importance for historical corpus linguistics cannot be overstated. Against this background, it is interesting to note that Rissanen felt compelled to discuss some potential pitfalls related to historical corpus linguistics two years prior to the publication of the Helsinki Corpus.
+
+From a present-day perspective, some of the issues raised by Rissanen have been addressed, while others remain a source for concern. Furthermore, there are some new trends in corpus-based research that Rissanen could not have anticipated in his article, and these introduce challenges of their own. In this paper, we revisit Rissanen's ideas in order to identify some of the present-day pitfalls in historical corpus linguistics.
+
+We pay particular attention to what
+
+However, it is not our intention to advise against the use of big-data corpora or sophisticated statistical methods in historical corpus linguistics. Having larger corpora at our disposal is arguably one of the most important advances of the recent decades, and the more statistically-oriented research projects have permitted the analysis of highly complex questions pertaining to language change with increased quantitative rigour
+
+Accordingly, we propose that the changing focus from detailed analyses of small datasets to more abstract and statistically-oriented analyses of big data requires a reconceptualization of the philologist's dilemma. While the original formulation of the philologist's dilemma is no less relevant for scholars engaged in, say, historical sociolinguistics, we argue that in more grammatically oriented studies that make use of big data, increasing attention should be paid to the corpus itself: to its sampling principles and layers of annotation. Indeed, while the handling of linguistic big data always includes a degree of uncertainty, there is no excuse for ignoring the potential problems related to these resources. We acknowledge that some of the issues that we discuss in this paper may not be specific to historical corpora (see, e.g,
+
+After this short introduction, we proceed directly to our examples of presentday pitfalls in historical corpus-based research. Each of the following sections is intended to illustrate one general problem associated with historical corpus linguistics by discussing individual studies that we have carried out previously. In Section 2, the focus is on part-of-speech (POS) annotation, which can be regarded as one of the most useful kinds of linguistic annotation in contemporary research, but which, as we shall see, does not come without problems. Section 3 focuses on some pitfalls related to big corpora, and our examples in this section concern both the reliability of the semi-automated sampling of such resources and the comparability of the research results when new genres are introduced to the corpus. In Section 4, the focus is on linguistic databases, and on Eighteenth Century Collections Online, in particular. Here, we discuss issues related to the reliability of the database with respect to OCR (Optical Character Recognition) accuracy as well as problems pertaining to the balance of the database and the metadata associated with it. Section 5 brings the chapter to a close with a discussion of the main topics and some final conclusions.
+
+POS annotation in diachronic datasets
+
+Part-of-speech (POS) annotation arguably provides one of the most useful layers of linguistic annotation to assist the researcher in the retrieval of relevant constructions from corpus data. Having each word in the corpus tagged according to its part of speech (i.e., word class) permits, for instance, the study of partiallyfilled constructions (e.g., N-PROP of N-PROP; "the Einstein of Italy") and of lexical items of a specific part of speech (e.g., love_V; "I love you").
+
+However, applying software developed for Present-day English to historical data is somewhat problematic
+
+Accounting for category change
+
+One of the areas of research where POS annotation might fail is category change, that is, a process where a word of one word class gradually begins to be used like a word from another class (see, e.g.,
+
+(1) I think that the role of the Ambassador in the Soviet Union is a very key one.
+
+Both key and fun in the above examples are correctly tagged as adjectives in COHA. Whether or not the tag has been probabilistically assigned by the tagger or manually inserted as a rule is not obvious, but at this stage we can note that the tagger can correctly identify at least some usages of these items as adjectival. Figure
+
+(3)
+
+(4)
+
+(5)
+
+(6)
+
+The situation becomes even more complicated when the research focuses on items that are attested with a lower frequency, or on items whose adjectival use has not yet become conventionalized to the same degree as key and fun. In (7) to (11), taken from COHA's sister corpus, the Corpus of Contemporary American English (COCA), all the "nouns" in boldface are used in a descriptive and non-referential function (i.e., similarly to key and fun in Examples (1) to (4) above), and yet none of them has been annotated as an adjective in the corpus. (11) The construction project was mammoth by the standards of the day.
+
+(12) (COCA, Fic, 2008) He wasn't just killer good-looking. He was to die for.
+
+(13) (COCA, Fic, 2002) Business meeting: Claudia Lester was textbook perfect.
+
+To summarize, the pitfall related to POS annotation in the case of category change is that even though word classes are treated as static entities in corpus annotation, they are in fact dynamic; word classes exhibit both category-internal and category-external gradience, and this gradience may be a result of ongoing language change. This problem is of course not limited to historical corpora but also affects present-day corpora when the process of change has not reached its conclusion. While software like CLAWS also provide probabilistic information about word class, in practice this information is typically not available to the end users of the corpus. A possible solution to these kinds of problems is to make use of queries that not only combine lexical items with POS tags (e.g., key_j, fun_j) but also target the surrounding context of the item under study.
+
+Theoretical choices in the design of the annotation scheme
+
+There are also cases where it may be impossible to make use of POS annotation because of the idiosyncratic tagging of the corpus. For example, in
+
+However, our approach was partly unsuccessful because of the theoretical choices made in the tagging of the corpus (see
+
+Whether or not Huddleston and Pullum's analysis is ideal from the perspective of word class theory is not relevant in this case; the important thing is that the PCEEC is annotated in a way that makes it impossible to study colloquialization by measuring the frequency of prepositions in different time periods. As pointed out in
+
+Annotation tailored to specific research questions
+
+Our third example of a potential POS-related pitfall pertains to a case where the corpus compilers were themselves working on the long diachrony of English and used a conservative annotation scheme to facilitate comparability over time. The PCEEC is one of the parsed corpora of historical English produced in collaboration between the universities of Penn, Helsinki, and York, among others. These corpora are intended to cover all stages of the history of English, and as such, the annotation scheme has been designed to be backwards compatible all the way to Old English. This is of course a laudable aim and makes the corpora invaluable for research on historical syntax. However, it severely complicates the study of certain types of research questions that rely on POS annotation, as will become apparent below.
+
+In our case, we were interested in examining changes in the POS frequencies in the PCEEC over time. In our first explorations, we focused on the frequency of nouns and personal pronouns in the corpus
+
+We initially assumed that any compound tag ending in a noun tag could be counted as a noun. Sometimes this was indeed the case, as in sixpence_NUM+N. At other times, however, these represented other parts of speech that had grammaticalized from nouns (see, e.g.,
+
+To resolve these issues, we ended up retagging the entire corpus in order to move the grammaticalized items from nouns to their current parts of speech. This was highly labour-intensive, especially as some of the compound tags were ambiguous in that they included both genuine instances of nouns, as in gentle-man_ADJ+N, as well as adverbs, as in likewise_ADJ+N; there were 1,199 instances of ADJ+N alone. Moreover, because the corpus contains private letters from a period before English was standardized, there is a great deal of spelling variation in the corpus. Consequently, it was not enough to simply list all adverbs etc. that could have been tagged as nouns; instead, we had to identify all their spelling variants as well, including those that had been written as two words (e.g., like_ADJ wise_N). These tokens were combined and reclassified, so the retagging involved changes in tokenization, too. Time-consuming though this process was, it enabled us to gain interesting and reliable results, which we refined and augmented in our study discussed above
+
+Large corpora
+
+Inaccuracies in text sampling
+
+In this section, we give an example of a potential pitfall related to the semi-automated sampling of corpus texts. Here, it is not our intention to argue that the texts included in big-data corpora should be sampled manually; indeed, when the corpus includes samples from tens or even hundreds of thousands of individual texts, it is obviously not feasible to check all the data sources individually. Consequently, big-data corpora are likely to contain errors pertaining to the dating of some of the texts, their genre, and even the language variety, which the researcher must be aware of. Needless to say, even though some amount of data-related noise may be tolerable in the analysis, sampling errors like these can sometimes lead to disastrous results if one does not exercise sufficient care in data collection and analysis.
+
+As an example of a pitfall related to text sampling, we discuss a particular usage of the complex adverb as well, which caught our attention some time ago. While as well is commonly used in a clause-final position in cases like (
+
+(14) Not only are we stranded on this dreadful planet, but we are starving as well.
+
+(COHA, TV/Mov, 1968) (15) This interaction with readers continues not only through the mail but on-line (COHA, NF/Acad, 1995) as well.
+
+(16) These communities have significant African-American and Hispanic-American populations, among others. As well, they are largely low-income (COHA, NF/Acad, 1994) communities.
+
+We consequently decided to investigate the frequency of sentence-initial as well in COHA, a corpus that provided us with enough material to examine its diachronic development in recent American English. According to our corpus queries, the frequency of the usage was generally very low in the corpus, but it was clearly becoming more common in the late twentieth century (Figure
+
+Importantly for our preliminary analysis, the frequency of these potential bridging contexts and the frequency of the sentence-initial connective uses converged in an interesting way in the corpus: we see the frequency of the bridging contexts decrease as the frequency of the sentence-initial connective uses increases (Figure
+
+(18) An attempt is made to bind up and fetter this country's expanding energies and prospects with Old World theories and methods. As well attempt to put (COHA, Mag, 1874) baby-clothes upon the statue of Hercules. Considering all this evidence, we were optimistic that the phenomenon was indeed real and that we were studying a usage that had thus far been ignored in the literature. We were only concerned about the low frequency of the form: in the last period studied , there were 32 tokens of the sentence-initial usage in COHA, which meant that our results might have been tarnished by errors made in the sampling of the corpus. Unfortunately, this is exactly what had happened. Indeed, our initial enthusiasm was quickly dampened by the observation that the connective use of as well was dispersed very unevenly in the corpus. On closer inspection, we were able to establish that 13 of the 32 tokens, all from the 1990s and the 2000s, were in fact produced by Canadian authors. Six additional tokens in the 1980s sample were produced by an author from Portland, Oregon, and one from Seattle, Washington, which raised strong suspicion of Canadian influence. Finally, the author of one sentence-initial usage turned out to be Irish. When these data are excluded from the results, the frequency of the form is so negligible that the argument for an incoming connective use of as well in American English can no longer be maintained. Now that we knew that the connective use was probably due to sampling errors in COHA, we conducted a new literature survey with a focus on Canadian English (CanE). We promptly found brief mentions of the sentence-initial usage in
+
+Changes in the balance of subgenres
+
+Our second example pertains to genre balance, and in particular to the effect of including new subgenres in a corpus over time. In
+
+(20) (COHA, News, 2017) We are very pleased with the court's ruling.
+
+Because we were interested in the potential impact of gender on the change, we chose as our dataset the fiction section of COHA, which contains named authors for whom gender metadata has been generated by
+
+However, when we began to look for potential reasons for this lag, we noticed that the internal balance of the fiction subcorpus changes over time. While most of the corpus consists of novels, the most recent periods in the corpus include increasing amounts of drama, short stories and movie scripts, for example. When we restricted our corpus queries to novels alone, which is possible if one uses the downloadable version of COHA rather than the online interface, the gender difference disappeared.
+
+This example serves as another illustration of the pitfalls of mega-corpora that are not as carefully sampled and balanced as smaller corpora. Of course, the issue of genre balance also affects smaller diachronic corpora like the Helsinki Corpus, because some genres may disappear and new ones appear over time, and compromises must be made in the compilation process in terms of representativeness vs. diachronic comparability. In the same vein, it is completely justified to include movie scripts in the fiction section of COHA as movies begin to be made in the twentieth century. On the other hand, the history of many fiction genres, including drama and short stories, is certainly longer than the coverage of COHA, so their proportions could have been more optimally balanced in the corpus; considering the automated sampling of COHA, their better representation in the most recent periods probably reflects their increased availability in digital form.
+
+Historical databases
+
+Issues with balance and metadata
+
+In recent years, corpus linguists have been increasingly interested in making use of massive historical databases, such as the Eighteenth Century Collections Online (ECCO), in their research. ECCO consists of more than half of all known British publications in the eighteenth century, or about 200,000 texts and 10.5 billion running words
+
+Fortunately, there is ongoing research that aims to shed more light on what exactly the database contains. For example,
+
+With the help of the ESTC metadata, harmonized and augmented by the Helsinki Computational History Group (COMHIS), the ECCO dataset can be narrowed down to first editions only, which greatly facilitates linguistic research. The metadata also provides opportunities for generating principled subcorpora of ECCO, such as economic literature
+
+OCR errors
+
+Crucially, the digitized texts in ECCO do not even represent "God's truth" about the original publications on which they are based, owing to severe errors in optical character recognition (OCR) in the digitization process. These errors, the rate of which varies between Parts I and II
+
+Hapax legomena
+
+To give a concrete example, many studies of lexical and morphological productivity rely on accurate type counts, particularly of hapax legomena, that is, words that only occur once in the corpus. Here, the small subset of ECCO that has been keyed in manually by the Text Creation Partnership (ECCO-TCP), and which is hence free from OCR errors, provides an illustrative example. Comparing the texts shared by ECCO and ECCO-TCP, we find that more than 90% of the hapax legomena in the ECCO sample (henceforth ECCO-OCR) are not found in ECCO-TCP. This means that they are in fact spurious OCR errors and that the precision of queries based on rarity is abysmal (Figure
+
+Historical lexis
+
+A recent study of economic vocabulary in ECCO
+
+The second issue relates to the fact that some characters are more likely to result in OCR errors than others: in particular, the long "s" and ligatures are more likely to be incorrectly identified. For instance, we aimed to study the spelling variants of economy to analyse the diachrony of the transition from the Latinate variants, "oeconomy" and "oeconomy", to "economy". However, by taking a small sample of the instances and going back to the document images, we discovered that about a third of the instances of "economy" were in fact OCR errors for "oeconomy". This made accurate timing impossible, unless we were to take a more representative sample and check all the document images manually, which would have been a very labour-intensive task. Moreover, in our multi-dimensional analysis of economic vocabulary where we mapped the words in a subset of ECCO to the "trade and finance" section of the Historical Thesaurus of the Oxford English Dictionary, none of the words that emerged as significant had an "s" in them, suggesting that these might have been missed owing to the problem with the long "s". Here one solution would be fuzzy searching, or at least adding variants with "f " or "l" for "s" to the queries.
+
+The texts in ECCO were digitized and OCR' d in the 1990s and 2000s. Since then, OCR methods have vastly improved, so it is to be hoped that the document images -poorly scanned as they may sometimes be -could be re-OCR' d in the future, with much better results. These methods rely on deep learning and neural networks, which are becoming increasingly common in other linguistic applications as well, for instance word embeddings, which are used for lexical semantics. Deep learning is an area of computer science that is highly resource intensive, which means that the restrictions of hardware and software, already mentioned by
+
+Discussion and conclusion
+
+In this paper, we have discussed pitfalls related to some of the widely used historical corpora and databases in the context of current corpus-linguistic research. Our main argument was that the recent trends and advances in the field, such as the publication of big-data corpora, the increased reliance on statistical approaches to linguistic data, and the exploitation of various kinds of metadata, require that the linguist should have a detailed understanding of the structure of the corpus, its sampling procedure, and the principles followed in the construction of the metadata. In other words, the increased use of big-data resources in historical research has resulted in fundamental changes in research methods, data analysis and research questions, and while these changes have provided researchers with exciting new possibilities, they have also presented new challenges.
+
+We also suggest that these challenges are ultimately not so different from the pitfalls discussed by Rissanen in his "philologist's dilemma": just like in the early days of historical corpus linguistics, today's challenges pertain to the linguist's knowledge and understanding of their data. However, because the focus of research has in many cases shifted from small, carefully compiled corpora to bigdata resources, the nature of the "data" and methods with which historical corpus linguists typically work has changed. Consequently, we suggest that it would be prudent to think about the principle of "knowing one's data" from a new perspective: as the sheer size of the modern mega-corpora prevents scholars from engaging with either all or the majority of the original source texts in as much detail as in the early days of historical corpus linguistics, they should strive for an intimate understanding of the historical corpora as mediators of the original texts.
+
+Admittedly, this perspective signifies a trade-off between two types of knowledge. On the one hand, the linguist must accept that while sociocultural contextualization remains as important as ever, it is not always possible to check every corpus text or concordance line manually. On the other hand, the linguist can compensate for this to some degree by acquiring a thorough understanding of the corpus and its description. This knowledge is more abstract in nature, and it is partly a reflection of the more abstract kinds of research questions explored in corpus-based research today, as well as of a shifting focus towards an increasingly statistical orientation in research design. This shift also means that researchers must be willing to accept a certain degree of data-related uncertainty or "noise", which cannot always be controlled as well as when one works with smaller corpora. In the following, we discuss these issues and potential solutions to them in light of our case studies.
+
+Our first examples concerned problems related to part-of-speech annotation, and these challenges are hard to overcome entirely. Even when the coding schemes are intended to be theoretically as neutral as possible, the POS tags always add an analytical layer to the corpus, which reflects a particular theoretical stance towards word class categorization. Because of this analytical interference,
+
+In our case study on as well in Section 3.1, the confounding influence of miscategorized Canadian sources could be controlled because of the low frequency of the form, but if the frequency of the form had been higher, the likelihood of our spotting the miscategorized texts would have been lower. However, based on the proportion of the Canadian texts that yielded a number of hits of as well in our query out of all the texts sampled in COHA, the effect of CanE on most research questions studied with COHA is likely to be negligible. Indeed, we wish to emphasize that resources like COHA are invaluable for diachronic linguistic research, and that these resources are even more useful when one knows exactly how they are constructed and annotated. Furthermore, the biases can be combatted methodologically, for example, by using "dispersion-aware" methods
+
+In the case of changes in the balance of subgenres (Section 3.2), one solution is for corpus compilers to provide detailed, or at least basic metadata, that enables users to zoom in on maximally comparable subcorpora or to take balanced samples of their own. As also suggested by
+
+In addition to problems with metadata, the noise present in the digitized texts in historical databases (Section 4) may lead to compromises in accuracy in corpus-linguistic research. While the precision of queries can always be increased by going through the hits manually or semi-automatically (taking a smaller sample of the full dataset if needed), striving for perfect recall in data afflicted by OCR errors may prove to be a doomed endeavour. As noted in Section 4.2.1, however, if the OCR errors are distributed relatively equally across the corpus data, settling for lower recall may be justified, as there is so much data that missing some of it does not significantly impact the results. Whether or not lower recall is acceptable ultimately depends on the research question.
+
+The principle of knowing one's data and being "on really intimate terms" with the data
+
+To conclude, we argue that all linguistic research conducted on historical corpora and text databases benefits from an understanding of not only the texts and the historical language variety but also from the sociocultural contexts in which the texts were produced. From the corpus compiler's perspective, one way of contextualizing the texts is to provide relevant metadata to the end users (e.g.,
+
+Named entities as potentially problematic items in corpora
+
+Mark Kaunisto
+
+Tampere University
+
+This chapter discusses problems in the interpretation of corpus data arising from the insufficiencies in the annotation of named entities. Many corpora nowadays still do not adequately enable corpus users to set up queries that would exclude items appearing in names when needed to improve precision of the searches. Through an examination of case studies in major English language corpora, the chapter highlights the need to carefully post-process the search results, as irrelevant occurrences of named entities may pose challenges in the analyses of word frequencies and their collocational behaviour. The chapter calls for more detailed annotation of named entities in already available large linguistic corpora and reminds of the importance of close inspection of the search hits.
+
+Keywords: named entities, proper names, annotation, corpus linguistics
+
+Introduction
+
+As we have reached the 2020s, corpus linguistics as a branch of linguistic study has progressed in many ways from its early days, nowadays offering a multitude of possibilities of examining various facets of language use. Not only have new corpora become available that are massive in size compared to those compiled in the 1980s and 1990s, but search engines or online interfaces have also become technically more and more sophisticated, giving users the opportunity to observe statistically organised search results that go far beyond the presentation of mere concordance lines. In concrete terms, the changes are noticeable on the level of educating students about the basics of corpus linguistics: with the evolving nature of the field, there is a constant need to update course materials to provide novices with an overview of both the possibilities and challenges relevant to corpus study.
+
+With new corpora containing billions of words and allowing complex searches by making use of various search functions and different types of linguistic anno-tation, novice corpus users may find it difficult to question the relevance of their search results adequately and carefully. In line with the "God's truth fallacy" noted by
+
+There are many types of items commonly found in corpora which, while they are perfectly representative of language use, may present problems when investigating patterns of language use. For example,
+
+There are also items which, because of their high frequency, pose other, quite serious challenges in corpus analyses, and the ubiquitous references to named entities can be identified as one such issue. Corpus users are probably well aware that items found in proper names -for example, words found in titles of books, articles, films, etc. -may be regarded as frozen items and would normally be excluded from further analysis because the choice of the exact words in such instances was usually made by someone else than the authors or speakers themselves. The identification of multi-word units functioning as proper names is a task that has received a great deal of attention from scholars to solve problems relating to different purposes -for example, data mining, automatic translation, named entity recognition -generally in the field of Natural Language Processing (NLP). Much work has gone into developing efficient annotation strategies for differentiating items belonging to named entities from those representing regular uses of the words. The task is obviously not straightforward, as names differ greatly as regards their structural complexity, and in some cases, they can be rather long, as in Example (1) from a review of a music album.
+
+(1) Originally titled 'The Southern Harmony And Musical Companion Featuring A Choice Collection Of Tomes, Songs, Odes And Anthems From The Most Eminent Authors In The United States' , this is the record that was struggling to be (BNC, CHA 4244) heard inside the more studio-constricted 'Money Maker' .
+
+In this example, we can see that the title of the album is a lengthy one, and it can be observed that although the mention of the title in practice constitutes a single reference to only one entity, the 25 words of the name are similar to a quote in that none of the words and their combinations were originally produced by the author of the review.
+
+Proper names and multi-word proper names in particular pose challenges to the study of language use, and many currently available linguistic corpora are lacking in this kind of annotation. In automated collocational analyses, for instance, it may not always be possible to make use of part-of-speech tags to distinguish between instances of words where the word has been a part of a proper name or not. The situation is somewhat easier if we need to distinguish between proper nouns and common nouns, as far as we can rely on the accuracy of the tagging. But as regards, for example, the occurrences of adjectives within proper names -as in magical in Magical Mystery Tour -no annotation is necessarily available for us to separate such instances from regular uses of the adjective, and close manual inspection is therefore needed to exclude such items from the analysis.
+
+In this chapter, I will examine through different types of examples how the frequencies of English proper name uses can distort studies focussing on word frequency and collocational behaviour, and how the occurrences of proper name use may show different degrees of prominence of words in different genres and regional varieties. Section 2 provides the broader background in relation to English proper nouns, proper names, and the strategies of annotating names. Section 3 presents small-scale studies of corpus searches involving words that may be frequently used as named entities, or parts of named entities. Section 4 provides further discussion and concluding remarks. Overall, the main argument is that due caution must be given to such items and sufficient manual inspection of concordance lines is needed to avoid the possibility of misinterpreting initial findings from corpus data.
+
+Background
+
+The concepts of proper nouns and proper names
+
+Many studies on the annotation of named entities start off with descriptions on how the concept of "name", or "proper name" has been described and defined, going back to the theoretical postulations by philosophers such as John Stuart Mill, Bertrand Russell, and Ludwig Wittgenstein (see, e.g.,
+
+Some grammarians (e.g.,
+
+In the domain of NLP, the term 'named entities' is often used as a broader umbrella term, including temporal and numerical expressions in addition to conceptually more straightforward 'proper nouns' (see, e.g.,
+
+Annotation of named entities
+
+As regards the task of annotating corpus data, the identification and annotation of named entities has been an area of interest from the very beginning, both in terms of manual and automated annotation strategies. There have been different ways of annotating named entities in corpus data, and the strategies tend to reflect both the various interests (e.g., translation and information retrieval, alongside general language study) as well as the practical possibilities of doing so. The guidelines used for the earliest English corpora compiled for linguistic analysis such as the Brown Corpus already observed the problems in the tagging of proper names. The annotation of multi-word proper names was also recommended in the corresponding guidelines for the Penn Treebank Project, in which
+
+Considerably more in-depth work on the development of automatic algorithms to identify and annotate named entities in digital texts has been done in the realm of NLP and Computational Linguistics, with the aim of increasing accuracy and precision related to tasks such as data mining for named entities and machine translation. Within NLP, Named Entity Recognition (NER) is now seen as one of the major tasks under the broader field of Information Extraction (IE). The challenges in such tasks include, for example, taking into consideration the differences between languages in terms of how the concepts of proper nouns and proper names are understood and how such items manifest themselves on a grammatical level. The use of capital initials is not a fully reliable marker of the status of a proper noun even in English (see, e.g.,
+
+To study annotated corpora efficiently, it is important to be aware of what kinds of things have been annotated and how, as this ultimately affects our understanding of the expected levels of precision and accuracy of our search hits. In addition, it is also true, as stated by
+
+Case studies
+
+This section looks into a number of lexical items whose analyses based on corpus searches are complicated by a high number of named entity instances found among the search results. What is the extent of potential noise, and why is the only option often to manually inspect the concordance lines in order to exclude irrelevant items from the analysis? Some of the items examined here are selected based on observations of individual problematic instances made over the years, while some near-synonymous word pairs chosen for closer study have one member of the pair fairly frequently occurring in different types of named entities, and the aim is to see how much such cases influence the studies of the near-synonyms.
+
+In the 100-million-word British National Corpus, (for the purpose of the searches for this chapter, I have used the BNCweb interface),
+
+Common nouns used as (parts of ) proper nouns: Lifespan and samurai
+
+If one performs a frequency list search of the singular nouns in the BNCweb with the _NN1 tag and begins to browse through the most frequently occurring nouns on the list, paying attention to the structural make-up of the words, it is probably unsurprising to see that the most common singular nouns are monomorphemic ones. Nouns such as time, way, year, day, and man appear at the top of the list. Not much further down the list, we also find nouns formed with a root and an affix (e.g., government, business, and development). The most frequent singular noun consisting of two roots on the list is chairman, and other nouns of this type include football, newspaper, background, and bedroom. Among the highest-ranking nouns of this type is lifespan, followed by words such as database, policeman and classroom.
+
+Considering the most common two-root singular nouns, we might be surprised to find lifespan featuring as one of the most frequent ones. With a total frequency of 3,700, and a normalized frequency of 37.6 instances per million words, it can be regarded as a high-frequency word in the corpus. However, a closer look into the instances of lifespan informs us that all the 3,700 hits are found in only 83 texts, which suggests the word probably has a very uneven dispersion across the corpus.
+
+(2) Customers who have purchased a LIFESPAN maintenance agreement are enti-(BNC, HWF 15266) tled to call upon the services of the LIFESPAN help desk.
+
+The case of lifespan is an example of the problem of accurate annotation in cases where common nouns are used as proper nouns, as has been observed in previous studies by, for example,
+
+Another interesting common word that is often found in proper names is the loan word samurai. In her MA dissertation on the occurrences of Japanese borrowings in six regional varieties in the Corpus of Global Web-Based English (GloWbE; Davies 2013),
+
+All instances of samurai in GloWbE are tagged as singular common nouns,
+
+(3) a. Inside he said he saw Mr Fisher holding a samurai sword.
+
+(GloWbE, Great Britain, General, www.thisisstaffordshire.co.uk) b. Believing he was carrying a Samurai sword, the officer called for backup and the police helicopter was scrambled […] (GloWbE, Great Britain, General, www.southwalesargus.co.uk) Table
+
+The differences seen in the rates of samurai in named entities potentially also reflect some cultural differences and the interests of the writers represented in the corpus: the named entities including samurai in the GB and US sections included more references to drama films (The Seven Samurai, The Last Samurai), the Asian sections featured references to food-related items, computer software (Market Samurai, a keyword research tool), action toy figures (Samurai Predator AC-01). The popularity of the word in the names of video games or board games (The Way of the Samurai 4, Samurai Warriors 3, Samurai Spirit) was seen in all sections examined. 5 3.2 Near-synonymous adjectives in named entities: Limited/restricted, royal/regal and fantastic/fabulous
+
+In addition to difficulties caused by common nouns used as parts of names, words representing other parts of speech may also be problematic when they are included in a name. For instance, in popular culture, the names of entities such as films, songs, books, etc. may feature a high number of adjectives, and some adjectives may appear more commonly in them than others. The tagging of some of the most well-known named entities in the BNCweb and the Corpus of Contemporary American English (COCA; Davies 2008-; which both use the CLAWS tagger), such as the White House (the official residence of the president of the United States), seems to take account of the use of capital initials, and mostly White in that name is tagged as a proper noun (_np or _NP0). Although for the most part, white in references to the White House is tagged as a proper noun, there are also some instances in BNCweb and COCA where it is tagged as an adjective; particularly in COCA, there are altogether 1,497 hits (searched August 27th, 2022) with this tagging, showing various combinations of capital or lowercase spelling of initial letters of white and house (mostly referring to the building in Washington D.C.). Interestingly, the House part in the name is usually tagged as a common noun. Lists of high-frequency names are often used when designing automatic taggers, which might account for the fact that with names of lower frequencies, the tagging of white in names appears less systematic. 6
+
+5.
+
+Considering the fashionableness of the concept of samurai in popular culture today, it is quite possible that the occurrences of the word in named entities would show changing trends in diachronic corpora, and the proportions of hits of the word in names as opposed to common noun uses vary from one period to another. 6. As noted previously, in the BNC2 manual,
+
+One kind of implication of difficulties in the tagging of named entities can be seen in the corpus-based analysis of near-synonyms, and here we will take a look at some examples of adjective pairs to illustrate the types of problems that can be posed by the occurrences of adjectives in proper names. On a purely intuitive basis, we might predict that the comparison between the adjectives limited and restricted could be affected by the fact that limited appears in names of
+
+In the BNCweb, there are no instances of limited which are tagged as a proper noun, regardless of the use of a capital or lowercase initial. There is variation in how limited and restricted are tagged, but it concerns the identification of the words as either adjectives or participial forms of their underlying verbs. To keep the analyses simple, the words were searched in BNCweb with the tag query _AJ*. The wildcard * allows one to target instances where the words were either assigned an adjectival tag or the portmanteau tag (sometimes also referred to as an ambiguity tag) _AJ0-VVN. The order of the two tags in a portmanteau tag is significant: in this case, the automatic tagger has found insufficient evidence to determine the accurate part of speech, but that it was more likely an adjective -the first element of the tag -than a past participial form of a lexical verb -identified by the tag _VVN. In order to assess the frequencies of the adjectives limited and restricted, and then to manually inspect the frequencies with which they occur in names, searches were made in three written sections of the BNC -Academic prose, Non-academic prose and biography, and Newspapers, which also allows for comparisons of the frequencies between written domains. The frequencies of the adjectival uses of the words, starting with total numbers of hits and then providing separate figures for nonnamed entity and named entity uses, are presented in Table
+
+As can be seen in Table
+
+7.
+
+The adjective restricted was rarely used in named entities; for example, the few instances of the word in newspaper texts related to the name of a horse racing category. In other words, the potential of finding unwanted or irrelevant items may in some cases vary between different sections of the corpus. Similar problems are encountered if we examine the adjective pair royal and regal. In the BNCweb, there are 56 instances where royal with a capital initial is tagged as a proper noun (NP0), as in Royal Exchange Square (as a part of an address), Palais Royal, Park Royal, and Musée Royal des Beaux-Arts, and in these cases all elements of the names are applied with the NP0 tag. However, out of the total number of hits of royal in the corpus -14,628 hits in 1,825 texts -it appears with a capital initial as often as 10,237 times in 1,603 texts). In the vast majority of instances with an capital initial royal is tagged as an adjective, as in the Royal Academy, the Royal Shakespeare Company, the Royal Exchange Theatre, the Royal Commission on Environmental Pollution, the Royal Mile, the Royal Albert Hall, the Royal Navy, and so on. 8 The adjective regal is overall considerably less frequent 8. Considering the names in which royal with a capital initial is tagged as an adjective instead of a proper noun, the types of entities in question is reflected in the tagging, as noted in the BNC2 manual; in the names of institutions or charters, royal is an adjective, in the names of locations it is treated as a proper name.
+
+than royal in the BNCweb, with 304 instances found in 152 texts, all of which are tagged as adjectives, although in a number of cases the word appears in names, as in the Regal Scottish Masters (a snooker tournament), the Regal (a cinema theatre), the Regal Arms (a hotel), and Regal Trophy (a rugby league). There are altogether 194 hits of regal spelled with a capital initial, although not all instances are proper names. In other words, in the case of both royal and regal, substantial proportions of the occurrences of the words in the corpus appear in proper names, and it would be crucial to exclude such instances if we wanted to study of the use of the words as non-frozen elements.
+
+In lexical studies, near-synonyms are investigated for various purposes and interests: to reveal fine-grained distinctions and principles behind word choices, to examine variation between dialects and sociolects, or to provide assistance to translators and language learners, to name but a few. When we examine the characteristics of near-synonyms with corpus data and attempt to analyze the differences in the uses of the words, we typically examine their collocational behaviour. Many corpus interfaces and tools allow for the analysis of the strongest collocates of words based on different methods of assessment: Mutual information, log-likelihood, T-scores, raw frequency ranking, and so on. In such analyses, it might be beneficial to be able to exclude those tokens which appear as a part of a name. If the taggings of the corpus data are not helpful in this regard, one can try to perform case-sensitive searches; in the BNCweb, the searches could be restricted to all-lowercase spellings of royal and regal, for example. However, this would compromise those cases where the words appear at the beginning of a sentence. Conversely, particularly in British English, the adjective royal is sometimes spelled with a capital initial, perhaps out of respect to the monarchy, even in cases where it is not a part of a name, as in "The old Royal adage of never complain, never explain just won't do any longer" (BNC, CH6 6584) and "Princess Diana got the star billing at a Royal banquet on board the Britannia last night" (CBF 9645). In addition, in some collocations there are variant types of spelling of royal: for example, we find instances of royal family, Royal family, and Royal Family, and the form of spelling does not necessarily make it clear whether the authors are using the phrase as a name. All such considerations potentially add to the problems of analysing of collocational strength, which in the case of royal and regal may be more complex with British English data.
+
+Some corpus interfaces such as the one at English-Corpora.org allow users to compare the collocates of two words, and the collocates which are more typically used with the compared words are listed in two separate columns in a ranked order, based on a score that takes into account the frequencies and comparative ratios of the two words in the corpus, the frequencies and ratios of different combinations of the words and their collocates, as well as the frequencies of the individual collocating words across the corpus. The listings are very useful in highlighting the differences between near-synonyms which are reflected in their collocational behaviour. However, we can note that analyses of collocations can also be affected by occurrences of the compared words in names; for example, we can consider the adjectives fantastic and fabulous.
+
+Adjectives sometimes differ as regards their adverbial modification, and adverbs have also been seen to differ as regards their degrees of use in different regional varieties of English (see, e.g.,
+
+None of the instances of absolutely fantastic in the US, GB, and IE sections were names or parts of names. So, when we examine the adverb modifiers of adjectives, we know that the collocation scores probably exaggerate the association between the adverb absolutely and the adjective fabulous, as the scores are skewed by the frequent occurrences of the combination of those two words in names. If we tried to adjust and recalculate the scores of collocational ratios of absolutely fantastic and absolutely fabulous by removing those instances of absolutely fabulous found in names, we would also need to subtract the corresponding instances from the numbers of instances of fabulous and absolutely fabulous. The recalculated scores for collocational strength for absolutely fantastic and absolutely fabulous would then be reversed in the Great Britain and Ireland data (in the GB section, the scores for absolutely fantastic and for absolutely fabulous are 1.7 and 0.6, and in the IE section, the corresponding scores are 1.2 and 0.8), indicating a tendency for absolutely to be used more frequently as a modifier to fantastic than fabulous, although the difference between the scores would not be high enough for absolutely to be identified as collocating strongly with fantastic in comparison with fabulous (i.e., absolutely would not be highlighted in the results list with green colour). But such recalculations, of course, are not entirely accurate, as we would be assuming that the scores for all the other adverbs modifying the two adjectives would be unaffected. Subtracting the instances of absolutely fabulous might not affect the rankings of other collocations to a notable degree, but for things to be ideal, we would need information on the named entity uses of all combinations, and for that purpose manual inspection is practically impossible. Nevertheless, based on these observations, it would be highly advisable to inspect concordance lines of the highest-ranking collocations to check for possible skewing effects by names.
+
+Discussion and conclusion
+
+Considering the occurrences of names in the corpora examined, it can be argued that it would be beneficial to have the option of building a search query that would enable one to include or exclude items if they constitute a part of a name. Ultimately names also contribute to the word count of a corpus, and it might also be beneficial to exclude named entities from automated calculations in cases where names -or other types of items in a corpus which may be irrelevant to what one is trying to assess by the calculations -do not reflect the active linguistic choices of the writers or speakers represented in the corpus. Of course, the uses of words in different types of names is an interesting question in its own right, and the words found in names definitely carry meanings beyond the moment of giving an entity a name. As mentioned, the question of exclusion arises from the idea that a person referring to the entity by its conventionalized name is bound by this convention and is not at liberty to use other words than the ones in the name, expect for any understood or established variants of the name.
+
+By drawing attention to the question of words appearing in names, the present chapter has made the point that it is not always necessarily clear from the outset how much and what kind of post-processing of the search results is needed. As all users of corpora are not necessarily aware of the variety of things to watch out for, a set of examples was presented of cases where occasionally large proportions of search hits can turn out to be -depending on the point of view of the study -instances that one might want to exclude from the study, which may not always be a straightforward matter. As has been observed in instances such as the noun lifespan in the British National Corpus, and the adjectival phrase absolutely fabulous in British and Irish sections of the News on the Web corpus, sometimes the irrelevant tokens may far outnumber the relevant ones.
+
+The concerns and challenges addressed in the present chapter are by no means new ones, and many existing corpora are frequently updated and improved to make the search interfaces more user-friendly as well as to increase the reliability of the findings. As a lot of work has been done on named entity recognition in the field of computational linguistics, a key to address the problems raised in commonly used, large corpora in corpus linguistics would be to increase the collaboration between the areas, and to integrate the systems and practices developed in NLP and computational linguistics into corpora such as the BNC. An encouraging example of such collaboration is the Clean Corpus of Historical American English
+
+Thinking back to the problems relating to the use of corpora as outlined by
+
+Challenges in the compilation, annotation, and analysis of learner corpus data
+
+Marcus Callies
+
+University of Bremen
+
+This chapter highlights and discusses the special characteristics of learner corpus data and the challenges they may present for corpus compilation, annotation, and analysis. Because learner corpus and SLA researchers use their data to study L2 production and development, it is of utmost importance that the data are valid, that is, they represent "authentic" L2 production, which means that the data must stem from the studied learners' own language production. I discuss challenges in three areas:
+
+Introduction and general remarks
+
+Learner Corpus Research (LCR) is a relative newcomer to the scene of research paradigms and methodologies within applied linguistics and second language acquisition (SLA) research. LCR as a field only emerged and became visible in the course of the 1990s in the context of the popularization of corpus linguistics at large but has rapidly evolved and grown in scope and sophistication over the past four decades. Two handbooks that survey the field and discuss its links to the major neighbouring disciplines of corpus linguistics, SLA and language teaching bear witness to this rapid development
+
+Challenges and how to respond to them
+
+Multilingual practices and metalinguistic language use
+
+Texts contained in learner corpora have typically been produced by bi-or even multilingual individuals, and learner data are rich in multilingual practices and phenomena induced by language contact, such as code-switching, foreignizing (the morphophonological modification of an L1 form to adapt to the structure of the L2) or calquing (literal translations of expressions from the L1 into the L2). Importantly, they are indicative of interlanguage development. In SLA, the term and concept of 'interlanguage' refers to a systematic and independent developing learner grammar that should be studied in its own right and contains elements of the learner's L1 and L2 but also independent structures
+
+Moreover, learner corpora, especially those of academic texts, contain expert terminology, metalinguistic language use such as contextualised examples of language use, citations or mentioned items, and sometimes even whole abstracts or thematic summaries from other languages. Such instances usually do not represent the respective learners' own written production as they are typically taken over or copied from secondary sources. On the one hand, from the point of view of quantitative L2 analysis, these could thus be considered unwanted items or 'false positives' as their inclusion in word counts and concordance analyses will affect findings on what structures learners may have acquired and are able to produce. Thus, such cases have to be treated separately so that they can be excluded from search results and word counts to not distort the data in learner corpus studies. On the other hand, they are part of the text, they cannot simply be removed, as this may reduce the context or even render the text illegible. Additionally, their textual embedding and glossing may be of interest for future analyses, for instance in studies of intertextuality and referencing in academic writing, so that it seems desirable to preserve them in their original form and syntactic function.
+
+Response
+
+Data of the kind discussed above should be specifically annotated/tagged. From a practical point of view, the annotation of instances of multilingual practices in learner corpora facilitates their automatic search and identification through corpus software such as concordancers. It also allows for their exclusion from analysis and frequency counts if necessary.
+
+Despite the pervasiveness and importance of instances of multilingual language use in SLA, learner corpora are not commonly annotated for such features. In some corpora, however, specific types of multilingual language use have explicitly been annotated. One example is the Louvain International Database of Spoken English Interlanguage (LINDSEI;
+
+(1) I don't know the the . the name in English but (eh) here we call it <foreign> (LINDSEI; SP025) Traducción e Interpretación </foreign> A similar practice has been followed in the annotation of the Spanish Learner Language Oral Corpora (SPLLOC), a set of corpora of L2 Spanish that were transcribed using the CHAT system developed by the CHILDES project.
+
+(2) a. *P63: y cómo se dice scuba@s:d diving@s:v ?
+
+b. *P51: no están en el sol están en shade@s:d.
+
+(3) Additionally, learners' use of indeterminate forms and idiosyncratic neologisms (referred to as "invented words", see SPLLOC Transcription Guidelines 2008: 18), apparently mostly cases of foreignizing or calquing, were marked with the code @n at the end of the word as shown in (
+
+(4) *P54: um ehm detrás de lo eh pictura@n eh hay [/] hay un número de turistas.
+
+The transcription guidelines also provide for codes to mark the use of a third language different from Spanish or English (see
+
+From the perspective of the corpus user, the annotation of instances of multilingual strategies such as codeswitching, foreignizing, and calquing may prove useful as it makes it possible to systematically retrieve and study them in a learner corpus. Analyzing such passages can provide new insights into interlanguage development, specifically in terms of the multilingual strategies and communicative competencies of the learners.
+
+As for academic texts that contain expert terminology and instances of metalinguistic language use,
+
+Task effects
+
+A further challenge that compilers and users of learner corpora have to deal with is unwanted lexical or constructional bias which results in an accidental overrepresentation of certain structures in the data. This bias can be introduced either indirectly by the topic of the task in that, for example, a large batch of essays on the topic of friendship in a corpus will lead to a disproportionally high frequencies of words and phrases that belong to the lexical field of friendship. Lexical or constructional bias can also occur when learners use words, phrases or syntactic constructions from the task description, the writing prompt or other input material. This may include patterns that are copied as unanalysed sequences by the learners to complete the task, a 'play-it-safe' strategy without necessarily having acquired the respective structure. Lexical material in the task instructions or the writing prompt may even trigger the recurrent use of a whole grammatical construction. For example,
+
+-Explicit encouragement to include a specific structure (e.g., a gerund) or certain type of structure (e.g., a relative clause) in a specific writing task, leading to a higher frequency of use in that particular task; -A task elicits a certain type of structure implicitly. A prompt may elicit a high number of occurrences of a particular structure (e.g., temporal clauses, pronouns) as a natural consequence of language required to meet functional communicative requirements of the task (e.g., past tense narrative) -A task is neutral with regard to the elicitation of a specific structure.
+
+-Copying directly from input prompt.
+
+Finally, as
+
+Response
+
+It is important that researchers detect and control for the effects of lexical and/ or constructional bias but identifying it can be challenging. Essay topics, task prompts, and writing instructions should be checked carefully if related and recurrent patterns are noticed in the data. Words identified to cause lexical bias are either treated as stopwords and thus excluded from corpus queries, and likewise, L2 structures that are likely to have been brought about by lexical or constructional bias (and thus may have been copied as unanalysed chunks by the writer) are excluded from the analysis (as in
+
+"Discourse of deficit" and learner corpus annotation
+
+Finally, I would like to discuss the potential bias of certain annotation methods used in LCR and in other disciplines. LCR has been influenced by the "discourse of deficit"
+
+A special kind of annotation in learner corpora is error annotation. This is typically carried out on the basis of an error tagset, which usually derives from error taxonomies based on structural linguistic categories (see, e.g.,
+
+Creative and innovative but 'non-standard' interlanguage forms are often contact-induced or formed on the basis of semantic or structural analogy to frequent and recurrent patterns identified in the L2 input. An often-discussed example is particle verbs like discuss about, enter into, return back (see
+
+Response
+
+As for error annotation,
+
+By contrast, instances of multilingual language use and lexical innovations should not be annotated as errors. By innovations I refer to forms that are unattested or infrequent in the main reference varieties of British and American English, but products of morphological regularity or creativity in that they are formed by either adapting L1 elements to fit L2 forms, or by recombining L2 elements
+
+Summary and conclusion
+
+In this chapter I have argued that in LCR and SLA the occurrence and contextual use of particular structure(s) in learner data is taken as evidence for the (process of ) acquisition and productive use, hence L2 data must be valid in that they represent language actually produced by the respective learners under study. Since texts compiled in learner corpora have been produced by multilingual individuals, learner data are rich in phenomena induced by multilingualism and language con-5. In addition, ICE uses two more tags relevant to the present discussion: <foreign> (for a "word or sequence of words that is foreign and non-naturalised") and <indig> (marking words which are "non-English but are indigenous to the country in which the corpus is being compiled"). 6. In fact, as ICE components have been compiled over three decades, annotation practices seem to vary from component to component.
+
+tact which have a hybrid nature and are challenging to classify. Learner corpora of academic writing, on the other hand, contain various kinds of metalinguistic language use and language taken over or copied from secondary sources.
+
+I have suggested that multilingual practices, metalinguistic language use and instances of intertextual reference should be identified and annotated so that they can be dealt with in or be excluded from corpus analysis. Researchers also need to pay attention to recurrent patterns in the task instructions, writing prompts and other input material (provided this has been documented!) and if these may induce lexical or constructional bias. When compiling a new corpus, the task instructions and the input material should be neutral with regard to the elicitation of specific structure(s). Finally, annotation and analysis should be separated from normative, oftentimes (over)prescriptive interpretation.
+
+Conceptual and methodological reform and innovation remain a strong desideratum in a young discipline like LCR. To provide a certain incentive for researchers to document and share their methodological practices and tools, and to give researchers engaged in advancing the methodological expertise of the field the recognition they deserve, the International Journal of Learner Corpus Research decided to introduce new publication formats (see
+
+Issues of standardisation and best practices have frequently been addressed (see, for instance, Gilquin 2015), but when it comes to corpus compilation and annotation, such guidelines for best practice do not seem to be available yet when compared to corpus linguistics in general (see, for instance,
+
+Finally, given that LCR is still biased towards written learner corpora that typically contain only the final product of the writing process, it is important to consider that more and more electronic writing tools have become available to help the learner. More recently, the field has seen some initiatives and innovative research that seeks to explore the actual writing process, for example by means of keystroke logging to examine textual revisions
+
+Early newspapers as data for corpus linguistics (and Digital Humanities) 1. Introduction
+
+The availability of massive text archives holds great promise for corpus linguistic work, but at the same time they also present considerable methodological challenges for users (see, e.g.,
+
+The recent proliferation of large digital archives as part of Digital Humanities research projects has raised the question of whether they could be readily used as linguistic corpora, which would allow scholars to spend less time on the compilation and pre-processing of data, and more time on actual research. While this prospect is extremely attractive, anecdotal evidence suggests in many cases this is far less straightforward than what might seem to be the case at the outset (as also noted by Vartiainen & Säily in Chapter 2 in the present volume) and that there are many pitfalls that could limit the effectiveness of this approach, and even undermine the validity of the results that are obtained.
+
+The aim of this chapter is to reflect on some of the pitfalls involved in using the British Library Newspapers database as a corpus and consider some ways in which they can be avoided. I argue that the specific issues encountered with this database are due to fundamentally different ideas of what might constitute "good data" in the fields of Digital Humanities and corpus linguistics, respectively, and this in turn leads to different expectations regarding how the data is made available to researchers (e.g., Mehl 2021). To use large, digitised archives as data for corpus linguistic research, it is essential to critically think about the ways in which they have been collected and processed, as well as what kinds of software tools are available to search them. In practical terms, this may involve different processes of "remediation"
+
+Section 2 of this chapter provides a brief outline of different approaches to digital text analysis. Section 3 identifies three pitfalls specific to the British Library Newspapers database and reviews some possible solutions to them. In Section 4 I summarise the main findings and discuss their implications to the corpus linguistic study of historical newspaper discourse.
+
+Digital text analysis in the humanities
+
+There is a high degree of consensus across humanities disciplines that the emergence of digitised materials and techniques for analysing them is a major advantage for scholarship. For example, in recent Digital Humanities literature, a great deal has been written on the nature of these advantages over "traditional" ones. The argument is that owing to the availability of new sources of data, digital approaches have great potential for increased productivity, enabling scholars to automate many of the tasks that previously have taken up a lot of time. Another widely recognised advantage of the proliferation of data is the possibility to obtain new perspectives on old questions which simply would not have been feasible previously, and this is seen as conducive to significant new epistemological advances. These views are nicely captured in the two quotations by
+
+The phrase [a telescope for the mind?] is Margaret Masterman's; the question mark is mine. […] She used the phrase to suggest computing's potential to transform our conception of the human world just as in the seventeenth century the optical telescope set in motion a fundamental rethink of our relation to the physical one. The question mark denotes my own and others' anxious interrogation of research in the digital humanities for signs that her vision, or something like it, is (McCarty 2012: 113) being realized or that demonstrable progress has been made.
+
+(Gale 2023)
+
+Gale Digital Scholar Lab provides a new lens to explore history.
+
+Very similar discourse is often found in corpus linguistic literature in support of a corpus-based approach. For example, in their widely used textbook Corpus Linguistics: Theory, Method and Practice,
+
+It may refine and redefine a range of theories of language. It may also enable us to use theories of language which were at best difficult to explore prior to the development of corpora of suitable size and machines of sufficient power to exploit (McEnery & Hardie 2011: 1) them.
+
+However, to discuss possible pitfalls associated with research at the interface of Digital Humanities and corpus linguistics, it is necessary to briefly review some basic assumptions associated with these respective areas of study.
+
+Digital Humanities
+
+Central to the field of Digital Humanities are computers and their application to the analysis of large masses of text, but beyond that, this broad field can be defined in different ways. In a recent article,
+
+Given the breadth of the field of Digital Humanities, sub-disciplinary specialisms naturally exist within the field.
+
+1. Digitised humanities (research broadly relying on digitized data) 2. Numerical humanities (which focuses specifically on numerical and, more broadly, formal models, e.g., computational social science or social informatics) 3. Humanities of the digital (i.e., the study of Computer-mediated interaction) He further argues that (
+
+As previously indicated, the role of computing in Digital Humanities is often framed with the help of a visual metaphor as being that of an instrument that enables scholars to get a new perspective on the data that would not be possible through any other means. Irrespective of the orientation, it is generally agreed that advantages of a DH approach are said to be epistemological: by making available large amounts of data, DH provides new ways of looking at data and enables scholars to ask new questions and to be more productive.
+
+Corpus linguistics
+
+It is clear that many of the points made in the previous section apply equally well to corpus linguistics, where research is based on large amounts of language data which have been processed and turned into linguistic corpora. Even the same metaphors are used: Such similarities are of course not surprising, given that both Digital Humanities and corpus linguistics deal with textual data. In fact, the field of corpus linguistics is often conceptualised as being part of the Digital Humanities (e.g., Roth 2018; Zottola 2020; Mehl 2021) despite the fact that it has a longer history. In the modern sense, the term "corpus linguistics" became established early in the second half of the 20th century, with such milestones as the publication of the Brown Corpus (1964) and the formation of The International Computer Archive of Modern English (ICAME) in the early 1970s
+
+However, there is one major difference that sets corpus linguistics apart from the Digital Humanities, and this relates to the definition of the term corpus. Corpus linguistics typically adopts a narrow definition: a corpus is not just any collection of texts, but a collection that has been selected to represent a language or a sublanguage following an extensional view of language (e.g.,
+
+Towards a useful synergy
+
+The differences between Digital Humanities and corpus linguistics should of course not be overstated, given that the two fields share many research goals and practices. For example, the use of unstructured archives as data is not exclusive to Digital Humanities, but they are also made use of by corpus linguists as "opportunistic corpora"
+
+The argument that I want to make in this chapter is that in order to take advantage of the synergy between corpus linguistics and Digital Humanities, it is often necessary to critically reflect on the digital materials, how they have been collected, processed, and made available. In particular, it is often the case that the default workflow for accessing a specific archive is not ideal to tackle corpus linguistic research questions, which may make it difficult to compare results to previous work. 1 To avoid such pitfalls, adjustments are clearly needed, and this often requires carefully considering the influence of register, which is a crucial notion in most types of corpus linguistics. If this is possible -and in particular if the availability of data is not tied to a particular platform or infrastructurewe can improve the quality of opportunistic corpora and ultimately obtain results that are more accurate and are more easily situated within previous research. My aim here is to illustrate this argument by identifying and describing issues that are specific to the British Library Newspapers database, an archive that has clearly not been put together with corpus linguistic research designs in mind, presenting some possible solutions to them, and reflecting on the overall feasibility of these solutions.
+
+1. For a fuller discussion of replicability and reproducibility specifically in the context of corpus linguistics, see
+
+Historical newspaper prose and the British Library Newspapers database
+
+The To peruse larger masses of historical newspaper language, scholars can nowadays turn their attention to the British Library Newspapers database, which is a massive digital archive of newspaper writing archive hosted by Gale. It contains around 5.5 million pages from national and regional newspapers from Britain between the 18th and the 20th centuries. To corpus linguists, however, the database also presents multiple issues, which need to be addressed to make full use of it. In the following sections, I will focus on four such issues:
+
+1. Problem with available search tools 2. Sampling, balance, representativeness 3. Register/sub-register considerations 4. Quality of Optical Character Recognition (OCR)
+
+Problems with available search tools
+
+The British Library Newspapers database can be accessed through the Gale Primary Sources platform,
+
+To a corpus linguist, the main shortcoming of Gale Primary Sources is the fact that the searches produce lists of documents, effectively suggesting that the next logical step in the analysis would be to focus on individual texts and their particularities. While such an "individual-document approach" (McEnery & Hardie 2011: 232) might indeed be appropriate for some purposes, corpus linguists would usually be interested in looking at a concordance to identify patterns in the use of the search term or calculate and compare its normalised frequency across different sections of the database. With Primary Sources this is only possible if the documents are individually downloaded and analysed using some other corpus tool.
+
+To some extent, these shortcomings are addressed by Gale's Digital Scholar Lab, 5 a text analytics platform through which the British Library Newspapers database can also be accessed. It enables users to build "content sets" based on search terms and apply different Digital Humanities tools on them, including document clustering, named entity recognition, n-grams, parts-of-speech, sentiment analysis, and topic modelling.
+
+One clear advantage of Digital Scholar Lab over Primary Sources is that it allows entire content sets to be downloaded by one action. However, it should be noted that the number of documents to download is currently limited to 10,000, which for many sets is insufficient for a comprehensive analysis. The usefulness of the available text mining tools is also seriously limited by their lack of customisability. For example, the part-of-speech tool (using spaCy) only offers visualisations of POS-frequencies but does not give direct access to the tagged texts or include them in the downloadable content sets, which effectively means that the morpho-syntactic annotation provided by Digital Scholar Lab is of no use for corpus research.
+
+Fortunately, there are alternative ways of accessing the textual data. The massive full-text archive of British Library Newspapers is available to subscribing institutions as plain text XML files, and with the help of Octavo, a tool for Digital Humanities research created by Eetu Mäkelä
+
+To sum up, as many workflows in corpus linguistics rely on the availability of data as plain text, it is clear that the possibility to access the data in the British Library Newspapers database using Octavo addresses many of the concerns that 5. 〈https
+
+Sampling, balance, and representativeness
+
+While a Digital Humanities research project might start by mining the entire digital archive in a bottom-up fashion, this approach is often seen as problematic in corpus linguistics, as lack of structure in the dataset makes it difficult to interpret the findings (see, e.g.,
+
+Representativeness and balance of data are known to be tricky issues in corpus linguistics in general: while
+
+Although the database includes articles from both 18th and 20th century, my focus here is exclusively on the 19th century, which is far more comprehensively represented in terms of the newspaper issues available. Even so, it is immediately clear that the distribution of texts is not even: as can be seen in Figure
+
+Figure 1. Overall distribution of 19C issues
+
+Choosing the appropriate sampling strategy depends on the aims of the research, and the chosen method should also take into account the contents of the database itself. For example, the most basic sampling method, a simple random sampling, is not sensitive to the increase in available issues and might result in the second half of the 19th century being overrepresented in the sample. If this is deemed problematic, then a stratified sampling strategy, where the database is first divided into smaller, temporally-defined strata (e.g., periods of 1, 5, or 10 years) before extracting the samples, is likely to be a better choice.
+
+Stratified sampling is also more appropriate if the aim is to investigate differences between different newspapers and their linguistic characteristics, both synchronically and diachronically. To achieve this, it is necessary to first identify newspapers like Leeds Mercury, which are sufficiently well-represented in the database and meaningfully cover the entire century, and use them as the strata
+
+Registers and subregisters
+
+The importance accorded to register in contemporary corpus linguistics can hardly be overstated. Register has been established as a major determinant of linguistic variation
+
+The database contains potentially relevant information about text categories under two headings: Document type contains information about "the format, genre, or other characteristics of the document", and Publication section allows users to limit searches to a specific section of the publication. Of these, the latter indicates whether the text belongs to section A, B, etc., and as such is of limited use to register analysis. Document type is much more useful: it categorises each text as belonging to one of the seven types listed in Table
+
+With that said, the adoption of the text categories in Table
+
+But even if the existing text categorisation is accepted as a basis for corpus compilation, it is still necessary to consider the implications from the perspective of representativeness. The register categories (like newspaper titles in the previous section) are not evenly distributed across the database, and different choices will inevitably result in different representations of the text-external reality, and as before, this information is only accessible to users systematically looking into this. This issue, too, can be illustrated with the help of the same sample corpus from Hiltunen (2021), Corpus A, which comprises complete issues of the four newspapers sampled at 10-year intervals. Out of the 3,475 texts, approximately 88% (3,081) represented a single text category, namely the category News; this is shown in Figure
+
+Optical Character Recognition (OCR)
+
+The third major pitfall in the context of the British Library Newspapers database is the poor accuracy of Optical Character Recognition (OCR). OCR quality is a well-known issue in the Digital Humanities in general, and specifically for digitised newspapers (e.g.,
+
+(3) The circumstance of Mr. Addington being ■shout to be appointed Speaker of the House ©f Lou!-., lias given rise to a report of the following] changes, which we mention without vouching the ' avi-uracy ef any part of the statement :I It is evident that the accuracy of the text depends crucially on the quality of the image used as the basis of the digitised text. Contemporary OCR software is able to reach a high accuracy with clean, present-day English text
+
+Intuitively, the usefulness of digitised texts depends crucially on the overall frequency and distribution of the OCR errors that they contain, and if this is the case, then there indeed appears to be reason for some concern: Tanner, Munoz and Hemy Ros (2009) have estimated the average OCR accuracy across the British Library Newspapers database to be 83.6% for characters and 78% for words, and suggest that if word accuracy is higher than 80%, a fuzzy search engine would nonetheless be able to reach a high search accuracy. However, achieving this across the entire database appears unrealistic, given that this level of word accuracy was only reached by a quarter of the texts in their sample, and this impression is borne out by the trial searches reported by
+
+On a more positive note, it has been shown that not all corpus linguistic research tasks are equally sensitive to OCR errors, with for example, the identification of frequent collocations providing robust results even with texts containing relatively large numbers of errors
+
+To do this, we can make use of the figures for OCR confidence (0-99.99%), which are available for each text in the British Library Newspapers database and "[represent] the OCR engine's confidence in the accuracy of the conversion from image to text". The OCR confidence value corresponding to each text can be conveniently accessed with Octavo, like any other metadata. While it is unclear how the values for OCR confidence are determined,
+
+After evaluating a number of files representing different levels of OCR confidence, it was decided that texts reaching 90% were sufficiently clean to provide accurate research, and this criterion was adopted for Corpus A. This ensures the extracted sample corpus is reasonably clean and can therefore be expected to provide reliable output for standard corpus linguistic tasks. However, the disadvantage is that we also discard an enormous amount of potentially interesting lin-7. See 〈https
+
+To sum up, removing low-quality texts is essential for accurate corpus linguistic work, and it can be accomplished by filtering out texts that do not meet a pre-determined OCR confidence value. The flipside is that this may potentially compromise the representativeness and balance of the filtered sample, and this needs to be evaluated on a case-by-case basis due to the uneven and erratic distribution of OCR errors in the database.
+
+Discussion
+
+After identifying and reviewing four major pitfalls and suggesting possible ways of avoiding them, it is possible to offer some preliminary conclusions about the usefulness of the British Library Newspapers database for corpus linguistic research. Starting with the positives, an important advantage over traditional, relatively small linguistic corpora is that the database enables an exploratory data-driven approach with reasonable effort. In other words, as data extraction can easily be automated, it becomes straightforward to create multiple corpora with the search parameters and frequency thresholds and assess their suitability for different research tasks. The structure of the database also allows researchers to readily incorporate a register perspective into the study design. Finally, as it is possible to automatically discard low-quality samples, this workflow also enables the creation of reasonably tidy corpora. As a result, the British Library Newspapers database is an attractive alternative for the corpus-linguistic analysis of historical newspaper prose.
+
+However, there are also obvious caveats to consider. Compared to carefully constructed traditional corpora with often hand-picked text samples, there is obviously much less control over individual choices, and the fact that the exact 8. Including the text in Figure
+
+basis of text categorisation is unclear is likewise not optimal. Yet the by far most serious issue is the presence of errors in the source material, which introduces errors to analyses, and, in the worst case, may compromise the representativeness of corpora. How problematic these issues are depends on the goal of the individual research project. As the database is large, the omission of some publications or volumes due to low OCR quality might not matter too much for the analysis of general trends in language and discourse, whereas it may effectively preclude the study of specific questions or narrower time periods.
+
+Given these caveats, corpus linguistics arguably still has a place for "small and tidy"
+
+Open Corpus Linguistics -or How to overcome common problems in dealing with corpus data by adopting open research practices
+
+Stefan Hartmann Heinrich Heine University Düsseldorf
+
+In recent years, many researchers have called attention to the fact that research results very often cannot be replicated -a phenomenon that has been called replication crisis. The replication crisis in linguistics is highly relevant to corpus-based research: Many corpus studies are not directly replicable as the data on which they are based are not readily available. Especially in English linguistics, the full versions of many widely used corpora are still behind paywalls, which means that they are not accessible to parts of the global research community, and even when parts of the data are freely accessible, this presents problems for state-of-the-art methods of data analysis. In this paper, I discuss the challenges that have led to this situation and address some possible solutions. In particular, I argue for using smaller but openly available corpora whenever possible and for adopting open research practices as far as possible even when using commercial corpora.
+
+Introduction
+
+In a seminal paper,
+
+More than thirty years later, corpus linguists still struggle with some of the issues that Rissanen has identified. But in recent years, additional issues have emerged. Perhaps most importantly for the purposes of the present chapter, the "replication crisis" that has permeated various quantitatively oriented disciplines in recent years and decades has also had a significant impact on methodological discussions in (corpus) linguistics
+
+The term "replication crisis" refers to the observation that many scientific findings have been found to be much less replicable than many believe they should be
+
+Regardless of the exact approach to replication, it has become clear that the lack of replicability is also a topic in linguistics. To mention only one prominent example from experimental linguistics, a recent multi-lab effort to replicate the seminal study by
+
+Sönning and Werner (2021: 1182) mention the following list of problems that have been identified as potential causes of non-replicability:
+
+-a lack of transparency in methodology and data analysis, -the non-reproducibility of scholarly work, as, for example, original data and analysis procedures are not accessible, -reluctance to undertake replication studies as purportedly "unoriginal" (and unprestigious) despite their potential to put previous findings in perspective, and -concerns about high rates of false-positive findings in the published scientific literature.
+
+At first glance, it might seem quite far-fetched to link Rissanen's problems to the issues related to the "replication crisis". In this paper, however, I will argue that there are important connections between the different issues mentioned above. And more importantly, I will argue that the measures that have been proposed to help overcome the replication crisis can also solve Rissanen's problems -at least partly. Specifically, I will make a case for what I call Open Corpus Linguistics. This entails putting into practice principles of open research at various levels and at various (ideally, all) stages of the research process. In a best-case scenario, it involves the open availability of the entire corpus the researcher draws on, as well as sharing of concordances, annotations, and analysis scripts (if applicable). This also helps other researchers to put one's findings into perspective, which may be seen as the main overarching issue underlying Rissanen's problems. The remainder of this contribution is structured as follows: In Section 2, I explicate Rissanen's problems in more detail, relating each of them to specific issues raised in the replication debate. In Section 3, I discuss the main principles of Open Corpus Linguistics, taking potential challenges and pitfalls into account. Section 4 concludes the paper by bringing the two strands of the discussion together by showing how Open Corpus Linguistics can contribute to overcome several widely discussed problems in corpus linguistics. While my focus in this paper is on English corpora, many considerations brought forward here of course apply to corpora of all languages.
+
+Revisiting Rissanen's problems
+
+In many cases, it can therefore make sense to look for alternative corpora that can be considered equally representative for the language the researcher wants to investigate, or even to compile one's own corpus -possibly by drawing on existing (open) corpora and using relevant subcorpora of each corpus. This can also be advantageous with regard to the "mystery of vanishing reliability", that is, the phenomenon that each datapoint tends to become less reliable the more parameters (in corpus-linguistic terms, annotations) one adds. We can think about this in terms of a simple spreadsheet: The number of data points (rows) remains the same, the number of columns, however, increases. The problem now is of course not that more parameters are added but rather that the number of "cells" (in relation to the number of datapoints) increases and, as such, the potential for error. The obvious solution, then, is not to reduce the number of columns 1 but, ideally, to increase the number of datapoints so that the individual errors weigh in less. As such, the "mystery of vanishing reliability" can be reframed in terms of a lack of extensibility: Being in control over the compilation of a corpus allows us to easily extend the database if necessary. The problem, after all, is not so much that each data point becomes less reliable if we add more annotation categories, but rather that we often do not have enough data points to obtain a truly informative picture when addressing research questions that require us to take many categories into account simultaneously. But there is another dimension to extensibility: The reliability of a particular annotation can also "vanish" because it turns out to be misguided, for whatever reason. For example, it could turn out that an annotation set used for a corpus is based on false assumptions. Thus, it is tremendously helpful if a corpus is extensible, that is, existing annotations can be amended or improved and new ones can be added, both by the original creators and by people who reuse the data. As
+
+Open Corpus Linguistics: Perspectives and challenges
+
+In the previous section, I argued that open research practices can provide (partial) solutions to common corpus-linguistic problems. This raises the question of how exactly these open research principles can and should be put into practice, and which challenges this entails.
+
+There exist several standards and guidelines that can provide orientation. After all, the problems discussed here are not specifically corpus-linguistic ones.
+
+In terms of open data, the FAIR guiding principles
+
+In an ideal world, then, all linguistic corpora would be available for free in re-usable and interoperable formats under a Creative Commons license. In practice, however, there are some obstacles. One obvious problem is that corpora are usually themselves derivative works in the broadest sense, that is, they draw on existing material. And in the default case, the existing material is subject to copyright. In the case of, say, newspaper texts, the copyright holders are usually easy to find but hard to convince to make their content available for free; in the case of web data, by contrast, the copyright situation is often unclear, which can make the redistribution of data crawled from the web problematic
+
+Apart from copyright, personality rights can of course also be an issue. In the case of spoken corpora or child language corpora, for example, we are usually dealing with elicited data, requiring the participants' (or their parents') informed consent. Especially in the case of child language data, the recordings can contain sensitive information such as the child's or the parents' name or the place where they live. Thus, it is important to anonymize or pseudonymize the data. But data crawled from the web can also contain sensitive information. Given that the information was public at the time of crawling, one could make a case that including it in the corpus is unproblematic, but it is quite easy to imagine scenarios in which the publication of data crawled from the web can lead to legally or ethically challenging situations. In some cases, it can therefore be useful to publish a corpus in password-protected form, even though generally, the ideal should of course be maximal accessibility.
+
+How should we ideally approach the copyright problem now if we want to follow the principles of Open Corpus Linguistics? If we do not need full texts to address our research questions, the problem is quite negligible. In that case, we can work with concordances, and to the best of my knowledge, nothing usually speaks against sharing concordances via dedicated repositories like OSF 〈https
+
+If we need full texts, my suggestion is that we should always consider using an openly available corpus like the BNC or the Open American National Corpus first. In a broader sense, the aforementioned COW can be considered open corpora, too -for legal reasons, they are released under a relatively restrictive license, but they are freely available for academic purposes. Naturally, there will be situations in which we cannot use such open corpora because we need more or different data. In such cases, we might have to either fall back on commercial corpora or compile our own corpus. Thanks to the availability of powerful programming languages such as R or Python, this is easier than ever before; even novice users can quite easily get familiar with a tool like
+
+Also, thanks to relatively permissive new legislation at least in (parts of ) the European Union, 4 many data mining activities that used to take place in a legal grey zone are explicitly legal now (see, e.g.,
+
+Conclusion: Open Corpus Linguistics in practice
+
+In the preceding sections, I argued for adopting open research practices in corpus linguistics and examined a number of potential problems that such an endeavor entails. In this section, I discuss how Open Corpus Linguistics can work in practice, and how it contributes to overcoming the pertinent problems addressed in Section 2.
+
+In Section 1, I argued that adopting open research practices -and in the ideal case, using openly available corpora -helps us to overcome "Rissanen's problems": In the best-case scenario, we can use corpora whose full texts are readily available, which can contribute to overcoming "the philologist's dilemma". Such a scenario also provides some flexibility in working with pre-compiled corpora, as we are not at the mercy of the corpus creators with regard to the composition of the corpus. Instead, we can work with custom subcorpora or work with custom compilations of subcorpora from different corpora, which can help to solve the problem of "God's truth fallacy". And finally, such an approach ensures replicability and reproducibility, which partly solves the "mystery of vanishing reliability".
+
+The latter is even true if we work with commercial corpora but make our concordances and analysis scripts available, as is increasingly common in corpus linguistics. For this purpose, platforms like the Open Science Framework (OSF) or the Tromsø Repository of Language and Linguistics (TroLLing) can be used (see the FAQ in Table
+
+In the previous section, I addressed some potential problems, many of which are, in my view, not insurmountable. Some of them, though, call for creative solutions such as Schäfer and Bildhauer's decision to work with sentence shuffles in the case of COW. Needless to say, it would be desirable to have more legal certainty when using copyright-protected content for linguistic purposes -the aforementioned EU directive might be seen as a promising sign that (some) political stakeholders are aware of the need to reconcile research and copyright interests. For the time being, following the ideals of Open Corpus Linguistics might in some cases require entering legal grey zones. The risk of having to tread uncertain legal ground can, however, be minimized by keeping the question of how the data should be published in mind from the earliest design phase on, and by choosing open corpora wherever possible, as discussed above. In other words, following the principles of Open Corpus Linguistics requires us to invest considerable time in Research Data Management (RDM). While this can be time-consuming, it is very likely that it will save others and ourselves much time later on.
+
+One topic that I have not addressed yet is open-access publication. As one reviewer correctly points out, open research practices and open-access publication ideally go in tandem, even though they can be treated as separate topics.
+
+Many of the arguments in favor of open research practices mentioned above also apply to open-access publication, ideally in the form of "gold open access" (i.e., the final publication is available free of charge) or alternatively in the form of "green open access" (i.e., a preprint is published on a pertinent repository; see Eve 2014 for more details and discussion).
+
+While linguistic research questions and the corpus-linguistic scenarios required to address them are too diverse to provide anything like a "cookbook" for Open Corpus Linguistics, this chapter has hopefully provided some helpful guidelines, some of which are summarized in the form of Frequently Asked Questions in Table
+
+Table 1. Answers to some frequently asked questions about open research practices in corpus linguistics
+
+Category
+
+Questions and answers
+
+Existing corpora
+
+Which corpora should I use to follow the ideal of Open Corpus Linguistics?
+
+The choice of corpus has to be guided, first and foremost, by the research question. But in many cases, there are open alternatives to the widely-used default choices.
+
+Examples for synchronic English data include the Open American National Corpus for spoken and written American English, as well as the ENCOW corpus for World Englishes as used on the web. The BNC, which is a paradigm example of an open corpus, hardly needs to be mentioned as it is already widely used. There are also a number of multilingual corpora, for example, the COW family of corpora to which the above-mentioned ENCOW belongs, or the WaCky corpora
+
+Corpus compilation
+
+Which principles should I follow when compiling new corpora?
+
+If possible, try to create a corpus that can be published freely under an open license.
+
+To do so, it is very important to address legal questions at the very beginning of a project. If you cannot make the full texts freely available for copyright reasons, try to make the corpus as accessible as possible, for example, by allowing queries via flexible search engines such as NoSketchEngine or CQPweb and by publishing word and lemma lists (and ideally, n-gram lists), or by publishing it in password-protected form via a repository that allows for closed-access corpora (e.g., CLARIN). Data repositories that fit your needs can be found via 〈https
+
+Repositories Where can I publish my research data?
+
+There are dedicated repositories such as osf.io, zenodo.org, the TroLLing Dataverse (
+
+Table 1. (continued)
+
+Category
+
+Questions and answers
+
+Can I publish my paper (draft) along with my data?
+
+In most cases, this shouldn't be a problem, even if you submit the paper to a commercial journal. The Sherpa-Romeo database gives a good overview of different journals' and publishers' open-access policies 〈https
+
+To what should I pay attention when publishing my research data in repositories?
+
+Make sure that everything is well-documented and self-explanatory. (This is harder than it sounds, which is why I'm not referring to any of my own repositories here as a best-practice example.) Make sure that the repository is actually public when your paper is published (OSF, for instance, offers private and public repositories). Make sure that your analysis scripts are extensively commented (formats like R Markdown or Jupyter Notebooks invite extensive comments, but plain text scripts can also be used, of course). Make use of the possibility to assign a DOI to the dataset(s).
+
+I would like to share my dataset and analysis scripts with reviewers. How can I do this without compromising the anonymity of peer-review?
+
+OSF offers "view-only" links that you can share with reviewers. Note that the nonanonymous repository can easily be retrieved from the view-only link as soon as it is public -if you want to make sure that you remain anonymous, keep it private (the view-only link will still work). This is probably quite common -not only in corpus linguistics but also in other domains, for example, when it comes to publishing programming scripts. But the thing is: Nobody expects us to be perfect. Everybody who has ever worked in corpus linguistics knows that no corpus will ever be perfect, and that the quality of a corpus depends less on the competence of the researchers involved than on the resources they were able to put into it. As such, nobody will blame you for releasing a corpus that is still more of a raw diamond. Publishing your "raw diamond" will give other people the opportunity to build on it, or to work with it while you are still continuing to develop it.
+
+* Thanks to a reviewer for bringing this up!
+
+To sum up, Open Corpus Linguistics can be a challenging endeavor, but given the "replication crisis", it is a necessary one. In the long term, adopting open research practices can also help us to focus on actual linguistic research questions, rather than spending hours and hours of work on things that other people have done before, without making the results publicly available. Adopting open research practices is ethically a good choice, and it is in our own best interest, both as individual researchers and as an empirical discipline.
+
+Introduction
+
+It is a well-known fact that variation in text length is an unavoidable source of nonuniformity in corpora and can cause issues in quantitative corpus-linguistic analyses. At the very basic level, the confounding effect of variation in text length is obvious. Since a longer text by definition contains more words, there are also more opportunities for any given linguistic item or feature to appear. In other words, a longer text will, on average, contain more instances of any item or feature simply because it is longer. This is a problem particularly for text-analytic corpuslinguistic studies, which are interested in comparing how many of these items appear in different types of texts: if two texts have a different number of occurrences of the feature of interest simply because they are of different lengths, it can be very difficult to compare texts of different lengths with each other. 1  1. Variationist corpus linguistics, which focuses on the proportions of variant items or constructions, is not as heavily affected by the issue. However, even variationist analyses may be affected by the distribution of text lengths in their dataset.
+
+Fortunately, this basic problem has a simple mathematical solution, which commonly forms the basis of typical quantitative corpus-linguistic inquiries. The number of occurrences of the feature of interest in a text can be divided by the number of words
+
+Normalization is a tried-and-true method of comparing texts of different lengths with each other. However, while it is a working solution to a huge potential problem in a large number of cases, normalization is not without problems itself. One problem with normalization becomes particularly salient when applying the method to short texts. The problem is based on the mathematical fact that the smaller the divisor becomes, the larger the result of the division will be. In other words, the fewer words there are in a text, the larger the normalized value is. This is of course the very basis on which the normalization method is built to enable comparisons of texts of different lengths. However, when the divisor becomes very small, the effect gets magnified and the result of the calculation inflates to meaningless levels. For instance, consider a short text of only five words (such as a tweet, a postcard, or a sticky note) which contains one instance of a feature, for example, a single first-person pronoun. If we calculate the normalized frequency of first-person pronouns in this text, we get as the result 200 first-person pronouns per 1,000 words. This is the mathematical solution to the formula, but the result is quite useless in terms of comparing texts of different lengths with each other. While not every five-word text contains a first-person pronoun, it is also not that unusual if one does. But the same normalized rate of occurrence value also applies to a text of 1,000 words which contains 200 first person pronouns. While both the five-word text and the 1,000-word text have the same rate of occurrence of first-person pronouns, surely the 1,000-word text with 200 first-person pronouns is much more unusual than the five-word text with one first-person pronoun. Clearly, these calculated rates of occurrence are not meaningful measures for the comparison of short and longer texts in linguistics.
+
+In other words, there are two related problems caused by text length. First, texts of different lengths cannot be directly compared because they have different numbers of everything simply due to their difference in length. I call this the problem of text length. Second, extremely short texts cannot be easily compared with other texts using many typical quantitative corpus-linguistic methods, such as normalization, because the normalization results become meaningless as the length of the text becomes increasingly short. I call this the problem of short texts. In order to talk about these problems, in this chapter, I use the words "long" and "short" to refer to texts which are and are not long enough for typical quantitative corpus-linguistic analysis, respectively, though the line between the two is of course fuzzy.
+
+To combat these two problems, a number of solutions and workarounds of varying sophistication have been devised. However, many of these solutions have problems of their own. Despite the ubiquity of the problem, and the oftensuboptimal nature of its solutions, the problem is not that often discussed in much depth. In this chapter, my goal is to bring more attention to the problems of text length and short texts, and to encourage the development and application of new and improved approaches to the problem. In Section 2, I describe how the problem of text length was historically less of an issue but is coming to the forefront with the rise of research into the language of social media. I also refer to and summarize results from earlier studies, which suggest that texts of all lengths are of interest. In Section 3, I cover various methods which have been used to either solve or work around the issues caused by the problem of short texts, the problem of text length, and related problems, and discuss their upsides and downsides, as well as suggest best practices and propose potential improvements to these methods. Furthermore, I will briefly discuss the related topic of the effect of text length on measures of lexical diversity, which has been studied in more detail. Finally, in Section 4, I will conclude this chapter with some final thoughts on the problems caused by text length and their solutions.
+
+Background
+
+Text length, corpora, and social media
+
+The problem of text length and short texts is caused by a simple mathematical relationship, and as such it has been known of since the beginning of quantitative corpus linguistics. However, historically, the practical problems it has resulted in have arguably been of relatively little actual consequence. Most genres traditionally studied in quantitative corpus linguistics tend to comprise of longer texts, compared to the extremely short text lengths of up to only a few dozen words which are overwhelmingly common on, for example, social media. Because of the comparatively long text length in such genres, the normalization method works reasonably well with them.
+
+The reasons for the focus on genres with "longer" texts have been manifold. A major reason has of course been, and still is, availability of data. Researchers have to use whatever data they have access to. Historically, this has largely been published corpora compiled by teams of researchers. But the compilers of such corpora have also been working with the data they can get access to in large enough quantities. These include genres such as newspaper articles, fiction writing, academic papers, and countless others. Many of these genres have editorial guidelines or genre conventions which place certain requirements for the length of the piece of writing.
+
+Another reason for the focus on longer texts is what has been considered important and influential enough to study. The impact of, for example, newspaper articles, academic writing, casual conversations and personal letters on people, society, and language has been evident to all, and as such it is only natural that texts in such genres are of interest to anyone studying language. But these texts also tend to be long enough for reasonable quantitative corpus-linguistic analysis. It is often easier to overlook the societal and linguistic impact of genres with mainly shorter texts. For instance, personal notes, post cards, and shopping lists are also something written and read regularly, but we might not even think to consider them and other similar genres as research subjects.
+
+The question of influence and significance also comes back to the question of availability, since it is of course more difficult to collect a large and representative corpus of post cards or shopping lists than of newspaper articles. However, it is also, to an extent, a chicken-and-egg situation. With more interest in such genres, it is possible that more such data would be collected into corpora; and with more such corpora available, there might be more interest in such genres.
+
+A similar vicious circle has also developed when it comes to the development of analysis methods which would allow us to better approach genres with short texts. If genres with longer texts are easier to quantify and the available methods work better with them, it is only natural to focus on such genres; and if the focus typically is on genres with longer texts, there is no particular need to develop methods and approaches which could help analyze genres with shorter texts in more detail.
+
+However, over the past decades, many of these paradigms have been gradually but firmly upended. A central catalyst for the change has been the spread of the internet. The web and other means of computer-mediated communication have become easily accessible sources of linguistic data, which has greatly facilitated the building of new corpora and datasets to match the needs of the researcher and to enable the study of entirely new kinds of genres and registers. Of course, published corpora are still being compiled to this day, and they are a valuable tool used in a wide variety of linguistic research. But the easy access to textual data online has allowed quantitative corpus linguists to cast a wider net in terms of their research topics than ever before.
+
+At the same time, the rise of web and CMC texts has brought many of the issues with text length to the forefront. In contrast to the more "traditional" genres which make up many compiled corpora, texts from many internet genres tend to be less bound by word count limits or guidelines. While many online genres have a highly variable text length and a large proportion of shorter texts, such as blog posts or Wikipedia articles, this is particularly true for computer-mediated communication and social language use on the internet, such as postings on various social media platforms. Most social media platforms, such as Facebook or Reddit, do not limit the length of their postings to a meaningful degree. Platforms which do limit posting length, such as Twitter (now X), usually limit the maximum length, confining all of their content into the range of short texts, which is mathematically difficult to work with in quantitative corpus linguistics. Few online platforms require a minimum length for postings or even recommend postings to be of a specific length, whereas such requirements are commonplace within the publishing industry and for many of the genres included in typical published corpora, such as newspaper articles or academic writing. At the same time, online data has brought even the shortest texts to the center stage, making their societal and linguistic importance much more evident in comparison with the more traditional short genres. In other words, the free nature of internet writing has brought texts with a wide variety of lengths into the corpora of many linguists, and consequently made the problem of text length and, particularly, the problem of short texts more central than ever.
+
+The importance of text length
+
+It is clear that variation in text length, particularly the very shortest texts, causes mathematical issues in quantitative corpus-linguistic analyses. But do we actually have to care about text length? Can't we simply ignore the problematic cases when conducting quantitative linguistic studies? Or should we work towards finding more ways to make it possible to include texts of all lengths in our analyses?
+
+In order to specifically focus on the functional variation taking place across text lengths,
+
+This kind of analysis requires a very large dataset, as there need to be enough texts of every length in the dataset for meaningful results. Consequently, social media is a good source of data for this method. Reddit in particular is arguably a very fruitful source of material for quantitative linguistic analyses overall, and especially for the analysis of the effects of variation in text length. First of all, Reddit enables access to large amounts of publicly available textual data. Some other social media platforms, such as Facebook, theoretically also have a lot of data available, but in practice a large portion of it is visible only to one's friends on the platform or those who have joined any specific discussion group. In other cases, the data may be public but difficult to access in large quantities in practice. Furthermore, since Reddit is divided into topic-based subforums called subreddits, the data is naturally subdivided into subcategories by topic and by register (see, e.g.,
+
+The analysis conducted by
+
+Liimatta (2022b) performs a similar analysis but zooms in further to focus on a number of popular subreddits to find out whether all subreddits follow similar patterns, or if the same text length can have different functions in different subreddits. In the analysis, most subreddits analyzed are shown to follow similar patterns with each other. For example, the short comments in most subreddits contain more features which are more casual and involved, and longer comments contain more informational features. Similarly, comments of all lengths appear to be roughly equally narrative in all of the subreddits included in the analysis. However, a handful of the analyzed subreddits, which are more focused in terms of their topic in comparison with the very relative topics of most of the included subreddits, often differ greatly from both the general patterns and from each other. For instance, in the AskReddit subreddit, longer comments are much more narrative than the shorter ones, whereas for some other subreddits the opposite is the case. Figure
+
+These results show that not only does text length play a role in linguistic variation, but that text length can be associated with functions differently within different register categories.
+
+Solutions and workarounds
+
+As the problems of text length and short texts have been recognized, a number of solutions and workarounds for it have also been devised. In this section, I will cover some of these approaches, and some related methods. Some of these approaches help solve or work around the problems caused by variation in text length, some the problem of short texts, and some can help alleviate the effects of both. Additionally, I will describe a closely related problem, that of measures of lexical diversity. While the solutions to the problems with lexical diversity measures are not directly applicable to the problem of text length, they may still provide inspiration and starting points for new ways of approaching the problem of text length.
+
+I have divided the solutions and workarounds to the problem of text length and short texts into two main categories. In the first group of approaches, the original set of texts is manipulated in some way, after which standard methods are applied. These could also be considered the more "traditional" approaches to the problem. Their advantage is that they are simpler to implement, but this means that their downsides are often greater. Conversely, the approaches in the second group make use of various statistical and/or computational methods to see the existing data in a new light. These approaches are more complicated to implement and often only work for specific kinds of analyses, but they are much more powerful in the situations for which they are well-suited. These two groups of course overlap in practice, and methods within and between the groups can even be used together.
+
+Manipulation of the data
+
+Exclusion
+
+A commonly used workaround for the problem of short texts is to simply exclude all texts shorter than some threshold from the analysis. For instance, we might simply choose to remove all texts shorter than, say, 400 words, 500 words, or 1,000 words from our dataset. If the aim is to be able to include as much of the data in our analysis as possible, this approach is at its most reasonable when there are only a small number of outliers under the chosen length limit, as the exclusion of a handful of outliers do not affect the overall results from a good-sized corpus very much. It could even be argued that clear outliers do not even represent the varieties of interest in the corpus particularly well, and that therefore it would even be beneficial to exclude them.
+
+However, the larger the proportion of the texts in the corpus which fall under the chosen length limit, the more problematic the exclusion method becomes. Particularly when typical texts from the shorter end of the length range start to be excluded from the analysis in addition to obvious outliers, it is clear that the dataset starts to lose some of the information potentially available within the data. Of course, it is not obvious where the line should be drawn when considering whether a text of a certain length should be considered an outlier, but from the point of view of the data, the best practice would be to have the length limit as low as possible. The optimal cutoff length when using the exclusion approach would be low enough that as many texts as possible are included in the analysis, but high enough that the desired analysis is still possible to conduct reliably. For a slightly more statistically-based approach than simply choosing some round number such as 400 or 500 as the limit, it is also possible to define the cutoff point as, for example, the 1% quantile of the length distribution, or whichever percentage gives a length limit which is workable with the chosen methods and the research questions being investigated, since this helps quantify the amount of data which has been left out.
+
+However, there are datasets for which the exclusion approach is utterly unsuitable. For instance, most social media postings are very short, and therefore would need to be excluded from the analysis under any commonly used cutoff length which would allow analysis of the data using typical analysis methods. Consequently, different solutions and workarounds to the problems of short texts and variation in text length need to be used when dealing with such data.
+
+Combining
+
+In situations where discarding any data is undesirable, another workaround for the problem of short texts is available. In many studies working with, for example, social media data and other genres which have a relatively large proportion of shorter texts, texts deemed too short to comfortably conduct the intended analysis on are combined to create new "texts" which are sufficiently long for the analysis. For instance, we could decide to combine texts so that each of the combined texts is over some length limit, such as 500 or 1,000 words. As with the exclusion approach, the desirable length depends on the methods being used for the analysis and the research questions being investigated.
+
+The main upside of the combining method, when compared to the exclusion method, is that no data is completely ignored: all text available for the analysis is included in the analysis. However, the downside is that by combining texts together, the texts lose their individual nature. For example, if one text is highly edited in style, and another one is highly casual, combining them together results in a loss of a lot of this information, and makes the combined text look somewhat average on both counts. In this way, the combining approach to the problem of short texts may very easily blur out some of the variation in the data. On the other hand, it is also possible that texts may end up combined in such a way that the resulting dataset overstates the importance of some feature which is actually quite rare overall, for instance, if a feature is highly frequent in a small number of texts. The combining approach also easily results in a violation of the "independence assumption" inherent in various statistical procedures, including those commonly used by corpus linguists, such as Chi-square testing
+
+The issue of blurring out or overstating variation can in some situations be mitigated by the choice of the basis of combination. If the texts which are combined are chosen in an essentially random manner, as is often the case, these potential obscuring effects cannot be reduced. However, in many cases it is possible to use a more principled basis for the combining. In the simplest case, the texts are combined based on some metadata in which we are interested in our analysis. For instance, if the analysis focuses on texts written by different sociolinguistic groups, any combining of texts needs to be done by the sociolinguistic groups in question. This, however, is done out of necessity, and it does not really help to reduce the blurring of variation taking place within the groups. For example, if we are comparing personal letters and official letters, we of course need to combine the shorter texts separately within the two categories, personal letters and official letters. But even in this case there may be variation within these two categories which gets either blurred out or overstated. In order to lessen the blurring and overstating effect, it might be useful to consider combining texts which are as similar as possible in their production circumstances, as far as reasonably possible. What texts exactly are considered "similar" is however a question which depends on the dataset and research questions. As a rule of thumb, however, the highest number of matching or similar metadata field values might be a good starting point.
+
+Raising the level of analysis might be considered a special case of the principled metadata-based combining approach. For instance, instead of studying individual classified advertisements, we might consider the entire classified advertisements section a single text for the purposes of our analysis. Or instead of focusing on individual social media comments, we might choose to focus on full comment threads. The line between raising the level of analysis and the more general approach of principled metadata-based combining becomes blurred, however, in the case of, for example, combining Twitter tweets with their replies together to form individual texts.
+
+Chunking
+
+A different, slightly less-used approach to dealing with variation in text length is the opposite of combining shorter texts together: to cut longer texts into shorter pieces of (near) equal length. For instance, Hiltunen and Tyrkkö (2019) make use of this approach when studying Wikipedia articles, which are extremely variable in length, by dividing the articles into 200-word pieces for their analysis.
+
+When using this method, the fact that all texts included in the analysis are of (roughly) the same length facilitates their comparison using feature counts or rates of occurrence, since the confounding effects of variation in text length have been diminished. At the same time, all of the textual information is included in the analysis and not discarded, even if it has been cut into smaller pieces.
+
+Texts can be split up in various ways. A straightforward approach is to simply split a text into chunks of a certain number of words. However, since sentences are a basic structural unit of language, placing chunk boundaries at sentence boundaries, making sure that every chunk includes enough words, is likely to be a more desirable solution in many cases. Another solution, which keeps the structural and discourse units of a text together even more, is to divide the text into its paragraphs, or multi-paragraph chunks.
+
+In addition to the simple chunking options above, chunking can also make use of various computational methods to create chunks which are meaningful in terms of the discourse structure. For example,
+
+The chunking approach may or may not help with the problem of short texts. It would be difficult to meaningfully divide the longer texts into chunks of equivalent length if the shortest texts in the dataset are very short, such as on social media. On the other hand, if the shortest texts are still of reasonable length, dividing the longer texts into chunks of similar length might actually make them more easily comparable.
+
+Computational and statistical approaches
+
+Lengthwise analysis
+
+In order to make feature frequencies more comparable across text lengths, Liimatta (2020) proposes a family of methods called lengthwise scaling. Closely related to the lengthwise analysis described above, this family of methods is also based on the idea that it is trivial to compare texts which are the exact same length. In lengthwise scaling methods, feature counts in each text are first compared against texts of the exact same length ("intra-length comparison") using some suitable method of comparison. Based on the results of this comparison, each text receives a new, scaled value, which is a representation of how typical the text is in terms of the range of variation seen in all texts of the exact same length. These scaled values can then be compared between text lengths like normalized frequencies would be, such as by visual exploration of graphs or by using some further statistical or computational analysis.
+
+While the idea behind lengthwise scaling can be applied in various ways, Liimatta (2020) demonstrates the method family with two specific implementations, lengthwise rarity scaling and lengthwise quantile scaling. In lengthwise rarity scaling, when computing the scaled value for a feature count, each feature count is compared against the full set of feature counts in texts of the same length. Each feature count is then replaced with the percentage of smaller feature counts in texts of the same length. In other words, the following question is asked for each text: "what percentage of all of the texts of the same length as this text has fewer instances of this feature?"
+
+Of the two implementations, lengthwise rarity scaling is noted by Liimatta (2020) to be particularly useful for visual exploration of data. The advantages of this scaling method include the fact that it particularly highlights smaller differences in rates of occurrence within the data, making it easier to pick up on subtler differences between groups of texts, and that it scales the observed variation into a constrained range between 0% and 100%, facilitating the graphing and interpretation of the results.
+
+Figures
+
+Since lengthwise quantile scaling is based on the median and certain quantiles of the data, the -1 and 1 lines are particularly useful for the interpretation of the data in terms of recognizing texts with uncharacteristically high or low feature counts for any given text length. On the other hand, in contrast with lengthwise rarity scaling, lengthwise quantile scaling does not confine the scaled values into any particular range. It also does not highlight smaller differences as well as lengthwise rarity scaling. However, thanks to its basis on common statistical measures, lengthwise quantile scaling may be the better of the two methods to use as a preprocessing step for further statistical or computational analysis.
+
+The main downside to both lengthwise rarity scaling and lengthwise quantile scaling is that they require a very large dataset, so that there are enough texts of every individual length to make it possible to compare texts of the same length. Such datasets are most readily based on social media and other online sources. However, if the dataset mostly contains longer texts, even a slightly smaller dataset will do if texts of adjacent lengths are binned together. If the dataset is even smaller still, and/or includes shorter texts as well, the two methods may not work too well. But these two methods are only two potential implementations of the lengthwise scaling method family. In situations where the dataset is relatively small and includes a large number of shorter texts, other kinds of implementations of the lengthwise scaling method family may work better. For instance,
+
+However, even this method is unlikely to work with the smallest corpora and the shortest texts, which do not have enough text for each text range to estimate the population parameters with any reliability.
+
+Multiple Correspondence Analysis
+
+There also exist methods for specific purposes which can be used with shorter texts. For instance, factor analysis methods, such as those used in the multidimensional method of register analysis, rely on feature frequencies, and as such the methodology is difficult to apply to genres which include a large proportion of short texts. In order to get around this issue in their multi-dimensional analyses of Twitter tweets,
+
+However, while MCA works well with genres with only short texts, it cannot be used with datasets which include longer texts. This is because the longer a text becomes, the more likely it is to include any given feature. As the texts get longer, more and more of the features of interest start appearing in every text. Due to this, the co-occurrence patterns end up saturated when analyzing longer texts, rendering the method unusable with such texts.
+
+Resampling methods
+
+Resampling methods are powerful statistical methods which "make the best use of the available data"
+
+Resampling methods have been used in various studies of linguistic variation. They can be used simply to estimate the rate of occurrence together with its confidence intervals, or to enable analysis in situations where using the standard method of normalization is difficult (e.g.,
+
+A related problem: Lexical diversity
+
+While the effects of text length have generally speaking not been studied very much in corpus-linguistic research, there is a group of measures, whose relationship with text length has received some more attention: the type-token ratio and other measures of lexical diversity (or "lexical richness"). While the type-token ratio differs as a measure from the typical calculated normalized frequencies, its relationship to text length still bears discussing in this context.
+
+Like its name suggests, the type-token ratio is the ratio of the number of different words in a text (types) to the number of all words in the text (tokens). This ratio is notoriously sensitive to variation in the length of the text it is calculated for. Due to this sensitivity, for the results to be comparable, the ratio should be calculated for texts of almost the exact same length. However, since all texts in a normal-sized corpus are rarely close enough to each other in length, as a typical workaround, the ratio is calculated for a set number of words (such as 400 words) taken from the beginning of each text. While this workaround has been used for a long time to good effect, it is also not optimal, since in many cases it excludes a large majority of the text from the calculation. The solution is a lot less optimal still for datasets with a lot of variation in text length, since the 400-word sample covers a different fraction of each text, which means that every text is represented differently by the sampling.
+
+Due to these problems, and the fact that being able to measure lexical diversity in a meaningful way would be very desirable for many linguistic questions, the question of whether a method which is less sensitive to text length could be devised has received a decent amount of attention from corpus linguists and others.
+
+The problem of lexical diversity measures is closely related to the problem of text length and short texts in focus in the present study. While the efforts to develop a measure of lexical diversity which is less affected by text length do not directly target the problem of text length and short texts, the implication of these efforts is clear: methods which lessen the confounding effects of variation in text length can be developed. Maybe some method created for the purpose of measuring lexical diversity could even be adapted to help with the problem of text length in feature frequencies.
+
+Conclusion
+
+The present chapter has discussed two related problems, the more general problem of variation in text length and the more specific problem of short texts. While these problems have not received as much attention than they could have from quantitative corpus linguists (as evidenced by, e.g., the body of research on measures of lexical diversity), the difficulties caused by the confounding effects of text length are only going to become more central to many studies, as more and more research is being done on social media and web data.
+
+A number of solutions and workarounds to remedy the problems have been devised, all with their own advantages and disadvantages. These solutions can be used to good effect in many kinds of linguistic investigations. However, there still is no one-size-fits-all solution to the problems caused by text length and short texts in quantitative text-analytic corpus-linguistic studies. Some potential avenues for improvements and new method development have been proposed in the present chapter.
+
+Since resampling methods are very powerful for estimating the distribution based on smaller datasets, they appear as a potentially useful avenue for the development of new methods for the analysis of texts across text lengths. At the same time, larger datasets contain more information about the variation inside them, so various approaches making use of the large size of the data, such as those developed by
+
+Even if a perfect all-encompassing solution does not exist yet, or is not possible at all, the solutions mentioned in this chapter can still be used to study many linguistic questions, given that one is aware of the potential implications of their use. There certainly exist many other approaches not mentioned here, particularly various more advanced statistical and computational methods, which are less affected by variation in text length. Nevertheless, there is still a lot of room left for the development of new ways to analyze datasets with a wide range of text lengths, and particularly datasets which contain extremely short texts, which are more common today than ever.
+
+Introduction
+
+Fiction is inherently messy to work with. This is not due to the material itself, but rather due to the field that surrounds it and the needs of different theoretical approaches to the reading of the materials. Since
+
+The concept of special corpora, defined by Tognini-Bonelli (2010: 13) as corpora where the selection is not made to be representative of a language but of a specific use-case, such as the learner corpora available in the International Corpus of Learner English (ICLE)
+
+As the interpretation of data begins, further questions regarding the categorizations arise, often to do with genre and style, and one must consider whether the American author active during the 1920s to 1960s was a modernist and so forth. Consequently, comparing the fiction of one author to that of any other author matching the temporal and spatial categorization becomes problematic. It becomes more of an issue when presenting to an audience mainly engaged with other aspects of the author's work rather than the "when and where" (as attempted in
+
+As the intersection between linguistics and literature becomes more popular and more populated with resources, it becomes important to discuss how these uses of corpora as contrastive, or comparative resources beyond language variants and variation could look. How could this new arena influence our categorization habits, and what are the consequences of deeper categorization of fictional texts? This chapter highlights genre categorizations as a pitfall at the intersection of corpus linguistics and literature and problematizes the use of the genre category tag from the perspectives afforded by both fields. The chapter aims to contribute towards a more explicit communication of our genre categorization practices, and avoidance of miscommunication and confusion due to the genre term being understood differently within different disciplines and backgrounds.
+
+Looking up from the pit
+
+I have presented papers using reference corpora to distinguish author-specific traits on several occasions (for instance, Ihrmark 2018 and Ihrmark 2019) and regularly received questions specifically about the issue of the comparative aspects. One paper was presented to the Hemingway Society in 2018, and compared sentence lengths, noun distribution and lexical density in Ernest Hemingway's writing, using the COHA fiction category as reference. The reference corpus was further limited to include only materials produced between 1900 and 1960 to correctly match the time period. One line of questioning after the presentation was especially interesting for the current paper: First, was my selection of reference materials appropriate? And, second, what should be considered appropriate materials for distinguishing features specific to Hemingway?
+
+Regarding the first question about whether my selection was appropriate or not, I had approached it from an admittedly simplistic perspective. My line of thought had been that the texts belonged within the same category as they were all fiction, and that they were produced during the same time period. In retrospect, the temporal aspect had likely played too large of a role in my justification, and more time should instead have been spent considering the nature of the content. While the reference corpus did offer sub-categorization of the fiction component of the corpus, aligning those sub-categories with Hemingway's oeuvre is not a straightforward task. Partially this has to do with the sub-categorization of the reference corpus in question, but a more prominent issue is the fluctuating idea of Hemingway's genre belonging throughout his work, such as his short stories
+
+Moving on to the second question: what should be considered appropriate materials for distinguishing features specific to Hemingway's writing? The way we end up in the pit, to me, begins with what we consider as "specific to an author's writing". From a general standpoint, one could do as I did and simply use fiction in general as the reference, and asking the question of what makes this author stand out amongst a sizeable sample of other authors active during the same period. However, this leaves the comparison vulnerable for criticisms regarding the oversimplification of fiction, as distinguishing what is specific to an author from what is specific to their peers can be done on many levels. Continuing with Hemingway as an example, it could for instance be operationalized as asking what the differences are between Hemingway and other authors belonging in the Lost Generation of post-war American expatriates, other authors who write about war, other authors sharing his journalistic background, or other authors connected to Gertrude Stein or to Sherwood
+
+The initial rationale for applying these two categories was that they were easily applied with an acceptably high consensus for a majority of the authors based on other descriptions of the Lost Generation, and that they provided a clear, functional separation of texts. This allows for the corpus to be used for comparisons between the authors short stories and novels, as well as comparisons between different authors considered to belong within the same group. However, the corpus can only be used for questions based on comparisons within the Lost Generation in a broad sense, and it does not allow the user to perform comparisons along other lines of inquiry, for instance, carrying out comparisons between different genres of fiction. So far, the categorization is fairly intuitive and creates no overlapping tags, that is, a text is never both a short story and a novel.
+
+From a qualitative perspective and using a close-reading method, as is often the case in literature research, the use of overlapping genre categorizations can provide a way of connecting the content and style of the text being read to different movements or periods from which the author might have drawn their inspiration or within which they might have been an active participant. The genre features found in a piece of fiction can also be used to extend an argument regarding the intertextual properties of a text in such a way that the intellectual context of the writing can be connected to the written text. An example of this could be the use of genre tropes to create connection through allusions to other texts or even direct references to previous works that add to the narrative being conveyed, for instance a character coming across a different text within the story and having it influence the narrative. Genre plays a role in these examples as it draws on the expected previous reading of the audience, their context, and readers of one genre can more often be expected to be familiar with other texts of the same genre. 1  This is a very different use-case than that of genre categorization as a sorting mechanism for achieving portioning of large datasets, which would often be the purpose of genre categorization of literary materials or fiction in the distantreading approach commonly used within corpus stylistics or digital humanities
+
+Turning briefly to the world of fiction in film, combinations of genres have been shown to be viable from a commercial perspective. Star
+
+the intuitive taxonomy inferred by genre labelling in fiction could be when applying genre as a sorting mechanism.
+
+Several novels are highlighted as examples by
+
+Text genre categorization in literature
+
+Let us first start by discussing genre as a literary concept.
+
+Todorov's description emphasizes the influence of conventional choices on the structure of a piece, in this case a sonnet, but the concept of choices made conventional by society is an interesting one for the discussion carried in this chapter.
+
+Seeing the literary text as a social event adhering to (and understood through) the expectations of the receiving audience does connect well to intertextual ideas of literature, for instance, the work of Barthes proclaiming the death of the author as the birth of the reader
+
+Genre being a theoretical minefield does not begin in the 1990s, however, as Levin points out in his 1984 review of Fowler's Kinds of Literature: An Introduction to the Theory of
+
+Text genre categorization in linguistics
+
+It is important to start out with a distinction between text type and genre, as the terms occasionally fulfill a similar function
+
+The use of genres as a sorting mechanism also has practical roots amongst linguists, as
+
+Genres have also been defined from a more theoretical perspective within linguistics, some of which see genre as being dependent on the intended social context of meaning-making. Based on that conceptualization and the earlier work of
+
+Paltridge explores both text type and genre in the classroom setting and indicates a division according to generic structures and text structures, with the former being tied to genre and the latter to text type
+
+Turning to corpora, text categorization often takes place first at a higher level, where genre can, for instance, be defined as "Fiction", as is seen in the widely used COHA or the COCA corpora. The two corpora then provide further granularity by introducing sub-categorization. In the case of COHA, these sub-categories are explicitly tied to the Library of Congress taxonomy of non-fiction and academic materials (Figure
+
+The genre category pitfall
+
+To approach the potential genre category pitfall, this paper will first consider the position of corpus linguists and literature scholars based on the previous sections. In general, their positions on genre could be described to as defined by their relationship to the text as an object.
+
+The components highlighted as interesting from a linguistic perspective are features such as style, intended readership, intended function and the context in which the text is intended to fulfill a communicative purpose. The different purposes of the text are also of interest, especially when seen in relation to the other features. The position could be oversimplified as being one that is interested in the purpose and form of a text, and often focused on the intersection between the two. The occasional overlap between the idea of a genre and that of a text type serves to further muddy the waters in linguistic usage of the genre term.
+
+The perspective afforded by the field of literature, on the other hand, seems more interested in the intersection between style and content. Style is close to the idea of form as used in the definitions from the linguistics side of things, but it brings with it quite different connotations (see Aquilina 2014 for a thorough discussion). While style in linguistics can be discussed as having to do with formality, register and fitness-for-purpose, style in literature takes on an intertextual meaning connected to the idea of a genre. In addition, genres are often defined by their content to a higher degree, as the setting is used for genre descriptions in genres such as science fiction or westerns, whereas style and plot can play a larger defining role in genres such as horror or fantasy.
+
+Returning to the Star Wars dilemma, or the issue of expectations tied to the genre term amongst different audiences raised by
+
+Genres as a mode of categorization in corpus resource creation vis-à-vis use as descriptive tags used for fiction should also be considered an issue in the same pit, as the expected rules governing the use are different in nature. Overlapping genre descriptions in literature or fiction are not considered an issue. In fact, the combination of genre tropes and features within a piece can often be seen as a strength, as indicated by
+
+Turning from the issues to do with the positions of the audiences to the practice-oriented issues of the intersection between corpus linguistics and literature, there must first be an understanding of which tasks are performed therein.
+
+However, the projects in which these tasks are performed often deal with determining what is especially characteristic for a specific author or a specific text
+
+From a distant-reading linguistic perspective, the categorizations relying on text-internal features, such as the one presented by
+
+From a close-reading literature perspective, the resulting category "Novels" becomes too broad to be useful. It does not influence the close-reading method in a meaningful way and does not indicate information that could tie the text(s) to a broader intellectual context. Instead, a more useful taxonomy would be tied to fiction genres, allowing the researcher to connect the texts to their contexts and content more clearly.
+
+3.
+
+As pointed out by one of the reviewers, this could also lead to circularity if the texts are later explored for linguistic features tied to the genre. For example, if the genre "Reports" is defined by text-internal features, those features would be very frequent within the resulting category.
+
+For those stuck between linguistics and literature, it becomes a decision regarding the intended audience of the corpus. In the case of a resource created for the linguistics community it would make sense to include both the text type and the broader genre, as both have a theoretical background through which results could be connected to previous and future research, as well as inform about the nature of the item in an objective way.
+
+It is also important to consider which methods are going to be applied, as the methods relying on comparisons exemplified by
+
+Returning to my own pit for a moment, the use of the "Novel" and "Short story" categorization in the Lost Generation Corpus starts to appear more palatable to me than it was earlier. While very broad categories, they still provide some clear idea of their content in terms of it being fiction of a certain length, albeit with a large helping of internal variation as exemplified by
+
+Conclusion
+
+The main conclusion drawn is that fiction is difficult to categorize according to genre for corpus compilation, and especially so when trying to communicate useful information to two distinct fields of research with complex theoretical backgrounds connected to the term. In practice, this means that work taking place at the intersection between literature and linguistics must be explicit about how the term "genre" is being used, and what exactly is meant by it. The previous research referred to in this chapter could be said to highlight the communication taking place implicitly through the use of the term "genre" as the main culprit through its setting of different expectations depending on the audience.
+
+However, the connection between the approach to genre labelling and the methods being applied provides a concrete bridge across that rift. Considering genre categorization of fiction as a part of the methodology in a study could open up for both an explicit argumentation regarding why one has decided on the labelling being implemented, as well as a clear communication to the reader about what is actually intended by the labels. Moving the act of genre labelling for increased granularity to the methodologies of individual studies according to their specific needs, the broader categorizations make a lot of sense due to the corpora then having a wider applicability. In summary,
+
+Modeling fine-grained sociolinguistic variation
+
+The promises and pitfalls of Twitter corpora and neural word embeddings
+
+Stuttgart
+
+This chapter examines the use of recent data sources and computational methods to study fine-grained sociolinguistic phenomena. We deploy a custom-built corpus of tweets
+
+Introduction
+
+In this chapter, we deploy a novel corpus-based approach to the study of a complex type of language variation. Our focus is on contact-induced semantic shifts in Quebec English, that is, preexisting English words used with a meaning typical of a similar French word. Consider the following example taken from a tweet posted by a speaker from Montreal:
+
+(1) I really want to go to an art museum or an art exposition.
+
+Here, the word exposition refers to what is usually known as an art exhibition. This meaning is not conventionally used in English; it is instead associated with the homographic French word exposition.
+
+This phenomenon is explained by the local sociolinguistic context: Quebec is the only predominantly French-speaking Canadian province. As of 2021, 74.8% of its inhabitants -close to 6.3 million people -report that their mother tongue is French. Ten times fewer Quebecers -7.6% of the population, or just under 640,000 individuals -are native speakers of English
+
+Our analyses rely on a particular type of linguistic data -a large, custombuilt corpus of tweets -as well as a recent computational approach to modeling lexical semantic phenomena -neural word embeddings. Large-scale computational studies of language variation increasingly rely on both of these methodological choices
+
+More specifically, we analyze patterns of regional variation in our corpus of tweets; drawing on underlying demographic distinctions, we aim to isolate instances of contact-induced semantic shifts and further characterize their use. For a given lexical item, our method produces computational representations of its occurrences in the corpus and splits them into groups based on semantic similarity, prioritizing those that are expected to reflect the influence of French. Despite extensive data filtering and a carefully adapted implementation of a recent neural language model, our approach highlights not only contact-induced semantic shifts, but also a range of noise-related phenomena. While this means that it cannot provide reliable results in an unsupervised manner, we show that a coarse manual annotation -conducted on the automatically identified clusters of tweets rather than individual occurrences -provides an efficient way of eliminating false positives. Complementing an earlier analysis of the technical impact of these issues
+
+The remainder of this chapter is organized as follows. We first introduce a summary of related work (Section 2) and a more detailed description of the data and methods we deployed (Section 3). We then present the key results of our analysis (Section 4) and conclude with a discussion and main takeaways (Section 5).
+
+Theoretical and methodological background
+
+In this section, we contextualize our work with respect to research on semantic shifts in Quebec English, which represent our descriptive focus. We further discuss our key methodological choices, thus addressing the use of Twitter corpora and neural word embeddings.
+
+Semantic shifts in Quebec English: The need for corpus studies
+
+The use of English in Quebec is influenced by ongoing contact with French, particularly on the lexical level. Evidence for this claim comes from sociolinguistic studies (e.g.,
+
+These observations, however, are mainly based on studies of French loanwords; descriptions of other types of contact-related lexical influence are considerably more limited. This is particularly the case for the previously mentioned issue of semantic shifts, on which we focus in this paper. We understand this phenomenon as the presence of a sense in a preexisting English word that is explained by the presence of the equivalent sense in a formally and/or semantically similar French word. We know from
+
+Most of these studies rely on traditional sociolinguistic methods, which involve recording the speech production of carefully sampled speakers using face-to-face interviews
+
+Twitter-based corpora for language variation
+
+The development of social media has enabled large-scale analyses of language variation relying on publicly available posts from these websites. This is particularly true of Twitter, a social network created in 2006, where users can post 280-character messages known as tweets.
+
+The sheer amount of data available on Twitter is routinely presented as a key advantage compared to traditional sociolinguistic studies. However, this is counterbalanced by issues such as a lack of reliable demographic informationa mainstay of sociolinguistic research -as well as sources of bias inherent to the platform, affecting key information such as user location
+
+Vector space models for lexical semantic variation
+
+As previously suggested, the persistent challenges in systematic analyses of lexical semantic variation -in sociolinguistic studies in general
+
+Methods such as these constitute the cornerstone of recent computational approaches to semantic change. Starting from a diachronic corpus, different VSMs have been used to quantify the change in meaning of all words in a corpus (or any subset of them) over time (see
+
+However, most of these studies focus on computational issues. Existing descriptive applications include assessing longstanding hypotheses on semantic change
+
+Data and method
+
+Our approach relies on contrasting synchronic data from different Canadian regions, under the assumption that linguistic behaviors that are specific to Quebec but absent from areas where the use of French is limited, are likely to reflect the influence of language contact. This is inspired by the comparative sociolinguistic approach
+
+A corpus of tweets
+
+We use a previously created corpus of Canadian English tweets published by users from Montreal, Toronto, and Vancouver
+
+The data were collected from January to November 2019. We initially used Twitter's Search API to look up tweets tagged as written in English and associated with the geographic area of one of the target cities. The users identified in this way were narrowed down to those whose free-text profile location strictly corresponded to one of the three target cities. We then crawled their profiles, collecting up to 3,200 most recent tweets per user; this allowed us to increase the amount of data and obtain basic sociolinguistic information. For instance, we stored the distribution of language tags in the users' tweet production and subsequently used it as a rough estimate of their degree of bilingualism. Finally, we only retained the tweets tagged by Twitter as written in English, and we automatically removed near-duplicates posted by individual users. Exploratory analyses have shown that the retained data are both specific to the target cities and comparable across them (for more details, see Miletić et al. 2020). 3  In addition to the preprocessing decisions applied to the original corpus, we introduced additional filtering for the experiments presented in this paper. First, we removed the content posted before 2016 in order to limit the likelihood of picking up diachronic effects; the tweets in the original corpus date back to 2006. In determining the cut-off point, our aim was to find a reasonable tradeoff between a reduction in time span and the remaining amount of data. We then 3. In accordance with Twitter's developer terms, the corpus is released in the form of tweet IDs, which can be used with off-the-shelf software to collect the underlying data: 〈http
+
+In identifying the semantic shifts, we relied on descriptions provided in the literature on Quebec English
+
+ically identify occurrences used in similar contexts and quantify sense distributions, focusing on both regional and user-level patterns.
+
+Neural word embeddings
+
+For each of the 40 lexical items from Section 3.2, we first produced word embeddings for their individual occurrences. Each corresponds to a slightly different vector, which incorporates general distributional information captured during model pretraining and is further informed by the target item's immediate linguistic context. We then used these representations to automatically group the occurrences into clusters, which were expected to reflect similar contexts (and thereby similar uses of the target lexical item). This allows for a more efficient subsequent analysis of the full range of uses exhibited by a lexical item: for instance, the fact that similar occurrences are grouped together means that it is not necessary to disambiguate them one at a time.
+
+Word embeddings were produced using the previously discussed BERT model, and specifically the Hugging Face implementation
+
+For each analyzed lexical item, we extracted the tweets in which it appears in all three regional subcorpora. In order to limit processing and memory requirements, we retained no more than 1,000 total occurrences per word and used a random sample for more frequent items. We fed each tweet in its raw text form as a single sequence into BERT, which then produced context-informed vectors for each token in the tweet. The model outputs multiple vector representations per token, each corresponding to a different hidden layer in the neural network architecture. Similarly to other recent studies (e.g.,
+
+Clustering and annotating the uses of a lexical item
+
+Similar uses of a lexical item were automatically identified by clustering its tokenlevel vectors using affinity propagation, an algorithm which performed well in other semantic change studies (e.g.,
+
+In analyzing the output of the analysis, we considered the clusters containing at least five tweets, and retained them if more than half of the tweets were from the Montreal subcorpus. This is because of the focus on the uses which are clearly 7. Figure inspired by Jay Alammar's illustrations available at 〈http
+
+More specifically, a target item's use in a cluster was annotated as contactrelated if it was regionally specific to Montreal and potentially explained by the influence of a formally and/or semantically related French word. This determination relied on the same evidence used to select the target set of semantic shifts, that is, previous sociolinguistic studies and lexicographic sources (see Section 3.2). Recurrent phenomena that were not annotated as contact-related included a range of noise-related issues; these will be discussed in more detail below. A 15-word sample (91 clusters) was annotated by two annotators in order to test the reliability of the general procedure, obtaining a reasonably high interannotator agreement (Cohen's kappa coefficient of 0.55).
+
+On average, 8 clusters per word (min = 3, max = 10) were retained for annotation. The mean number of tweets per cluster stands at 13 (averaged over the means for individual lexical items; min = 8, max = 20). As shown by the examples discussed below, the clusters are largely homogeneous; although some are occasionally difficult to interpret, this is overall rare. Our analysis also allows for a degree of uncertainty, as the annotation targets the predominant use in a cluster. The utility of this approach is confirmed by the fact that it led to the identification of at least one contact-related cluster for each of the 40 target items. From a practical standpoint, using cluster-level annotations was an order of magnitude faster than analyzing individual tweets. This is due to the lower number of required decisions and the comparative ease in determining the meaning of a larger number of similar examples appearing together.
+
+Results
+
+This section discusses the results derived from the annotated data. It first presents a general overview of cluster types across lexical items; it then illustrates a range of true and false positives observed in the data; and it concludes with a case study examining the link of contact-induced semantic shifts with bilingualism.
+
+An overview of regionally specific clusters
+
+A global overview of the analysis (Figure
+
+Types of variation captured by the analysis
+
+This section discusses examples of tweets extracted from our corpus using the clustering analysis described above. Sample clusters of tweets are presented in the keyword-in-context format, for ease of reading as well as to illustrate the effect of this approach on manual perusal of corpus data, as observed during the manual annotation. Each sample cluster contains three representative tweets published in Montreal and occurring in a single original cluster output by our analysis. Further information on the size and regional composition of the clusters is also provided.
+
+In order to protect the privacy of tweet authors, we only reproduce textual content without any metadata. For the same reason, usernames, hashtags, URLs, and names of individuals are redacted from the tweets, except for widely known public figures or if necessary to interpret the meaning of the tweet.
+
+True positives
+
+We begin by examining positive contributions of our computational system, focusing on the help it provided in distinguishing between conventional and contact-related uses based on documented patterns from the corpus. This was beneficial across different semantic mechanisms and degrees of granularity of contact-related influence.
+
+A clear-cut distinction
+
+Perhaps the prototypical mechanism underlying contact-induced semantic shifts involves using an English lexical item to denote a referent conventionally designated by a formally similar French lexical item. One such example is manifestation, which is generally used to signify 'a display of the existence of something' , but is also attested in Quebec English with the sense of 'protest, demonstration' , typical of the homographic French lexical item manifestation. This sense is absent from the Canadian Oxford Dictionary (COD), but it is anecdotally reported by
+
+False positives
+
+We have so far focused on the informativeness of our semi-automated analysis in understanding often fine-grained patterns of contact-related language use, but this process was complicated by different types of false positives. This section provides a detailed analysis of the most frequent patterns that we encountered. We distinguish between the following types of locally-specific word usage which do not constitute contact-induced semantic shifts:
+
+-cultural effects, where word usage is related to the local cultural context of Montreal; -the use of common nouns as proper names denoting locally specific referents; -French homographs of English words, attested in codeswitched tweets; -structural patterns, such as the position of the target item across tweets, which accidentally affect model performance.
+
+For each category that we discuss, sample clusters of tweets are provided in order to illustrate the contrast between the contact-related use -the target of our analysis -and the noise that we identified along the way.
+
+Cultural effects
+
+The regionally specific character of some clusters output by our analysis is not related to the use of the target lexical items with a French-related sense, but rather to the local cultural context of Montreal. Take for example formation, whose English senses include 'the action or process of forming' and 'arrangement or disposition' . In our data, it is also attested with the sense of 'course, training program' , typical of the French homograph formation. This sense is absent from the COD and the OED, but its existence is noted in the sociolinguistic literature
+
+A different but related effect was observed in the case of animator. This lexical item is generally used with the sense of 'creator of animated films' , whereas the formally similar French equivalent animateur also includes the sense 'group leader; organizer; facilitator' . The use of animator with the former senses is attested in the sociolinguistic literature
+
+The goalie formation is solid . even if Price gets injured , Montoya the contact-related use, but these were limited to a single cluster; the remaining eight regionally-specific clusters reflected the conventional sense (Table
+
+Proper names
+
+The regional specificity of some clusters is explained by the target lexical item being used as a proper name, generally to denote a regionally-specific referent. Take for example deception, which in English refers to 'the action of misleading someone' , but whose French homograph also means 'disappointment' . This use is not recorded in the OED or the COD, nor is it described in the sociolinguistic literature we reviewed.
+
+Deception Bay , the title track from @milknbone's
+
+The new song Deception Bay , from Milk & Bone's second album , is Deception Bay on repeat !! Can't wait for the whole
+
+French homographs in codeswitched tweets
+
+The performance of our computational system is occasionally affected by crosslingual homographs of the target lexical items. They are generally used in a span of French text within a codeswitched tweet where most tokens are in English; this explains why the tweets were tagged as written in English and retained in the corpus. Codeswitching is overall rare in our corpus, but its relative frequency is considerably higher in Montreal, as can be expected given the prevalence of bilingual speakers in the city.
+
+The practical implications are illustrated by the case of souvenir. Our analysis focused on the conventional English sense 'keepsake, memento' and the potential presence of the more abstract sense 'memory' , typical of the formally identical French equivalent. The use of the English lexical item with the French-associated sense is not recorded in the COD. It is however attested in the OED, though only as "chiefly literary", as well as in the sociolinguistic literature
+
+Structural patterns affecting model performance
+
+A final recurrent issue is that of clusters where tweets appear to be grouped together based solely on structural regularities. This was observed in the case of trio, which conventionally means 'a group of three' , but is also used with the Francois Fournier a partagé un souvenir . 1 h • 7 years ago , i played my third gig with Old memories . Very old . Oh , les vieux souvenirs! <url> sense of its Quebec French homograph, denoting a 'sandwich-fries-soda special, combo' . This specific use is not attested in the lexicographic sources we consulted, but it is described in the sociolinguistic literature
+
+Deploying coarsely annotated data for linguistic description
+
+The structure of the clusters output by our analysis shows that lexical items differ in terms of the diffusion of contact-related usage (how many tweets are related to contact, out of all those retained in the regionally-specific clusters) as well as its regional specificity (how many tweets in contact-related clusters come from Montreal). These patterns may be indicative of different degrees and factors of diffusion of semantic shifts within the local speech community.
+
+To explore the descriptive relevance of this information, we calculated scores reflecting the two points raised above for each of the 40 manually annotated lexical items: a diffusion score, corresponding to the proportion of tweets tagged as contact-related, out of all manually annotated tweets; and a regionality score, corresponding to the proportion of tweets posted in Montreal, out of all tweets tagged as contact-related. In order to explore the potential impact of the degree of bilingualism on the use of semantic shifts, for each lexical item we also calculated a bilingualism score, corresponding to the mean proportion of tweets in English (out of tweets in English in French) posted by users who used the contact-related sense in the clusters tagged as such. It ranges from 0 for users tweeting only in French to 1 for users tweeting only in English, with intermediate values indicating a production of tweets in both languages.
+
+We first checked the relationship between the three scores by calculating Spearman's rank correlation coefficient. The diffusion score is uncorrelated with both the regionality score (ρ = -0.13, p = 0.42) and the bilingualism score (ρ = 0.02, p = 0.90). However, the regionality and bilingualism scores exhibit a moderate negative correlation (ρ = -0.53, p < 0.001); this link is explored in more detail in Figure
+
+The plotted results indicate that contact-related semantic shifts which are more regionally-specific (i.e., attested in Montreal to a higher extent) are also more directly related to the effects of bilingualism (i.e., a lower proportion of English, and hence a higher proportion of French, tweets). A typical example (bottom right) is the case of circulation, attested in the Quebec English data with the sense of 'traffic' , which is associated with the corresponding French homograph. All of the tweets from clusters tagged as contact-related come from Montreal; moreover, the mean proportion of English tweets stands at 0.75 per user. This may appear to be a relatively high value, but it is in fact just above the 10th percentile for all users in the corpus (0.73); at least within this dataset, this is suggestive of a comparatively and the bilingualism score (y-axis). Dotted lines show the 10th and 20th percentile for the bilingualism score, for all users in the corpus important influence of bilingualism. Patterns at the other end of the spectrum (upper left) are illustrated by the verb remark; we focused on the sense 'notice' , with which the French verb remarquer is widely used. It is less regionally-specific (62% of contact-related tweets posted in Montreal) and less strongly associated with bilingualism (higher mean proportion of English tweets per user, at 0.99). Unlike in the previous example, however, the contact-related sense is attested in dictionaries, but the OED marks it as rare in some syntactic contexts. While it is likely accessible to most English speakers, cross-linguistic influence might facilitate its wider use; this scenario is consistent with our data.
+
+It is also relevant to look at the outliers from the general trend. For instance, in the previously mentioned case of trio 'sandwich-fries-soda special, combo' (upper right in the plot above) all contact-related tweets similarly come from Montreal. However, the mean proportion of English tweets is higher, at 0.99 per user. This is indicative of a use which is regionally-specific, but is widespread in the local linguistic community, including among monolingual speakers. This is further sup-ported by existing descriptions which have shown it to be typical of the speech of native English-speaking Quebecers
+
+These observations indicate that, barring some exceptions, the more region specific the contact-related use is, the more strongly it is associated with use of French. Once again, it is important to note that the manual annotation was conducted on the level of clusters, rather than individual tweets, meaning that some non-contact-related occurrences may have been included in the counts. Moreover, the information on the use of French has the benefit of being empirically grounded in the attested use of languages by individual Twitter users, but it is only a very rough approximation of their linguistic profiles; for instance, there is no reliable way to determine their native language. That said, our analysis identified clear trends regarding the use of semantic shifts based on a large amount of data, further confirming the potential that corpus-based analyses have in understanding the patterns behind complex linguistic behaviors. It also constituted the basis of a face-to-face sociolinguistic survey we conducted in January 2022, whose initial results confirm the overall relevance of our approach, but also highlight the distinct -and complementary -nature of corpus-based and in-person estimates of semantic change
+
+Discussion and conclusion
+
+We have presented an analysis of a fine-grained sociolinguistic phenomenoncontact-induced semantic shifts in Quebec English -using a large, custom-built corpus of tweets and a recent pretrained language model relying on a deep neural network architecture. This approach has paved the way for a more detailed account of previously reported semantic shifts, contributing extensive empirical evidence where original descriptions often consisted in a single anecdotal mention of a lexical item of interest; our approach was also beneficial in more comprehensively characterizing previously undescribed semantic shifts, initially observed in isolated tweets. The computational tools we used facilitated manual inspection of vast amounts of data, directing our attention to the most relevant subsets of occurrences; they also enabled broad quantitative estimates of the use of semantic shifts, highlighting possible interpretations and informing the design of subsequent studies. The results have also broadly confirmed our highlevel assumption that regional variation in synchrony can be used as a proxy for detecting contact-induced phenomena. More generally, the overall setup -data extraction, clustering based on semantic similarity, and analysis of the distribution of occurrences over an explanatory factor -can be generalized to other descriptive issues.
+
+However, we cannot gloss over the fact that our computational system provided actionable results only once it was complemented with extensive manual analyses. The challenges that we encountered are related to several distinct issues: (i) a strong assumption on regional variation underpinning the methodological design -while some language use specific to Montreal is related to language contact, not all is; (ii) inherent limitations of the methods we used, with BERT occasionally capturing phenomena unrelated to lexical semantics; (iii) inherent limitations of the data we used, with a carefully filtered Twitter corpus representing an improvement on highly generic datasets, but still suffering from the 280-character limit and the limited ability to validate user descriptions, among other issues; (iv) the complexity of the phenomenon under study, which often involves very subtle -but nevertheless perceptible and socially meaningful -differences in language use. Some of the described false positives, such as French codeswitching and referents typical of Montreal, are specific to our corpus; however, they echo the observation that semantic change models capture different types of variation in word usage, also raised in other recent studies
+
+Despite these challenges, data-intensive computational approaches to lexical semantic phenomena, and to language variation in general, have an important role to play in descriptive linguistic research. They can provide meaningful quantitative accounts of lexical phenomena, including for the whole vocabulary, based on data obtained in an unobtrusive way; this is clearly complementary to traditional sociolinguistic methods. While methods such as those we implemented still require adaptations to the task at hand as well as some manual analysis, they simplify the tasks required of the linguist. One example of this approach is our analysis based on coarse cluster-level annotations; its relevance is confirmed by the fact that, together with the results presented in
+
+Funding
+
+The computational analyses presented in this paper were carried out using the OSIRIM computing platform, administered by the IRIT research laboratory and supported by the CNRS, the Région Occitanie, the French Government and the European Regional Development Fund (see 〈https
+
+D
+
+M
