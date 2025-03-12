@@ -1,0 +1,209 @@
+corpus linguistics
+corpus data
+corpus linguist
+co-occurrence
+frequency list
+word list
+word form
+language use
+learner corpus
+chi-square
+dataset
+effect size
+corpus analysis
+cluster analysis
+language teaching
+word corpus
+corpus research
+concordance line
+language processing
+language technology
+corpus study
+language variety
+language education
+text length
+text file
+word phrase
+language variation
+natural language processing
+classification approach
+language corpus
+learner corpora
+occurrence of word
+language datum
+corpus annotation
+language acquisition
+reference corpus
+stop word
+corpus file
+classification accuracy
+corpus method
+number of instance
+pearson chi
+annotation scheme
+number of word
+text type
+corpus design
+language feature
+collection of text
+sample size
+classification tree
+research design
+use of language
+corpus building
+parallel corpora
+discourse domain
+word type
+word frequency
+collocation network
+data frame
+pattern of language
+pos tagging
+association measure
+speech act
+regression model
+corpus type
+visualisation technique
+variation change
+time span
+word embedding
+information retrieval
+word class
+conditional inference tree
+keyword analysis
+confidence interval
+multi word
+corpus tool
+speech sample
+part of speech
+corpus linguistics methodology
+annotation process
+pos tag
+frequency of word
+language documentation
+degree of freedom
+character class
+word length
+data structure
+register analysis
+software program
+type-token ratio
+list of words
+sub corpus
+sub corpora
+language sample
+corpus compiler
+log-likelihood
+word token
+partial dependence score
+corpus metadata
+effect size measure
+software package
+quality of corpus
+annotation standard
+variable importance score
+corpus size
+dimensionality reduction
+word level
+number of example
+function word
+tag corpus
+word sense
+subordinate clause
+annotation time
+analysis of corpus
+effect model
+vector space
+correspondence analysis
+model selection
+variety of english
+target discourse
+sense disambiguation
+number of time
+word tag
+corpus user
+type of text
+corpus retrieval software
+social media language
+character string
+word sequence
+word occurrence
+bar plot
+file name
+type of file
+corpus generation
+time period
+concordance analysis
+selection criterion
+mean score
+text processing
+collection of datum
+software tool
+p value
+use of corpora
+text corpus
+type of datum
+person pronoun
+study of language
+measure of dispersion
+use of word
+number of cases
+sequence of word
+number of occurrences
+character vector
+multi word unit
+frequency of occurrence
+type of corpus
+line of code
+datum frame
+web page
+form of verb
+element of vector
+number of text
+type of annotation
+corpus compilation
+discourse marker
+size of corpus
+frequency count
+speech community
+web corpus
+meta information
+number of token
+code file
+speech tagging
+test statistics
+search engine
+search expression
+search word
+sample of language
+variety of language
+co-occurrence of word
+r code
+field of corpus
+portion of corpus
+register variation
+language change
+frequency table
+corpus query
+word frequency list
+type of corpora
+text category
+meaning of word
+line break
+content word
+frequency distribution
+punctuation mark
+correlation coefficient
+k-means
+lob corpus
+period of time
+statistical description analysis
+unit of analysis
+type of analysis
+word character
+test hypothesis
+type of speech
+number of characters
+combination of words
+input vector
+multimodal corpus
