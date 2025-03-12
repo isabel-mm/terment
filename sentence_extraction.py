@@ -1,18 +1,17 @@
 import os
 import spacy
 import re
-import argparse
+import argparse # Para poder aplicar el script a los argumentos necesarios
 from collections import defaultdict
 
 def extract_sentences(text_folder, glossary_path):
-    # Cargar el modelo spaCy con transformers
     nlp = spacy.load("en_core_web_trf")
 
-    # Cargar términos del glosario eliminando espacios en blanco y líneas vacías
+    # Cargar términos del glosario. Se eliminan, por si acaso, líneas vacías
     with open(glossary_path, "r", encoding="utf-8") as file:
         glossary_terms = [term.strip() for term in file.readlines() if term.strip()]
 
-    # Ordenar términos por longitud para priorizar términos compuestos
+    # Ordenar términos por longitud (número de caracteres) para priorizar la anotación de términos compuestos
     glossary_terms.sort(key=len, reverse=True)
 
     # Diccionario para almacenar oraciones por término
@@ -26,24 +25,24 @@ def extract_sentences(text_folder, glossary_path):
         with open(file_path, "r", encoding="utf-8") as file:
             text = file.read()
 
-        # Procesar con spaCy para segmentar en oraciones
+        # Procesar con spaCy para tokenizar y segmentar en oraciones
         doc = nlp(text)
         sentences = [sent.text.strip() for sent in doc.sents]  # Extraer oraciones y limpiar espacios
 
-        # Filtrar oraciones bien formadas (empiezan con mayúscula y terminan en punto)
+        # Filtrar solo oraciones bien formadas (empiezan con mayúscula y terminan en punto), i.e., se excluyen epígrafes, tablas, etc.
         valid_sentences = [sent for sent in sentences if re.match(r"^[A-Z].*\.$", sent)]
 
-        # Filtrar oraciones que contienen términos del glosario
+        # Filtrar SOLO oraciones que contienen términos del glosario
         for sentence in valid_sentences:
             for term in glossary_terms:
                 if re.search(rf"\b{re.escape(term)}\b", sentence):  # Coincidencia exacta de palabra completa
                     sentences_by_term[term].append(sentence)
 
-    # Verificar la cantidad de oraciones recolectadas
+    # Verificar la cantidad de oraciones recolectadas y el número de términos que hay en el glosario
     print(f"\n🔹 Se han extraído {sum(len(s) for s in sentences_by_term.values())} oraciones en total.")
     print(f"🔹 Número de términos en el glosario: {len(glossary_terms)}")
 
-    # Asegurar que cada término aparece al menos 4 veces
+    # Asegurar que cada término aparece al menos 4 veces (es la freq. mínima de aparición del último término)
     selected_sentences = set()
     for term, sentences in sentences_by_term.items():
         if len(sentences) >= 4:
@@ -57,7 +56,7 @@ def extract_sentences(text_folder, glossary_path):
         for sent in selected_sentences:
             file.write(sent + "\n")
 
-    # Mostrar algunas oraciones seleccionadas
+    # Mostrar algunas de las oraciones seleccionadas
     print("\nEjemplo de oraciones seleccionadas:")
     for i, sent in enumerate(list(selected_sentences)[:5]):
         print(f"{i+1}. {sent}")
