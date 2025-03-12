@@ -1,0 +1,125 @@
+These issues vary based on the type of text and the purpose of its use.
+Indeed, linguists working on language teaching had long observed that mistakes made by learners were often linked to transfers from their mother tongue.
+Examples of type b) make it possible to identify phonotactic features, such as the presence or absence of reduplication and its effect on pronunciation, while type c) may be useful for selecting or extracting words of different length in order to establish potential correlations between word length and complexity, or, if we assume that shorter words are indeed less complex, to extract simpler vocabulary from texts in order to teach it at less advanced learner levels.
+More generally, static and full text representations do not sit well with the iterative and data-driven nature of the corpus linguistics methodology.
+Section 1.1 will discuss four major points of criticisms leveled at corpus data.
+The social parameters of being a learner in classroom settings in particular creates rather specific settings for language use.
+It might just as easily occur once in the hypothetical million-word corpus, or five times, or maybe not at all: the actual smaller corpus simply does not give us enough evidence to extrapolate.
+For example, the part-of-speech tool (using spaCy) only offers visualisations of POS-frequencies but does not give direct access to the tagged texts or include them in the downloadable content sets, which effectively means that the morpho-syntactic annotation provided by Digital Scholar Lab is of no use for corpus research.
+Tools for Corpus Linguistics provides an up-to-date list of software packages for corpus annotation and analysis, and includes information about their pricing and the operating systems that they support.
+Retrieval methods and tools are those most commonly and prototypically associated with the corpus user's toolbox because many linguists use pre-existing corpora and so can skip the first two stages.
+In this chapter we turn our attention to the process of corpus building (or corpus compilation) itself.
+After the loop, we compile all data into a data frame and use table as well as prop. table to create reductions and reductions.perc as well as order and rowSums to re-order their rows.
+Of course, it is possible that by performing such analyses for a large number of word pairs containing a particular affix pair, general semantic differences may emerge, but since we are frequently dealing with highly lexicalized forms, there is no guarantee for this.
+It involves retrieving all words from one or more texts produced by learners and classifying all words as belonging to one of several word families and word frequency bins.
+Without a measure of dispersion, it is not possible to know how good the measure of central tendency is at summarizing the data.
+But these large web page-based corpora do not represent particularly well the full range of variation that we see in genre-balanced corpora like the 100-million-word BNC, the 440-millionword Bank of English, or the 450-million-word (and growing) Corpus of Contemporary American English -which is currently the largest publicly available, genre-balanced corpus of English.
+The question of whether natural language processing is different from or identical to language technology is a matter of perspective.
+It describes their main characteristics, with particular emphasis on those that are distinctive of learner corpora.
+Next, the frequency of each word in the target corpus is compared to its frequency in the reference dataset in order to calculate a keyness value.
+In this book, I use language variety to refer to any form of language delineable from other forms along cultural, linguistic or demographic criteria.
+Computational methods and tools for corpus annotation therefore take two forms.
+Thus, there is no way of telling whether co-occurrence within the same sentence is something that is typical specifically of antonyms, or whether it is something that characterizes word pairs in other lexical relations, too.
+Having realised that some adverbs may in fact be colligates of this clitic, we can now go the other way and, instead of excluding a particular word class, restrict our sorting to display only adverbs (using 'any adverb') to the left of the clitic.
+Several such contributed libraries exist for cluster analysis, and these substantially expand the range of available methods.
+In other words, Variety explains less than three percent of the distribution of s-possessor modifier types across language varieties; or "This study has shown a very weak but highly significant influence of language variety on the realization of s-possessor modifiers as pronouns, proper names or common nouns (𝜒 2 = 473.73, df = 12, 𝑝 < 0.001, 𝑟 = 0.0275).
+Such issues may also cause problems for approaches to the automated processing of language where such disambiguation is of course also important, but naïve algorithms based on probability-based assumptions regarding the word class of only a single word preceding a grammatically polysemous item would potentially fail, as such probabilities would, in our case, clearly favour the more frequent use of to as an infinitive marker.
+Thus, the syntactic or prosodic annotation of a corpus might be based on a different theoretical tradition than the one preferred by the researcher or one type of annotation that is necessary for the current study might be missing altogether.
+The study of language variation seeks to understand how language changes and varies for different reasons and in different contexts.
+We must agree that quantitative data retrieved from a corpus is necessary not only in language technology but also in many areas of linguistics (e.g., speech analysis, lexicography, discourse analysis, language teaching, stylometrics, translation, and language planning).
+Section 5 provided a brief example to illustrate the benefits of supplementing register analysis with qualitative research techniques.
+Gardner and Davies argue that using the lemma as the unit of analysis will allow list users to more accurately target the most frequently occurring forms and meaning senses of academic vocabulary.
+By listing properties that a group must have to count as an organization in the sense of the annotation scheme, the decision is simplified considerably, and by providing a decision procedure, the number of unclear cases is reduced.
+So, if the occurs 60,000 times in a 1.5 million word corpus, its relative frequency is forty per thousand words, or 40,000 per million words.
+A binary classification tree divides the data into two groups based on which data points are most different from each other, using the given variables.
+That is, if you want to identify bi-grams, you will capture each two-word sequence in the corpus.
+There will then be a description of some of the methodologies behind corpus research, with an emphasis placed on the word-based approach.
+Treebased methods have become a welcome alternative for data sets that defy regression-based methods especially in noisy and unbalanced corpus data, and that, in and of itself, is potentially a good thing.
+However, corpus analysis has revealed that the predominant collocations are rather neutral, as in jeune mec (a young guy) or positive, as in mec bien (a good guy), beau mec (a handsome guy).
+After briefly introducing learner corpora, this paper clearly presents the different stages that can be involved in a learner corpus study: choice of a methodological approach, selection and/or compilation of a learner corpus, data annotation, data extraction, data analysis, data interpretation and pedagogical implementation.
+Third, the first column just gets a counter from 1 to n so that you can always restore the data frame to one particular (the original?) order, and the first row should contain the names of all columns (i.e., variables).
+Gu focuses on different modalities within the analysis, beyond what the majority of multimodal corpus studies typically afford, making this work of particular relevance to the final section of this chapter: projections for the future directions of this field.
+It should have become clear, however, that much of what happens in corpus data is a result of word-/speaker-/file-/register-specific random effects rather than of the fixed effects we as corpus linguists are usually interested in.
+Histograms are a special kind of bar plot that display counts of continuous variable measurements (the figures in Section 5.4.1 on frequency were bar plots but not histograms because they were counting categorical data).
+We will also recommend a software tool, AntConc, to carry out a keyword analysis (further details on the software is in Chapter 5).
+Thus, the first step in a corpus study is to identify relevant sources that have so far explored the research subject under consideration.
+In applications where the aim is simply dimensionality reduction and semantic interpretation of the new variables is not an issue, this doesn't matter.
+More data would be needed to fully specify which elements of the behaviour profile are most significant for word sense disambiguation, but in principle this would be possible, meaning that examinations of word profiles can be useful for both issues of semantic theory and practical applications.
+It is also easy to find even in an untagged corpus, since it includes (by definition) a passage of direct speech surrounded by quotation marks, a subject that is, in an overwhelming number of cases, a pronoun, and a verb (or verb group) -typically in that order.
+An area related to sociolinguistics, psycholinguistics, and acquisition research is that of language change and language evolution.
+Each corpus and software program has its own idiosyncrasies and we have found that these different corpora and software programs are sometimes confusing to students who do not have access to the corpora and/ or struggle to learn one program or search interface in a corpus and then have to learn another.
+The case study investigates stance features in nurse-patient interactions, a lesserstudied discourse domain, and also highlights differences within the interactions and across speaker groups (nurses and patients).
+In continental Europe the application of mathematical and statistical concepts and methods to analysis of corpus data for derivation of linguistic laws has continued to be developed.
+Typical morphosyntactic annotations are part-of-speech tagging (PoS tagging) which captures the word class and other morphological and syntactic properties of token wordforms in a corpus; such corpora can be loosely classified as tagged corpora.
+A type is a unique word form in the corpus.
+Granger and Lefer's study thus also provides compelling evidence that parallel corpora can be used to improve the number and accuracy of translation equivalents.
+For an example of reporting and discussing results of the cluster analysis see Section 5.5.
+However, it is important not to become too rigidly invested in the initial corpus design, since obstacles and complications may be encountered while collecting data that may require changes in the initial corpus design: It might not be possible, for instance, to obtain recordings for all the genres originally planned for inclusion in the corpus, or copyright restrictions might make it difficult to obtain certain kinds of writing.
+Although both descriptive and prescriptive perspectives refer to language rules, prescriptive rules attempt to dictate language use while descriptive rules provide judgment-free statements about language patterns.
+We have to keep in mind that, even at this advanced stage of language processing, there are many non-advanced and minority languages, which have not yet been successful in producing digital language texts or linguistic resources due to the non-availability of digital fonts that could be used to produced digital texts.
+The one type of annotation that all spoken corpora share is an orthographic transcription (see also Chap. 14).
+All of the files in a single time period would be available in a single folder so that each sub-corpus could be loaded separately.
+In the practitioner interviews, the link between language use and successful engineering practice was a consistent theme.
+In addition, the quantitative analysis that is typical of corpus research facilitates comparisons of linguistic features' distributions across registers and judgments about what is common or rare in a particular register.
+Low-frequency linguistic phenomena may be hard to analyze on the basis of parallel corpora, for sheer lack of sufficient data that would allow reliable generalizations.
+In particular, we will see how corpus data can be used for studying the language of specific groups such as children, individuals with language impairments and foreign language learners.
+As it is an introductory work, this book is necessarily partial and does not deal with all the questions raised by the use of corpora in different linguistic disciplines.
+A second variable concerns the word class of the host to which the -ment suffix attaches.
+As you will see further in the next chapters, with smaller, specialized corpora, you are only able to draw conclusions in your dataset rather than generalize the results to larger contexts.
+Colligation is the co-occurrence of specific parts of speech (verbs, nouns, adjectives, etc.) with each other; for example, we can estimate that articles in English show different colligational patterns with nouns, adjectives, and adverbs.
+A word of caution is warranted here: many off-the-shelf tools offer a 'random selection' option that makes it possible to retrieve randomly x instances of the searched item out of the total number of occurrences.
+One of these libraries is called "Math, Statistics, and Optimization", and it contains a larger range of dimensionality reduction and cluster analysis functions than any of the above software packages: principal component analysis, canonical correlation, factor analysis, singular value decomposition, multidimensional scaling, Sammon's mapping, hierarchical clustering, k-means, self-organizing map, and Gaussian mixture models.
+Beyond this distinction based on medium, there are of course other classification systems that can be applied to data, such as according to genre , register , text type , etc., although these distinctions are not always very clearly formalised and distinguished from one another, so that different scholars may sometimes be using distinct, but frequently also overlapping, terminology to represent similar things.
+Let us assume you want to define a data frame y that contains only those rows of x referring to open-class words.
+In the field of corpus linguistics and its neighboring field of language education, only a few attempts have been made to explore a comprehensive and bird's eye view of the interaction among published research articles on the subject.
+As the name suggests the annotation picks up the word class membership of word forms, traditionally called parts of speech.
+We then detailed the different stages that make up an annotation process and stressed the importance of good methodological practices, so that the annotation is as valid and reusable whenever possible.
+It must be noted, however, that it is the only book where all the examples are clearly identified as coming from corpora (the text type is always listed).
+The term corpus is derived from the Latin word corpus which means "body".
+Strings of words are how texts are represented prior to any further corpus annotation (cf.
+As diachronic corpora are typically used to study language change, and language change is generally understood to arise from and give rise to language variation, it is something of a bitter irony that one of the greatest difficulties diachronic corpora face lies precisely in capturing historical variation.
+The annotation of syntactic dependencies can also be done automatically using computer tools, but so far these have not generally been included in the interfaces for creating corpora, and their use requires natural language processing (NLP) skills that go beyond this book.
+Further similar studies on grammatical variation should take into account as many variables as feasible, since the interplay of determinants of variation needs to be re-examined for each dataset.
+Finally, a case study was presented to demonstrate that corpus analyses and various linguistic theories go hand in hand, and that such studies can do more than simply provide examples of constructions and document their frequency of occurrence.
+It is clear, then, that tokenization and part-of-speech tagging are not inherent in the text itself, but are the result of decisions by the corpus makers.
+Hierarchical clustering is very widely used, and so is covered in most accounts of cluster analysis, multivariate analysis, and related disciplines like data mining.
+Given the size of the comparable corpora used, we set the minimum co-occurrence frequency to 3.
+In the field of language teaching, it is also possible to collect texts written by students having different levels, and to build a corpus of these writings in order to study the typical errors that students produce at different learning stages.
+For this reason, many have argued that corpus data should be supplemented with other means of gathering data.
+For example, a first or second person pronoun will always refer to a human or animate NP and a third person pronoun will frequently do so, as will a proper name or a kin term.
+Most of the examples documented above are insults, a type of speech act that violates many norms of politeness, particularly because Trump's insults of individuals occur in very public forums, such as Twitter, debates, and campaign rallies.
+Several studies have used corpus data to study the factors that lead speakers to pronounce the liaison or not.
+This type of analysis will then be continued in the next chapter, where we'll discuss fixed or variable combinations of words that may be equally, or sometimes even more so, relevant to a particular type of text or genre.
+A systematic search for co-occurrence of the PP with a clear past-tense adverb (i.e. yesterday) did not yield a single incidence in any of the press sections of the ten corpora surveyed for this case study.
+The number of word types in each corpus is a scalar-type linguistic variable.
+An additional strain of corpus-based research in linguistic typology focuses on diversity in language use.
+In essence, language technology is happy in engaging technological devices like computers and mobiles to do a large number of purposeful activities with natural languages, both spoken and written.
+Finally, in Section 4, I will conclude this chapter with some final thoughts on the problems caused by text length and their solutions.
+When using additional data from the BNC and PDC2000 corpora, the minimum co-occurrence frequency was set at 20.
+If the taggings of the corpus data are not helpful in this regard, one can try to perform case-sensitive searches; in the BNCweb, the searches could be restricted to all-lowercase spellings of royal and regal, for example.
+However, in some rare cases, apart from the question just cited, it may indeed be grammatically correct to repeat the same word form twice in a row, albeit with different grammatical functions and meanings.
+The smaller the corpora compared are, the easier it'll of course become to narrow down such selections, but essentially, the technique itself is similar to creating basic stopword lists, only that, in this case, a word list from a whole corpus is used as a stopword list.
+Corpus-based typology can be represented variably in corpora, and this means that case marking needs to be investigated as a variable of language use as well.
+The annotation scheme defines an organization as a referent involving "more than one human" with "some degree of group identity".
+The effect of this is to make the connection vector increasingly similar to the input vector.
+In this more specific sense, collocation refers to the co-occurrence of particular word-forms with the node, and three other terms are used to refer to grammatical, semantic or discourse-pragmatic or affective co-occurrence pattern: colligation, semantic preference and semantic prosody.
+The dataset contains 489 tokens from 83 individuals.
+Finally, and related to the issue of world knowledge, the co-occurrence of words is restricted by topical considerations.
+Language documentation-based corpora are typically less varied in terms of text type.
+On the other hand, it is simply not feasible to annotate a 100-million-word corpus using human annotators (though advances in crowdsourcing technology may change this), so we are stuck with a choice between using a tagger or having no POS annotation at all.
+This is related to the size of a corpus as size is an important issue in corpus generation.
+Such generalizations are captured in dictionaries, grammars, and textbooks on the use of language.
+In fact, a corpus is a collection of texts or recordings specifically chosen in order to be representative of a language, of a certain register or even a language variety.
+This handbook provides a comprehensive overview of the different facets of learner corpus research, including the design of learner corpora, the methods that can be applied to study them, their use to investigate various aspects of language, and the link between learner corpus research and second language acquisition, language teaching and natural language processing.
+As corpus users we therefore need to think critically about the nature of the evidence that corpora provide in terms of their quality (representativeness and balance) as well as their quantity (corpus size).
+It is therefore essential for corpus compilers to make available to future corpus users ample metadata and a corpus manual detailing the corpus compilation and annotation process.
+No matter how explicit our annotation scheme, we will come across cases that are not covered and will require individual decisions; and even the clear cases are always based on an interpretative judgment.
+Note that the order of the vectors is only important in that it determines the order of the columns in the data frame.
+Because of this, range 2 can be used for a first (simple) exploration of the corpus data; but for further analyses more sensitive dispersion measures are preferable.
+Particularly when typical texts from the shorter end of the length range start to be excluded from the analysis in addition to obvious outliers, it is clear that the dataset starts to lose some of the information potentially available within the data.
+However, the mean becomes vastly different depending on the actual scores in the dataset.
+As an example, consider the so-called Silverstein Hierarchy used to categorize nouns for (inherent) Topicality (after Deane 1987: 67): Note, first, that there is a lot of overlap in this annotation scheme.
+Let' s apply a binary classification tree to our Vera' a data, excluding here Speaker and Text because their many levels may cause too many splits in the tree, making it difficult to read.
+Various types of corpus annotation can make these aspects explicit and searchable.
+The building of a corpus within a language documentation project is not generally different from any other corpus building project, as discussed in Chapter 6.
+Not all approaches to using corpus data stray towards positivism to the extent that the critique expressed by the likes of Zoldan holds.
