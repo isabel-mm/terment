@@ -6,25 +6,25 @@ Cluster Analysis,0,1
 Cluster analysis,0,3
 Co-occurrence,0,3
 Colligation,1,1
-Collocation,4,2
+Collocation,5,1
 Comparability,1,0
-Concordance,2,2
+Concordance,1,3
 Conditional inference tree,0,1
-Corpus,236,74
+Corpus,239,71
 Corpus Linguistics,27,8
-Corpus linguistics,19,2
+Corpus linguistics,17,4
 Corpus-based,9,2
 Corpus-driven,1,0
 Correspondence analysis,0,1
 Dataset,0,1
 Diachronic,5,3
 EFFECT SIZE,0,1
-Encoding,10,1
+Encoding,9,2
 Information Retrieval,0,1
 K-means,0,2
 Key Word In Context,1,0
 Keyword,4,2
-LEMMA,3,1
+LEMMA,2,2
 Language Acquisition,0,2
 Language Data,0,2
 Language acquisition,0,1
@@ -34,23 +34,27 @@ Learner Corpora,0,2
 Learner corpora,0,4
 Lemma,2,0
 Lemmatisation,1,0
-Lemmatization,2,0
+Lemmatization,1,1
 Lexis,2,0
 Markup,5,1
 Markup Language,8,0
-Metadata,17,2
+Metadata,16,3
 Natural Language Processing,0,2
 Natural language processing,0,1
 Node,2,0
 P-value,0,1
 P-values,0,1
+POS tag,0,6
+POS tags,0,20
 Parallel corpora,0,9
 Part of Speech,0,4
+PoS tag,0,9
+PoS tags,0,4
 R code,0,17
 Reference Corpus,0,2
 Register analysis,0,3
 Representativeness,3,0
-Sample,10,2
+Sample,11,1
 Speech Act,0,1
 Speech Community,0,2
 Speech act,0,2
@@ -58,18 +62,18 @@ Statistical significance,0,1
 TEXT,2,0
 TYPE,3,0
 Tagging,2,0
-Text,24,12
+Text,25,11
 Token,1,0
-Type,33,1
+Type,31,3
 Variety of English,0,1
-Web Page,0,1
+Webpage,0,1
 Word Form,0,1
 Word Length,0,2
 Word Sense,0,1
-XML,91,29
-annotation,326,192
+XML,89,31
+annotation,327,191
 association measure,0,10
-balance,39,10
+balance,37,12
 bar plot,0,5
 character class,0,14
 character string,0,7
@@ -82,32 +86,32 @@ cluster analysis,0,45
 co-occurrence,0,72
 code file,0,15
 colligation,2,1
-collocation,74,29
+collocation,78,25
 combination of words,0,1
-comparability,16,1
-concordance,78,95
-concordancer,29,11
+comparability,15,2
+concordance,76,97
+concordancer,28,12
 confidence interval,0,17
 content word,0,5
-corpus,2452,1217
-corpus construction,7,1
-corpus linguistics,358,88
-corpus-based,100,30
-corpus-driven,26,5
+corpus,2409,1260
+corpus construction,6,2
+corpus linguistics,351,95
+corpus-based,101,29
+corpus-driven,27,4
 correlation coefficient,0,13
 correspondence analysis,0,14
 data structure,0,27
 dataframe,0,2
 dataset,0,94
 degree of freedom,0,14
-diachronic,56,16
+diachronic,55,17
 dimensionality reduction,0,26
 discourse domain,0,8
 discourse marker,0,3
 effect model,0,1
 effect size,0,56
 effect size measure,0,8
-encoding,48,15
+encoding,47,16
 file name,0,20
 frequency count,0,4
 frequency distribution,0,7
@@ -119,7 +123,7 @@ function word,0,4
 information retrieval,0,8
 input vector,0,12
 k-means,0,32
-key word in context,2,0
+key word in context,1,1
 keyword,35,46
 language acquisition,0,37
 language change,0,16
@@ -136,29 +140,29 @@ language variety,0,25
 learner corpora,0,68
 lemma,63,9
 lemmatisation,5,1
-lemmatization,8,6
-lexis,22,7
+lemmatization,9,5
+lexis,26,3
 line break,0,3
 line of code,0,7
 list of words,0,11
 log-likelihood,0,16
 markup,47,6
-markup language,3,1
+markup language,4,0
 mean score,0,6
 measure of dispersion,0,7
-metadata,86,21
+metadata,85,22
 model selection,0,6
-monitor corpus,8,2
-multiword,0,8
+monitor corpus,9,1
+multiword,0,7
+multiword unit,0,1
 natural language processing,0,22
-node,68,21
-number of Word,0,1
+node,70,19
 number of cases,0,20
 number of characters,0,9
 number of instances,0,6
 number of occurrences,0,29
 number of times,0,23
-number of word,0,8
+number of words,0,39
 p-value,0,55
 p-values,0,32
 parallel corpora,0,45
@@ -171,10 +175,10 @@ reference corpus,0,49
 register analysis,0,24
 register variation,0,16
 regression model,0,21
-representativeness,48,14
+representativeness,47,15
 research design,0,32
-sample,277,115
-sample corpus,4,0
+sample,280,112
+sample corpus,3,1
 sampling frame,7,3
 search engine,0,10
 search expression,0,3
@@ -189,19 +193,21 @@ software program,0,3
 software tool,0,3
 speech act,0,11
 speech community,0,13
-statistical significance,14,7
-stop word,0,4
+statistical significance,13,8
+stopword,0,3
+stopwords,0,3
 study of language,0,12
+sub-corpora,0,20
 subordinate clause,0,7
 synchronic,16,1
-tagging,67,67
+tagging,69,65
 target discourse,0,3
 test statistics,0,5
-text,790,362
+text,791,361
 time period,0,13
 time span,0,11
-token,92,19
-type,371,168
+token,94,17
+type,364,175
 type-token ratio,0,10
 unit of analysis,0,13
 use of corpora,0,25
@@ -211,7 +217,7 @@ variety of English,0,7
 variety of language,0,5
 vector space,0,11
 visualisation technique,0,1
-web page,0,11
+webpage,0,3
 word character,0,13
 word class,0,23
 word form,0,45
@@ -222,4 +228,4 @@ word occurrence,0,2
 word sense,0,3
 word sequence,0,8
 wordlist,0,1
-xml,3,0
+xml,2,1
