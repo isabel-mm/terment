@@ -1,0 +1,3 @@
+Dataset,Num. ejemplos,Num. términos únicos,Num. términos anotados,Promedio anotaciones por oración
+TRAIN,4541,69,6187,1.3624752257212067
+DEV,2997,206,4814,1.606272939606273

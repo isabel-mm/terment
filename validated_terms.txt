@@ -1,7 +1,7 @@
 corpus data
 co-occurrence
 frequency list
-word list
+wordlist
 word form
 language use
 learner corpus
@@ -11,36 +11,39 @@ effect size
 corpus analysis
 cluster analysis
 language teaching
-word corpus
 corpus research
 concordance line
+concordance lines
 language processing
-language technology
+language technologies
 corpus study
 language variety
 language education
 text length
 text file
-word phrase
+text files
 language variation
 natural language processing
 classification approach
 language corpus
 learner corpora
 occurrence of word
-language datum
+language data
 corpus annotation
 language acquisition
 reference corpus
-stop word
+stopword
+stopwords
 corpus file
+corpus files
 classification accuracy
 corpus method
-number of instance
-pearson chi
+number of instances
+pearson's chi
 annotation scheme
-number of word
+number of words
 text type
+text types
 corpus design
 language feature
 collection of text
@@ -54,8 +57,8 @@ discourse domain
 word type
 word frequency
 collocation network
-data frame
-pattern of language
+dataframe
+pattern of languages
 pos tagging
 association measure
 speech act
@@ -70,14 +73,18 @@ word class
 conditional inference tree
 keyword analysis
 confidence interval
-multi word
+multiword
 corpus tool
 speech sample
 part of speech
+parts of speech
 corpus linguistics methodology
 annotation process
-pos tag
+POS tag
+POS tags
+pos-tag
 frequency of word
+frequency of words
 language documentation
 degree of freedom
 character class
@@ -87,12 +94,11 @@ register analysis
 software program
 type-token ratio
 list of words
-sub corpus
-sub corpora
+sub-corpus
+sub-corpora
 language sample
 corpus compiler
 log-likelihood
-word token
 partial dependence score
 corpus metadata
 effect size measure
@@ -150,12 +156,12 @@ number of cases
 sequence of word
 number of occurrences
 character vector
-multi word unit
+multiword unit
 frequency of occurrence
 type of corpus
 line of code
 datum frame
-web page
+webpage
 form of verb
 element of vector
 number of text
@@ -165,7 +171,7 @@ discourse marker
 size of corpus
 frequency count
 speech community
-web corpus
+web as corpus
 meta information
 number of token
 code file
@@ -194,7 +200,7 @@ frequency distribution
 punctuation mark
 correlation coefficient
 k-means
-lob corpus
+LOB corpus
 period of time
 statistical description analysis
 unit of analysis
