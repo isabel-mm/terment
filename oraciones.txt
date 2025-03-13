@@ -1,0 +1,73 @@
+import os
+import re
+
+# Rutas de los archivos
+input_dir = "/content/terment/texts"
+glossary_file = "/content/terment/cl_glossary"
+exclusion_file = "/content/terment/validated_terms.txt"
+output_file = "/content/terment/oraciones_filtradas.txt"
+
+# Cargar el glosario de 40 términos clave
+with open(glossary_file, "r", encoding="utf-8") as f:
+    glosario_40 = {line.strip() for line in f if line.strip()}
+
+# Cargar la lista de 200 términos prohibidos
+with open(exclusion_file, "r", encoding="utf-8") as f:
+    lista_exclusion_200 = {line.strip() for line in f if line.strip()}
+
+# Expresiones regulares para búsqueda eficiente
+glosario_regex = re.compile(r'\b(' + '|'.join(re.escape(t) for t in glosario_40) + r')\b', re.IGNORECASE)
+exclusion_regex = re.compile(r'\b(' + '|'.join(re.escape(t) for t in lista_exclusion_200) + r')\b', re.IGNORECASE)
+
+# Expresión regular para verificar que la oración empieza con mayúscula
+mayuscula_regex = re.compile(r'^[A-Z]')
+
+# Expresión para asegurarse de que la oración termina en un signo de puntuación válido
+puntuacion_final_regex = re.compile(r'[.!?:]$')
+
+# Expresión para eliminar títulos o epígrafes como "Part II", "Introduction vii", etc.
+seccion_regex = re.compile(r'^\s*(Introduction|Chapter|Part|Section|Appendix|Table|Figure)\s+[IVXLCDM\d]*\s*$')
+
+# Función para extraer y filtrar oraciones
+def extraer_oraciones_filtradas(texto):
+    oraciones = re.split(r'(?<=[.!?:])\s+', texto)  # Dividir en oraciones
+    oraciones_filtradas = []
+
+    for oracion in oraciones:
+        oracion = oracion.strip()
+
+        # Condiciones para aceptar la oración:
+        # 1. Empieza con mayúscula
+        # 2. Termina en '.', '?', '!', ':'
+        # 3. Tiene más de 5 palabras
+        # 4. No es un epígrafe o título ("Introduction vii", "Part II", etc.)
+        # 5. Contiene un término del glosario
+        # 6. No contiene términos de la lista de exclusión
+        if (
+            mayuscula_regex.match(oracion) and
+            puntuacion_final_regex.search(oracion) and
+            len(oracion.split()) > 5 and
+            not seccion_regex.match(oracion) and
+            glosario_regex.search(oracion) and
+            not exclusion_regex.search(oracion)
+        ):
+            oraciones_filtradas.append(oracion)
+
+    return oraciones_filtradas
+
+# Procesar los archivos .txt
+oraciones_finales = []
+for filename in os.listdir(input_dir):
+    if filename.endswith(".txt"):
+        with open(os.path.join(input_dir, filename), "r", encoding="utf-8") as f:
+            texto = f.read()
+        
+        oraciones_filtradas = extraer_oraciones_filtradas(texto)
+        oraciones_finales.extend(oraciones_filtradas)
+
+# Guardar las oraciones filtradas
+with open(output_file, "w", encoding="utf-8") as f:
+    for oracion in oraciones_finales:
+        f.write(oracion + "\n")
+
+print(f"✅ {len(oraciones_finales)} oraciones filtradas guardadas en {output_file}")

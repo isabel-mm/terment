@@ -1,6 +1,4 @@
-corpus linguistics
 corpus data
-corpus linguist
 co-occurrence
 frequency list
 word list
@@ -119,7 +117,7 @@ model selection
 variety of english
 target discourse
 sense disambiguation
-number of time
+number of times
 word tag
 corpus user
 type of text
@@ -139,7 +137,8 @@ mean score
 text processing
 collection of datum
 software tool
-p value
+p-value
+p-values
 use of corpora
 text corpus
 type of datum
