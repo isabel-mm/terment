@@ -184,7 +184,6 @@ sample of language
 variety of language
 co-occurrence of word
 r code
-field of corpus
 portion of corpus
 register variation
 language change

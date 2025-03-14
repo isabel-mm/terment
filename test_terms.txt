@@ -1,0 +1,50 @@
+annotation
+classification accuracy
+classification tree
+code file
+combination of words
+concordance
+concordance analysis
+concordance line
+concordance lines
+corpus
+corpus file
+corpus size
+discourse marker
+effect model
+effect size measure
+field of corpus
+form of verb
+frequency table
+input vector
+language corpus
+language feature
+language sample
+language technologies
+learner corpora
+lemmatisation
+meta information
+natural language processing
+number of times
+occurrence of word
+p-values
+period of time
+person pronoun
+register variation
+representativeness
+sample size
+selection criterion
+social media language
+speech tagging
+tagging
+text length
+text type
+token
+type of corpus
+use of corpora
+variable importance score
+variation change
+word length
+word tag
+word type
+wordlist
