@@ -1,50 +1,50 @@
 annotation
 classification accuracy
 classification tree
-code file
+collection of text
+collocation
 combination of words
 concordance
-concordance analysis
-concordance line
 concordance lines
 corpus
+corpus construction
+corpus data
 corpus file
+corpus files
+corpus generation
+corpus linguistics methodology
 corpus size
-discourse marker
-effect model
 effect size measure
-field of corpus
-form of verb
 frequency table
 input vector
 language corpus
 language feature
 language sample
 language technologies
-learner corpora
 lemmatisation
 meta information
-natural language processing
+number of cases
+number of example
 number of times
-occurrence of word
 p-values
-period of time
 person pronoun
-register variation
+punctuation mark
+reference corpus
 representativeness
-sample size
+research design
+sampling frame
 selection criterion
 social media language
+software tool
 speech tagging
 tagging
-text length
-text type
+text category
 token
 type of corpus
 use of corpora
 variable importance score
-variation change
+visualisation technique
+webpage
 word length
-word tag
-word type
+word sequence
 wordlist

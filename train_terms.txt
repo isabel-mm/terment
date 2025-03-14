@@ -18,12 +18,13 @@ classification approach
 cluster analysis
 co-occurrence
 co-occurrence of word
+code file
 collection of datum
-collection of text
 colligation
-collocation
 collocation network
 comparability
+concordance analysis
+concordance line
 concordancer
 conditional inference tree
 confidence interval
@@ -33,13 +34,8 @@ corpus annotation
 corpus building
 corpus compilation
 corpus compiler
-corpus construction
-corpus data
 corpus design
-corpus files
-corpus generation
 corpus linguistics
-corpus linguistics methodology
 corpus metadata
 corpus method
 corpus query
@@ -61,10 +57,13 @@ degree of freedom
 diachronic
 dimensionality reduction
 discourse domain
+discourse marker
+effect model
 effect size
 element of vector
 encoding
 file name
+form of verb
 frequency count
 frequency distribution
 frequency list
@@ -87,6 +86,7 @@ language teaching
 language use
 language variation
 language variety
+learner corpora
 learner corpus
 lemma
 lemmatization
@@ -106,15 +106,15 @@ monitor corpus
 multimodal corpus
 multiword
 multiword unit
+natural language processing
 node
-number of cases
 number of characters
-number of example
 number of instances
 number of occurrences
 number of text
 number of token
 number of words
+occurrence of word
 p-value
 parallel corpora
 part of speech
@@ -122,20 +122,19 @@ partial dependence score
 parts of speech
 pattern of languages
 pearson's chi
+period of time
 portion of corpus
 pos tagging
 pos-tag
-punctuation mark
 quality of corpus
 r code
-reference corpus
 register analysis
+register variation
 regression model
-research design
 sample
 sample corpus
 sample of language
-sampling frame
+sample size
 search engine
 search expression
 search word
@@ -145,7 +144,6 @@ significance test
 size of corpus
 software package
 software program
-software tool
 speech act
 speech community
 speech sample
@@ -163,11 +161,12 @@ target discourse
 test hypothesis
 test statistics
 text
-text category
 text corpus
 text file
 text files
+text length
 text processing
+text type
 text types
 time period
 time span
@@ -183,12 +182,11 @@ type-token ratio
 unit of analysis
 use of language
 use of word
+variation change
 variety of english
 variety of language
 vector space
-visualisation technique
 web as corpus
-webpage
 word character
 word class
 word embedding
@@ -198,4 +196,5 @@ word frequency list
 word level
 word occurrence
 word sense
-word sequence
+word tag
+word type
