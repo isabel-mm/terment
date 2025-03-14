@@ -1,0 +1,250 @@
+LOB corpus
+POS tag
+POS tags
+XML
+analysis of corpus
+annotation
+annotation process
+annotation scheme
+annotation standard
+annotation time
+association measure
+balance
+bar plot
+character class
+character string
+character vector
+chi-square
+classification accuracy
+classification approach
+classification tree
+cluster analysis
+co-occurrence
+co-occurrence of word
+code file
+collection of datum
+collection of text
+colligation
+collocation
+collocation network
+combination of words
+comparability
+concordance
+concordance analysis
+concordance line
+concordance lines
+concordancer
+conditional inference tree
+confidence interval
+content word
+corpus
+corpus analysis
+corpus annotation
+corpus building
+corpus compilation
+corpus compiler
+corpus construction
+corpus data
+corpus design
+corpus file
+corpus files
+corpus generation
+corpus linguistics
+corpus linguistics methodology
+corpus metadata
+corpus method
+corpus query
+corpus research
+corpus retrieval software
+corpus size
+corpus study
+corpus tool
+corpus type
+corpus user
+corpus-based
+corpus-driven
+correlation coefficient
+correspondence analysis
+data structure
+dataframe
+dataset
+datum frame
+degree of freedom
+diachronic
+dimensionality reduction
+discourse domain
+discourse marker
+effect model
+effect size
+effect size measure
+element of vector
+encoding
+field of corpus
+file name
+form of verb
+frequency count
+frequency distribution
+frequency list
+frequency of occurrence
+frequency of word
+frequency of words
+frequency table
+function word
+information retrieval
+input vector
+k-means
+key word in context
+keyword
+keyword analysis
+language acquisition
+language change
+language corpus
+language data
+language documentation
+language education
+language feature
+language processing
+language sample
+language teaching
+language technologies
+language use
+language variation
+language variety
+learner corpora
+learner corpus
+lemma
+lemmatisation
+lemmatization
+lexis
+line break
+line of code
+list of words
+log-likelihood
+markup
+markup language
+mean score
+meaning of word
+measure of dispersion
+meta information
+metadata
+model selection
+monitor corpus
+multimodal corpus
+multiword
+multiword unit
+natural language processing
+node
+number of cases
+number of characters
+number of example
+number of instances
+number of occurrences
+number of text
+number of times
+number of token
+number of words
+occurrence of word
+p-value
+p-values
+parallel corpora
+part of speech
+partial dependence score
+parts of speech
+pattern of languages
+pearson's chi
+period of time
+person pronoun
+portion of corpus
+pos tagging
+pos-tag
+punctuation mark
+quality of corpus
+r code
+reference corpus
+register analysis
+register variation
+regression model
+representativeness
+research design
+sample
+sample corpus
+sample of language
+sample size
+sampling frame
+search engine
+search expression
+search word
+selection criterion
+sense disambiguation
+sequence of word
+significance test
+size of corpus
+social media language
+software package
+software program
+software tool
+speech act
+speech community
+speech sample
+speech tagging
+statistical description analysis
+statistical significance
+stopword
+stopwords
+study of language
+sub-corpora
+sub-corpus
+subordinate clause
+synchronic
+tag corpus
+tagging
+target discourse
+test hypothesis
+test statistics
+text
+text category
+text corpus
+text file
+text files
+text length
+text processing
+text type
+text types
+time period
+time span
+token
+type
+type of analysis
+type of annotation
+type of corpora
+type of corpus
+type of datum
+type of file
+type of speech
+type of text
+type-token ratio
+unit of analysis
+use of corpora
+use of language
+variable importance score
+variation change
+variety of english
+variety of language
+vector space
+visualisation technique
+web as corpus
+webpage
+word character
+word class
+word embedding
+word form
+word frequency
+word frequency list
+word length
+word level
+word occurrence
+word sense
+word sequence
+word tag
+word type
+wordlist
